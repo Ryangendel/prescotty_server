@@ -37,7 +37,7 @@ app.post('/submit', ({ body }, res) => {
 
 app.get('/all', (req, res) => {
     var results = []
-    fs.createReadStream('./contacts.csv')
+    fs.createReadStream('./contacts_live.csv')
         .pipe(csv())
         .on('data', (data) => {
             var formattedData = []
@@ -117,7 +117,7 @@ app.get('/all', (req, res) => {
         })
         .on('end', () => {
             console.log(results);
-            res.send("Done")
+            res.json(results)
             // [
             //   { NAME: 'Daffy Duck', AGE: '24' },
             //   { NAME: 'Bugs Bunny', AGE: '22' }
