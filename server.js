@@ -37,15 +37,15 @@ app.post('/submit', ({ body }, res) => {
 
 app.get('/all', (req, res) => {
     var results = []
-    fs.createReadStream('./contacts_live.csv')
+    fs.createReadStream('./contacts_testing.csv')
         .pipe(csv())
-        .on('data', (data) => {
+        .on('data', async (data) => {
             var formattedData = []
             var dataObj = {}
             var dataArr = [data]
-            console.log("-------------")
-            console.log(data)
-            console.log("-------------")
+            // console.log("-------------")
+            // console.log(data)
+            // console.log("-------------")
             // for (let i = 0; i < dataArr.length; i++) {
             dataObj.full_name = data.Name
             dataObj.mobile = data["Phone 1 - Value"]
@@ -54,6 +54,10 @@ app.get('/all', (req, res) => {
             dataObj.state = data["Address 1 - Region"]
             dataObj.zip = data["Address 1 - Postal Code"]
             const dobRegex = /DOB: (\d{2}\/\d{2}\/\d{4})/;
+            console.log("************************************")
+            console.log(data)
+            console.log("************************************")
+
             const dob = data.Notes.match(dobRegex);
             if (dob && dob[1]) {
                 dataObj.dob = dob[1];
@@ -85,10 +89,10 @@ app.get('/all', (req, res) => {
             const productRegex = /([A-Za-z\s]+)\nOption: [^\n]+\nQuantity: \d+\nBrand: [^\n]+\nPrice: \d+/g;
             const ProductName = data.Notes.match(productRegex);
 
-            if (ProductName) {
-                const productNames = ProductName.map(match => match.trim());
-                dataObj.product_info = productNames
-            }
+            // if (ProductName) {
+            //     const productNames = ProductName.map(match => match.trim());
+            //     dataObj.product_info = productNames
+            // }
 
             const costRegex = /(\w+): (\$[\d.]+)/g;
 
@@ -100,19 +104,30 @@ app.get('/all', (req, res) => {
                 dataObj[key] = value;
             }
 
-            var products = data.Notes.split("Products:")[1]
-            console.log("************************************")
-            console.log(products)
-            console.log("************************************")
-            if (products) {
+            const itemRegex = /Option: ([^\n]+)\nQuantity: (\d+)\nBrand: ([^\n]+)\nPrice: (\d+)/g;
 
-            } else {
-                //DOES NOT USE DUTCHIE
+            const extractedItems = [];
+            let match;
+            
+            while ((match = itemRegex.exec(data.Notes)) !== null) {
+                const [, option, quantity, brand, price] = match;
+                extractedItems.push({
+                    itemPurchased: "N/A",
+                    option,
+                    quantity: parseInt(quantity),
+                    brand,
+                    price: parseFloat(price)
+                });
             }
-
+            
+            console.log("----------------------------===============")
+            console.log(extractedItems)
+            console.log("----------------------------===============")
+            dataObj.purchase_details = extractedItems
             // dataObj.notes = data.Notes
             results.push(dataObj)
             //   } 
+        
             // console.log(formattedData)
         })
         .on('end', () => {

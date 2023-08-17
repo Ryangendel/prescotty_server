@@ -41,7 +41,9 @@ const CustomerSchema = new Schema({
     type: Date,
     trim: true,
   },
-  
+  medical_patient:{
+    type:Boolean,
+  }
 
 });
 
