@@ -37,7 +37,7 @@ app.post('/submit', ({ body }, res) => {
 
 app.get('/all', (req, res) => {
     var results = []
-    fs.createReadStream('./contacts_testing.csv')
+    fs.createReadStream('./contacts_live.csv')
         .pipe(csv())
         .on('data', async (data) => {
             // console.log("************************************")
