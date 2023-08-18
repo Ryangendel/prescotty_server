@@ -37,10 +37,13 @@ app.post('/submit', ({ body }, res) => {
 
 app.get('/all', (req, res) => {
     var results = []
-    fs.createReadStream('./contacts_live.csv')
+    fs.createReadStream('./contacts_testing.csv')
         .pipe(csv())
         .on('data', async (data) => {
-            var formattedData = []
+            // console.log("************************************")
+            // console.log(i)
+            // console.log("************************************")
+            // var formattedData = []
             var dataObj = {}
             var dataArr = [data]
             // console.log("-------------")
@@ -54,9 +57,7 @@ app.get('/all', (req, res) => {
             dataObj.state = data["Address 1 - Region"]
             dataObj.zip = data["Address 1 - Postal Code"]
             const dobRegex = /DOB: (\d{2}\/\d{2}\/\d{4})/;
-            console.log("************************************")
-            console.log(data)
-            console.log("************************************")
+         
 
             const dob = data.Notes.match(dobRegex);
             if (dob && dob[1]) {
@@ -89,10 +90,10 @@ app.get('/all', (req, res) => {
             const productRegex = /([A-Za-z\s]+)\nOption: [^\n]+\nQuantity: \d+\nBrand: [^\n]+\nPrice: \d+/g;
             const ProductName = data.Notes.match(productRegex);
 
-            // if (ProductName) {
-            //     const productNames = ProductName.map(match => match.trim());
-            //     dataObj.product_info = productNames
-            // }
+            if (ProductName) {
+                const productNames = ProductName.map(match => match.trim());
+                dataObj.product_info = productNames
+            }
 
             const costRegex = /(\w+): (\$[\d.]+)/g;
 
@@ -103,31 +104,94 @@ app.get('/all', (req, res) => {
                 const value = match[2];
                 dataObj[key] = value;
             }
+            //---------------------------------WORKING CODE
+            // const itemRegex = /Option: ([^\n]+)\nQuantity: (\d+)\nBrand: ([^\n]+)\nPrice: (\d+)/g;
 
-            const itemRegex = /Option: ([^\n]+)\nQuantity: (\d+)\nBrand: ([^\n]+)\nPrice: (\d+)/g;
+            // const extractedItems = [];
+            // let match;
 
-            const extractedItems = [];
-            let match;
-            
-            while ((match = itemRegex.exec(data.Notes)) !== null) {
-                const [, option, quantity, brand, price] = match;
-                extractedItems.push({
-                    itemPurchased: "N/A",
-                    option,
-                    quantity: parseInt(quantity),
-                    brand,
-                    price: parseFloat(price)
-                });
+            // while ((match = itemRegex.exec(data.Notes)) !== null) {
+            //     const [, y, option, quantity, brand, price] = match;
+            //     console.log("888888888888888888888888======================")
+            //     console.log(y)
+            //     console.log(option)
+            //     console.log(quantity)
+            //     console.log(brand)
+            //     console.log(price)
+            //     console.log("888888888888888888888888======================")
+            //     extractedItems.push({
+            //         itemPurchased: "N/A",
+            //         option,
+            //         quantity: parseInt(quantity),
+            //         brand,
+            //         price: parseFloat(price)
+            //     });
+            // }
+           // ---------------------------- WORKING CODE
+            //5555555555555555555555555555555555555555555555
+                var orders = dataObj.product_info
+              
+            if (orders?.length) {
+                console.log("----------------------------99900000---------============")  
+                console.log(orders.length)
+                console.log("---------------------------- 9999999  ---------============")  
+                // console.log("----------------------------   ---------============")  
+                //  console.log(typeof orders)
+                //  console.log("----------------------------   ---------============")  
+                var extractedItems = [];
+                orders.forEach(entry => {
+                    const lines = entry.split('\n');
+                    const [productNameLine, optionLine, quantityLine, brandLine, priceLine] = lines;
+                    
+                    const productName = productNameLine.split('\n')[0];
+                    const option = optionLine.split(": ")[1];
+                    const quantity = quantityLine.split(": ")[1];
+                    const brand = brandLine.split(": ")[1];
+                    const price = priceLine.split(": ")[1];
+                  
+                    extractedItems.push({
+                      product_name: productName,
+                      option,
+                      quantity: parseInt(quantity),
+                      brand,
+                      price: parseFloat(price)
+                    });
+                  });
             }
-            
-            console.log("----------------------------===============")
-            console.log(extractedItems)
-            console.log("----------------------------===============")
+            //5555555555555555555555555555555555555555555555
+            //     console.log("----------------------------   ---------============")  
+            //     console.log(ProductName[0])
+            //     console.log("----------------------------   ---------============")  
+            //     ProductName[0]?.forEach(all =>{ 
+            //     const entries = all.split('",\n"');
+
+                // const extractedItems = [];
+
+                // entries.forEach(entry => {
+                //     const lines = entry.split('\n');
+                //     const productName = lines[0];
+                //     const option = lines[1].split(": ")[1];
+                //     const quantity = lines[2].split(": ")[1];
+                //     const brand = lines[3].split(": ")[1];
+                //     const price = lines[4].split(": ")[1];
+
+                //     extractedItems.push({
+                //         product_name: productName,
+                //         option,
+                //         quantity: parseInt(quantity),
+                //         brand,
+                //         price: parseFloat(price)
+                //     });
+                // });
+           // })
+            // console.log("----------------------------===============")
+            // console.log(extractedItems)
+            // console.log("----------------------------===============")
             dataObj.purchase_details = extractedItems
             // dataObj.notes = data.Notes
             results.push(dataObj)
             //   } 
-        
+
             // console.log(formattedData)
         })
         .on('end', () => {
