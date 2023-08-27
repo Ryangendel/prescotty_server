@@ -184,6 +184,9 @@ app.get('/all', (req, res) => {
 
                 // Function to extract Total and Sub-Total
                 function extractTotals(lines) {
+                    // console.log("llllllllllllllllll")
+                    // console.log(lines)
+                    // console.log("llllllllllllllllll")
                     const subTotalLine = lines.find(line => line.includes('Sub-Total:'));
                     const totalLine = lines.find(line => line.includes('Total:'));
                     const subTotal = parseFloat(subTotalLine.match(/\$([\d.]+)/)[1]);
@@ -199,6 +202,9 @@ app.get('/all', (req, res) => {
                 const totals1 = extractTotals(lines1);
 
                 dataObj.pos_system_used = "not sure1"
+                // console.log("llllllllllllllllll")
+                // console.log(totals1)
+                // console.log("llllllllllllllllll")
                 dataObj.order = info1
                 dataObj.subtotal = totals1.subTotal
                 dataObj.total = totals1.total
@@ -237,11 +243,62 @@ app.get('/all', (req, res) => {
 
 
                 // Output results
-                console.log("Product Info from input1:", productInfo1);
-                console.log("Total from input1:", total1);
+                // console.log("Product Info from input1:", productInfo1);
+                // console.log("Total from input1:", total1);
                 dataObj.pos_system_used = "not sure2"
                 dataObj.order = productInfo1
                 dataObj.total = total1.total
+            }
+
+            if (data.Notes.includes("Jane Customer")) {
+                console.log("INSIDE JANE0000000000000000000000")
+                console.log(data.Notes)
+                function extractProductInfo(input) {
+                    const lines = input.split('\n');
+                    let orderTotal = null;
+                    const productInfo = [];
+                    let currentProduct = {};
+                  
+                    for (const line of lines) {
+                      if (line.includes('Total = $')) {
+                        orderTotal = parseFloat(line.match(/Total = \$([\d.]+)/)[1]);
+                      } else if (line.trim().length > 0) {
+                        const quantityMatch = line.match(/(\d+)x\s+/);
+                        if (quantityMatch) {
+                          if (currentProduct.product) {
+                            productInfo.push(currentProduct);
+                          }
+                          currentProduct = {};
+                          currentProduct.quantity = parseInt(quantityMatch[1]);
+                          const productOptionMatch = line.replace(quantityMatch[0], '').match(/(.*?)\s+\|\s+(.*):\s+\$([\d.]+)/);
+                          if (productOptionMatch) {
+                            currentProduct.product = productOptionMatch[1].trim();
+                            currentProduct.option = productOptionMatch[2].trim();
+                            currentProduct.price = parseFloat(productOptionMatch[3]);
+                          } else {
+                            // Handle cases where productOptionMatch is null
+                            currentProduct.product = line.replace(quantityMatch[0], '').replace(/:\s+\$([\d.]+)/, '').trim();
+                            currentProduct.price = parseFloat(line.match(/:\s+\$([\d.]+)/)[1]);
+                          }
+                        }
+                      }
+                    }
+                  
+                    if (currentProduct.product) {
+                      productInfo.push(currentProduct);
+                    }
+                  
+                    return { orderTotal, productInfo };
+                  }
+                  
+                  // Extract product information and order total
+                  const { orderTotal, productInfo } = extractProductInfo(data.Notes);
+                  
+                  // Output results
+                  dataObj.pos_system_used = "Jane"
+                  dataObj.order = productInfo
+                  dataObj.total = orderTotal
+              
             }
 
             results.push(dataObj)
