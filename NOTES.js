@@ -63,3 +63,39 @@
 //                 }
 //                 dataObj.pos_system_used = "Dutchie"
 //                 dataObj.purchase_details = extractedItems
+
+//------------------NOT SURE 1
+
+// function extractInfo(line) {
+//     const regex = /([\d.]+) x (.+?) ([\d.]+(?: Gram|g)) .+?\| (\d+)/;
+//     const match = line.match(regex);
+//     if (match) {
+//         const quantity = parseFloat(match[1]);
+//         const product = match[2];
+//         const option = match[3];
+//         const sku = parseInt(match[4]);
+//         return { quantity, product, option, sku };
+//     }
+//     return null;
+// }
+
+// // Function to extract Total and Sub-Total
+// function extractTotals(lines) {
+
+//     console.log("llllllllllllllllll")
+//     console.log(lines)
+//     console.log("llllllllllllllllll")
+ 
+//     const subTotalLine = lines.find(line => line.includes('Sub-Total:'));
+//     const totalLine = lines.find(line => line.includes('Total:'));
+//     const subTotal = parseFloat(subTotalLine.match(/\$([\d.]+)/)[1]);
+//     const total = parseFloat(totalLine.match(/\$([\d.]+)/)[1]);
+//     return { subTotal, total };
+// }
+
+// // Split the input string into lines
+// const lines1 = data.Notes.split('\n');
+
+// // Extract information and totals
+// const info1 = lines1.map(extractInfo).filter(Boolean);
+// const totals1 = extractTotals(lines1);

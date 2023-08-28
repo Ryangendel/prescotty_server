@@ -64,69 +64,69 @@ app.get('/all', (req, res) => {
                 dataObj.pos_system_used = "Dutchie"
                 function extractOrderInfo(input) {
                     const orderInfo = {};
-                  
+
                     // Extract DOB, Drivers License, Onfleet Task ID, View Order, Order Number
                     const dobMatch = input.match(/DOB: ([^\n]+)/);
                     const driversLicenseMatch = input.match(/Drivers License: ([^\n]+)/);
                     const onFleetTaskIDMatch = input.match(/Onfleet Task ID:  ([^\n]+)/);
                     const viewOrderMatch = input.match(/View order: ([^\n]+)/);
                     const orderNumberMatch = input.match(/Order Number: ([^\n]+)/);
-                  
+
                     orderInfo.dob = dobMatch ? dobMatch[1].trim() : null;
                     orderInfo.drivers_license = driversLicenseMatch ? driversLicenseMatch[1].trim() : null;
-                  
+
                     // Split "created at" time from "on_fleet_task_id"
                     if (onFleetTaskIDMatch) {
-                      const onFleetTaskIDParts = onFleetTaskIDMatch[1].split(" created at ");
-                      orderInfo.on_fleet_task_id = onFleetTaskIDParts[0].trim();
-                      const created_at_timestamp = parseInt(onFleetTaskIDParts[1]);
-                      orderInfo.created_at = new Date(created_at_timestamp).toISOString();
+                        const onFleetTaskIDParts = onFleetTaskIDMatch[1].split(" created at ");
+                        orderInfo.on_fleet_task_id = onFleetTaskIDParts[0].trim();
+                        const created_at_timestamp = parseInt(onFleetTaskIDParts[1]);
+                        orderInfo.created_at = new Date(created_at_timestamp).toISOString();
                     } else {
-                      orderInfo.on_fleet_task_id = null;
-                      orderInfo.created_at = null;
+                        orderInfo.on_fleet_task_id = null;
+                        orderInfo.created_at = null;
                     }
-                  
+
                     orderInfo.view_order = viewOrderMatch ? viewOrderMatch[1].trim() : null;
                     orderInfo.order_number = orderNumberMatch ? orderNumberMatch[1].trim() : null;
-                  
+
                     // Extract Product Info
                     const productInfo = [];
-                  
+
                     const productBlocks = input.match(/Products:(.*?)productSubtotal:/s);
                     if (productBlocks) {
-                      const productLines = productBlocks[1].split("\n");
-                      let product = {};
-                  
-                      for (let i = 0; i < productLines.length; i++) {
-                        const line = productLines[i].trim();
-                        if (line === "-----------") {
-                          if (Object.keys(product).length > 0) {
-                            // Convert quantity and price to integers
+                        const productLines = productBlocks[1].split("\n");
+                        let product = {};
+
+                        for (let i = 0; i < productLines.length; i++) {
+                            const line = productLines[i].trim();
+                            if (line === "-----------") {
+                                if (Object.keys(product).length > 0) {
+                                    // Convert quantity and price to integers
+                                    product.quantity = parseInt(product.quantity);
+                                    product.price = parseFloat(product.price);
+                                    productInfo.push(product);
+                                    product = {};
+                                }
+                            } else {
+                                const keyValue = line.split(":");
+                                if (keyValue.length === 2) {
+                                    const key = keyValue[0].trim();
+                                    const value = keyValue[1].trim();
+                                    product[key.toLowerCase()] = key === "price" ? parseFloat(value) : value;
+                                }
+                            }
+                        }
+
+                        if (Object.keys(product).length > 0) {
+                            // Convert quantity and price to integers for the last product
                             product.quantity = parseInt(product.quantity);
                             product.price = parseFloat(product.price);
                             productInfo.push(product);
-                            product = {};
-                          }
-                        } else {
-                          const keyValue = line.split(":");
-                          if (keyValue.length === 2) {
-                            const key = keyValue[0].trim();
-                            const value = keyValue[1].trim();
-                            product[key.toLowerCase()] = key === "price" ? parseFloat(value) : value;
-                          }
                         }
-                      }
-                  
-                      if (Object.keys(product).length > 0) {
-                        // Convert quantity and price to integers for the last product
-                        product.quantity = parseInt(product.quantity);
-                        product.price = parseFloat(product.price);
-                        productInfo.push(product);
-                      }
                     }
-                  
+
                     orderInfo.products = productInfo;
-                  
+
                     // Extract productSubtotal, deliveryFee, total, medical card, etc.
                     const productSubtotalMatch = input.match(/productSubtotal: \$([\d.]+)/);
                     const deliveryFeeMatch = input.match(/deliveryFee: \$([\d.]+)/);
@@ -134,33 +134,33 @@ app.get('/all', (req, res) => {
                     const medicalCardMatch = input.match(/Medical Card: ([^\n]+)/);
                     const emailMatch = input.match(/Email: ([^\n]+)/);
                     const expirationDateMatch = input.match(/Exp: ([^\n]+)/);
-                  
+
                     orderInfo.productSubtotal = productSubtotalMatch ? parseFloat(productSubtotalMatch[1]) : null;
                     orderInfo.deliveryFee = deliveryFeeMatch ? parseFloat(deliveryFeeMatch[1]) : null;
                     orderInfo.total = totalMatch ? parseFloat(totalMatch[1]) : null;
                     orderInfo.medical = medicalCardMatch ? true : false;
                     orderInfo.email = emailMatch ? emailMatch[1].trim() : null;
                     orderInfo.expiration_date = expirationDateMatch ? expirationDateMatch[1].trim() : null;
-                  
+
                     return orderInfo;
-                  }
-                  
-                  const orderInfo = extractOrderInfo(data.Notes);
-                  
-                  dataObj.dob = orderInfo.dob
-                  dataObj.drivers_license = orderInfo.drivers_license
-                  dataObj.on_fleet_task_id = orderInfo.on_fleet_task_id
-                  dataObj.created_at = orderInfo.created_at
-                  dataObj.order_number = orderInfo.order_number
-                  dataObj.order_detail = orderInfo.products
-                  dataObj.subtotal = orderInfo.productSubtotal
-                  dataObj.drivers_license = orderInfo.drivers_license
-                  dataObj.delivery_fee = orderInfo.deliveryFee
-                  dataObj.order_total = orderInfo.total
-                  dataObj.medical = orderInfo.medical
-                  dataObj.customer_email = orderInfo.email
-                  dataObj.med_card_expiration_date = orderInfo.expiration_date
-                
+                }
+
+                const orderInfo = extractOrderInfo(data.Notes);
+
+                dataObj.dob = orderInfo.dob
+                dataObj.drivers_license = orderInfo.drivers_license
+                dataObj.on_fleet_task_id = orderInfo.on_fleet_task_id
+                dataObj.created_at = orderInfo.created_at
+                dataObj.order_number = orderInfo.order_number
+                dataObj.order_detail = orderInfo.products
+                dataObj.subtotal = orderInfo.productSubtotal
+                dataObj.drivers_license = orderInfo.drivers_license
+                dataObj.delivery_fee = orderInfo.deliveryFee
+                dataObj.order_total = orderInfo.total
+                dataObj.medical = orderInfo.medical
+                dataObj.customer_email = orderInfo.email
+                dataObj.med_card_expiration_date = orderInfo.expiration_date
+
             }
             //END DUTCHIE ORDER------------------------------
 
@@ -204,45 +204,60 @@ app.get('/all', (req, res) => {
             if (data.Notes.includes("Transaction ID")) {
                 // console.log(data.Notes)
                 //******************************************** */
-                function extractInfo(line) {
-                    const regex = /([\d.]+) x (.+?) ([\d.]+(?: Gram|g)) .+?\| (\d+)/;
-                    const match = line.match(regex);
-                    if (match) {
-                        const quantity = parseFloat(match[1]);
-                        const product = match[2];
-                        const option = match[3];
-                        const sku = parseInt(match[4]);
-                        return { quantity, product, option, sku };
+                function extractProductInfo(input) {
+                    const productInfo = [];
+
+                    const lines = input.split('\n');
+                    let isProductsSection = false;
+                    let subTotal = null;
+                    let total = null;
+
+                    for (const line of lines) {
+                        if (line.startsWith("Sub-Total: $")) {
+                            subTotal = parseFloat(line.match(/\$([\d.]+)/)?.[1]) || null;
+                        } else if (line.startsWith("Total: $")) {
+                            total = parseFloat(line.match(/\$([\d.]+)/)?.[1]) || null;
+                        } else if (isProductsSection && line.trim() !== "") {
+                            const parts = line.split("|");
+                            if (parts.length === 2) {
+                                const [productPart, skuPart] = parts;
+                                const matchQuantityProduct = productPart.trim().match(/(\d+\.\d+)\s*x\s+(.+)/);
+                                const matchOptionType = productPart.trim().match(/(\d\s*Gram|\d\s*g)\s*(.+)/);
+
+                                if (matchQuantityProduct && matchOptionType) {
+                                    const [, quantity, productKey] = matchQuantityProduct;
+                                    const [, option, type] = matchOptionType;
+
+                                    const sku = parseInt(skuPart.trim().split(" ")[0], 10);
+
+                                    // Remove the number and any following characters after the option
+                                    const trimmedProductKey = productKey.trim().replace(/\d+\s*(g|Gram|gram)?.*$/, "");
+
+                                    productInfo.push({
+                                        quantity: parseFloat(quantity),
+                                        product: trimmedProductKey.trim(),
+                                        option: option.trim(),
+                                        type: type.trim(),
+                                        sku,
+                                    });
+                                }
+                            }
+                        } else if (line.startsWith("ONFLEET ORDER NOTES")) {
+                            isProductsSection = true;
+                        }
                     }
-                    return null;
+
+                    return { productInfo, subTotal, total };
                 }
 
-                // Function to extract Total and Sub-Total
-                function extractTotals(lines) {
-                    // console.log("llllllllllllllllll")
-                    // console.log(lines)
-                    // console.log("llllllllllllllllll")
-                    const subTotalLine = lines.find(line => line.includes('Sub-Total:'));
-                    const totalLine = lines.find(line => line.includes('Total:'));
-                    const subTotal = parseFloat(subTotalLine.match(/\$([\d.]+)/)[1]);
-                    const total = parseFloat(totalLine.match(/\$([\d.]+)/)[1]);
-                    return { subTotal, total };
-                }
-
-                // Split the input string into lines
-                const lines1 = data.Notes.split('\n');
-
-                // Extract information and totals
-                const info1 = lines1.map(extractInfo).filter(Boolean);
-                const totals1 = extractTotals(lines1);
-
+                const { productInfo, subTotal, total } = extractProductInfo(data.Notes);
+                console.log("Product Info:", productInfo);
+                console.log("Sub-Total:", subTotal);
+                console.log("Total:", total);
                 dataObj.pos_system_used = "not sure1"
-                // console.log("llllllllllllllllll")
-                // console.log(totals1)
-                // console.log("llllllllllllllllll")
-                dataObj.order = info1
-                dataObj.subtotal = totals1.subTotal
-                dataObj.total = totals1.total
+                dataObj.order = productInfo
+                dataObj.subtotal = subTotal
+                dataObj.total = total
             }
             //END Transaction ID --- NOT SURE THE POS
             if (data.Notes.includes("-------------------")) {
@@ -284,7 +299,7 @@ app.get('/all', (req, res) => {
                 dataObj.order = productInfo1
                 dataObj.total = total1.total
             }
-// JANE START -------------------------------------------------------------------
+            // JANE START -------------------------------------------------------------------
             if (data.Notes.includes("Jane Customer")) {
                 console.log(data.Notes)
                 function extractProductInfo(input) {
@@ -292,49 +307,49 @@ app.get('/all', (req, res) => {
                     let orderTotal = null;
                     const productInfo = [];
                     let currentProduct = {};
-                  
+
                     for (const line of lines) {
-                      if (line.includes('Total = $')) {
-                        orderTotal = parseFloat(line.match(/Total = \$([\d.]+)/)[1]);
-                      } else if (line.trim().length > 0) {
-                        const quantityMatch = line.match(/(\d+)x\s+/);
-                        if (quantityMatch) {
-                          if (currentProduct.product) {
-                            productInfo.push(currentProduct);
-                          }
-                          currentProduct = {};
-                          currentProduct.quantity = parseInt(quantityMatch[1]);
-                          const productOptionMatch = line.replace(quantityMatch[0], '').match(/(.*?)\s+\|\s+(.*):\s+\$([\d.]+)/);
-                          if (productOptionMatch) {
-                            currentProduct.product = productOptionMatch[1].trim();
-                            currentProduct.option = productOptionMatch[2].trim();
-                            currentProduct.price = parseFloat(productOptionMatch[3]);
-                          } else {
-                            // Handle cases where productOptionMatch is null
-                            currentProduct.product = line.replace(quantityMatch[0], '').replace(/:\s+\$([\d.]+)/, '').trim();
-                            currentProduct.price = parseFloat(line.match(/:\s+\$([\d.]+)/)[1]);
-                          }
+                        if (line.includes('Total = $')) {
+                            orderTotal = parseFloat(line.match(/Total = \$([\d.]+)/)[1]);
+                        } else if (line.trim().length > 0) {
+                            const quantityMatch = line.match(/(\d+)x\s+/);
+                            if (quantityMatch) {
+                                if (currentProduct.product) {
+                                    productInfo.push(currentProduct);
+                                }
+                                currentProduct = {};
+                                currentProduct.quantity = parseInt(quantityMatch[1]);
+                                const productOptionMatch = line.replace(quantityMatch[0], '').match(/(.*?)\s+\|\s+(.*):\s+\$([\d.]+)/);
+                                if (productOptionMatch) {
+                                    currentProduct.product = productOptionMatch[1].trim();
+                                    currentProduct.option = productOptionMatch[2].trim();
+                                    currentProduct.price = parseFloat(productOptionMatch[3]);
+                                } else {
+                                    // Handle cases where productOptionMatch is null
+                                    currentProduct.product = line.replace(quantityMatch[0], '').replace(/:\s+\$([\d.]+)/, '').trim();
+                                    currentProduct.price = parseFloat(line.match(/:\s+\$([\d.]+)/)[1]);
+                                }
+                            }
                         }
-                      }
                     }
-                  
+
                     if (currentProduct.product) {
-                      productInfo.push(currentProduct);
+                        productInfo.push(currentProduct);
                     }
-                  
+
                     return { orderTotal, productInfo };
-                  }
-                  
-                  // Extract product information and order total
-                  const { orderTotal, productInfo } = extractProductInfo(data.Notes);
-                  
-                  // Output results
-                  dataObj.pos_system_used = "Jane"
-                  dataObj.order = productInfo
-                  dataObj.total = orderTotal
-              
+                }
+
+                // Extract product information and order total
+                const { orderTotal, productInfo } = extractProductInfo(data.Notes);
+
+                // Output results
+                dataObj.pos_system_used = "Jane"
+                dataObj.order = productInfo
+                dataObj.total = orderTotal
+
             }
-// JANE END -------------------------------------------------------------------
+            // JANE END -------------------------------------------------------------------
 
             results.push(dataObj)
         })
