@@ -62,104 +62,84 @@ app.get('/all', (req, res) => {
             if (data.Notes.includes("https://dhcie")) {
                 console.log("************************************")
                 dataObj.pos_system_used = "Dutchie"
+                console.log("--------------------------------------PPPPPPPPPPP")
                 function extractOrderInfo(input) {
-                    const orderInfo = {};
-
-                    // Extract DOB, Drivers License, Onfleet Task ID, View Order, Order Number
-                    const dobMatch = input.match(/DOB: ([^\n]+)/);
-                    const driversLicenseMatch = input.match(/Drivers License: ([^\n]+)/);
-                    const onFleetTaskIDMatch = input.match(/Onfleet Task ID:  ([^\n]+)/);
-                    const viewOrderMatch = input.match(/View order: ([^\n]+)/);
-                    const orderNumberMatch = input.match(/Order Number: ([^\n]+)/);
-
-                    orderInfo.dob = dobMatch ? dobMatch[1].trim() : null;
-                    orderInfo.drivers_license = driversLicenseMatch ? driversLicenseMatch[1].trim() : null;
-
-                    // Split "created at" time from "on_fleet_task_id"
-                    if (onFleetTaskIDMatch) {
-                        const onFleetTaskIDParts = onFleetTaskIDMatch[1].split(" created at ");
-                        orderInfo.on_fleet_task_id = onFleetTaskIDParts[0].trim();
-                        const created_at_timestamp = parseInt(onFleetTaskIDParts[1]);
-                        orderInfo.created_at = new Date(created_at_timestamp).toISOString();
-                    } else {
-                        orderInfo.on_fleet_task_id = null;
-                        orderInfo.created_at = null;
+                    let orderInfo = {};
+                  
+                    // Personal information
+                    const dobMatch = input.match(/DOB: (\d{2}\/\d{2}\/\d{4})/);
+                    const emailMatch = input.match(/Email: ([\w.-]+@[\w.-]+\.[a-zA-Z]{2,4})/);
+                    const medicalCardMatch = input.match(/Medical Card: (.*)/);
+                    const expDateMatch = input.match(/Exp: (\d{2}\/\d{2}\/\d{4})/);
+                  
+                    orderInfo.dob = dobMatch ? dobMatch[1] : null;
+                    orderInfo.user_email = emailMatch ? emailMatch[1] : null;
+                    orderInfo.medical = medicalCardMatch && medicalCardMatch[1].trim() ? true : false;
+                    orderInfo.medical_card = medicalCardMatch && medicalCardMatch[1].trim() ? medicalCardMatch[1].trim() : null;
+                    orderInfo.exp = expDateMatch ? expDateMatch[1] : null;
+                  
+                    // Onfleet order notes
+                    const onfleetTaskIdMatch = input.match(/Onfleet Task ID:  (\w+) created at (\d+)/);
+                    const viewOrderMatch = input.match(/View order: (https:\/\/dhcie\.(org|biz)\/c\/\w+)/);
+                    const orderNumberMatch = input.match(/Order Number: (\d+)/);
+                  
+                    orderInfo.onfleet_task_id = onfleetTaskIdMatch ? onfleetTaskIdMatch[1] : null;
+                    orderInfo.time = onfleetTaskIdMatch ? parseInt(onfleetTaskIdMatch[2]) : null;
+                    orderInfo.view_order = viewOrderMatch ? viewOrderMatch[1] : null;
+                    orderInfo.order_number = orderNumberMatch ? parseInt(orderNumberMatch[1]) : null;
+                  
+                    // Products
+                    const productsString = input.split("Products:")[1].split("productSubtotal:")[0];
+                    const productsArray = productsString.split("-----------").filter(p => p.trim().length > 0);
+                    let products = [];
+                  
+                    for (const product of productsArray) {
+                      let productInfo = {};
+                      const lines = product.trim().split("\n");
+                      productInfo.product_name = lines[0];
+                      productInfo.option = lines[1].replace("Option: ", "");
+                      productInfo.quantity = parseInt(lines[2].replace("Quantity: ", ""));
+                      productInfo.brand = lines[3].replace("Brand: ", "");
+                      productInfo.price = parseFloat(lines[4].replace("Price: ", ""));
+                  
+                      products.push(productInfo);
                     }
-
-                    orderInfo.view_order = viewOrderMatch ? viewOrderMatch[1].trim() : null;
-                    orderInfo.order_number = orderNumberMatch ? orderNumberMatch[1].trim() : null;
-
-                    // Extract Product Info
-                    const productInfo = [];
-
-                    const productBlocks = input.match(/Products:(.*?)productSubtotal:/s);
-                    if (productBlocks) {
-                        const productLines = productBlocks[1].split("\n");
-                        let product = {};
-
-                        for (let i = 0; i < productLines.length; i++) {
-                            const line = productLines[i].trim();
-                            if (line === "-----------") {
-                                if (Object.keys(product).length > 0) {
-                                    // Convert quantity and price to integers
-                                    product.quantity = parseInt(product.quantity);
-                                    product.price = parseFloat(product.price);
-                                    productInfo.push(product);
-                                    product = {};
-                                }
-                            } else {
-                                const keyValue = line.split(":");
-                                if (keyValue.length === 2) {
-                                    const key = keyValue[0].trim();
-                                    const value = keyValue[1].trim();
-                                    product[key.toLowerCase()] = key === "price" ? parseFloat(value) : value;
-                                }
-                            }
-                        }
-
-                        if (Object.keys(product).length > 0) {
-                            // Convert quantity and price to integers for the last product
-                            product.quantity = parseInt(product.quantity);
-                            product.price = parseFloat(product.price);
-                            productInfo.push(product);
-                        }
-                    }
-
-                    orderInfo.products = productInfo;
-
-                    // Extract productSubtotal, deliveryFee, total, medical card, etc.
-                    const productSubtotalMatch = input.match(/productSubtotal: \$([\d.]+)/);
-                    const deliveryFeeMatch = input.match(/deliveryFee: \$([\d.]+)/);
-                    const totalMatch = input.match(/total: \$([\d.]+)/);
-                    const medicalCardMatch = input.match(/Medical Card: ([^\n]+)/);
-                    const emailMatch = input.match(/Email: ([^\n]+)/);
-                    const expirationDateMatch = input.match(/Exp: ([^\n]+)/);
-
-                    orderInfo.productSubtotal = productSubtotalMatch ? parseFloat(productSubtotalMatch[1]) : null;
-                    orderInfo.deliveryFee = deliveryFeeMatch ? parseFloat(deliveryFeeMatch[1]) : null;
-                    orderInfo.total = totalMatch ? parseFloat(totalMatch[1]) : null;
-                    orderInfo.medical = medicalCardMatch ? true : false;
-                    orderInfo.email = emailMatch ? emailMatch[1].trim() : null;
-                    orderInfo.expiration_date = expirationDateMatch ? expirationDateMatch[1].trim() : null;
-
+                  
+                    orderInfo.products = products;
+                  
+                    // Summary
+                    const lines = input.split("\n");
+                    const subtotalLine = lines.find(line => line.startsWith("productSubtotal:"));
+                    const totalLine = lines.find(line => line.startsWith("total:"));
+                    
+                    orderInfo.subtotal = subtotalLine ? parseFloat(subtotalLine.replace("productSubtotal: $", "")) : null;
+                    orderInfo.delivery_fee = parseFloat(input.match(/deliveryFee: \$(\d+(\.\d{2})?)/)[1]);
+                    orderInfo.total = totalLine ? parseFloat(totalLine.replace("total: $", "")) : null;
+                  
                     return orderInfo;
-                }
-
-                const orderInfo = extractOrderInfo(data.Notes);
-
-                dataObj.dob = orderInfo.dob
+                  }
+                  
+                  // Example usage
+                  var orderInfo=extractOrderInfo(data.Notes)
+               
+                //7777777777777777777777777777777777777777777777777777777777
+                dataObj.NOTES = data.Notes
+                dataObj.customers_dob = orderInfo.dob
                 dataObj.drivers_license = orderInfo.drivers_license
                 dataObj.on_fleet_task_id = orderInfo.on_fleet_task_id
-                dataObj.created_at = orderInfo.created_at
+                dataObj.created_at = new Date(orderInfo.time)
                 dataObj.order_number = orderInfo.order_number
                 dataObj.order_detail = orderInfo.products
-                dataObj.subtotal = orderInfo.productSubtotal
+                dataObj.subtotal = orderInfo.subtotal
+                dataObj.delivery_fee = orderInfo.delivery_fee
+                dataObj.order_total = orderInfo.total
                 dataObj.drivers_license = orderInfo.drivers_license
                 dataObj.delivery_fee = orderInfo.deliveryFee
-                dataObj.order_total = orderInfo.total
-                dataObj.medical = orderInfo.medical
-                dataObj.customer_email = orderInfo.email
-                dataObj.med_card_expiration_date = orderInfo.expiration_date
+                dataObj.medical_patient = orderInfo.medical
+                dataObj.medical_patient_card = orderInfo.medical_card
+                dataObj.customer_email = orderInfo.user_email
+                dataObj.med_card_expiration_date = orderInfo.exp
+                dataObj.view_order_url = orderInfo.view_order
 
             }
             //END DUTCHIE ORDER------------------------------
@@ -195,7 +175,7 @@ app.get('/all', (req, res) => {
                 //new Date(parseInt(inputString.match(timePattern)[1])).toISOString();
                 dataObj.time_stamp = new Date(extractedData1.time_stamp)
                 dataObj.order_id = extractedData1.order_id
-                dataObj.total = extractedData1.total
+                dataObj.order_total = extractedData1.total
                 dataObj.pos_system_used = "Leafly"
             }
 
@@ -251,13 +231,10 @@ app.get('/all', (req, res) => {
                 }
 
                 const { productInfo, subTotal, total } = extractProductInfo(data.Notes);
-                console.log("Product Info:", productInfo);
-                console.log("Sub-Total:", subTotal);
-                console.log("Total:", total);
                 dataObj.pos_system_used = "not sure1"
                 dataObj.order = productInfo
                 dataObj.subtotal = subTotal
-                dataObj.total = total
+                dataObj.order_total = total
             }
             //END Transaction ID --- NOT SURE THE POS
             if (data.Notes.includes("-------------------")) {
@@ -297,7 +274,7 @@ app.get('/all', (req, res) => {
                 // console.log("Total from input1:", total1);
                 dataObj.pos_system_used = "not sure2"
                 dataObj.order = productInfo1
-                dataObj.total = total1.total
+                dataObj.order_total = total1.total
             }
             // JANE START -------------------------------------------------------------------
             if (data.Notes.includes("Jane Customer")) {
@@ -345,13 +322,14 @@ app.get('/all', (req, res) => {
 
                 // Output results
                 dataObj.pos_system_used = "Jane"
-                dataObj.order = productInfo
+                dataObj.order_total = productInfo
                 dataObj.total = orderTotal
 
             }
             // JANE END -------------------------------------------------------------------
-
-            results.push(dataObj)
+            if(dataObj.order_total > 15){
+                results.push(dataObj)
+            }
         })
         .on('end', () => {
 
