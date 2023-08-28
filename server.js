@@ -113,7 +113,7 @@ app.get('/all', (req, res) => {
                     const totalLine = lines.find(line => line.startsWith("total:"));
                     
                     orderInfo.subtotal = subtotalLine ? parseFloat(subtotalLine.replace("productSubtotal: $", "")) : null;
-                    orderInfo.delivery_fee = parseFloat(input.match(/deliveryFee: \$(\d+(\.\d{2})?)/)[1]);
+                    orderInfo.delivery_fee? orderInfo.delivery_fee= parseFloat(input.match(/deliveryFee: \$(\d+(\.\d{2})?)/)[1]):null;
                     orderInfo.total = totalLine ? parseFloat(totalLine.replace("total: $", "")) : null;
                   
                     return orderInfo;
