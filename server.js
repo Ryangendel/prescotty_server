@@ -528,7 +528,7 @@ app.get('/update/:month', (req, res) => {
             
         })
         .on('end', () => {
-            res.send("CHECK DATABASE ")
+            res.send(`${req.params.month} was added!`)
             //res.json(results)
         });
 });
