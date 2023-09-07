@@ -1,27 +1,23 @@
 const { Schema, model } = require('mongoose');
 
 const CustomerSchema = new Schema({
-  customer_id: {
-    type: String,
-    trim: true,
-  },
-  full_name: { //have
-    type: String,
-    trim: true,
-  },
-  email: {
+  full_name: { 
     type: String,
     trim: true,
   },
   mobile: {
+    sparse: true,
+    unique: true,
     type: String,
     trim: true,
+  },
+  email: {
+    unique: true,
+    type: String,
+    trim: true,
+    sparse: true,
   },
   address1: {
-    type: String,
-    trim: true,
-  },
-  address2: {
     type: String,
     trim: true,
   },
@@ -34,17 +30,19 @@ const CustomerSchema = new Schema({
     trim: true,
   },
   zip: {
-    type: Number,
+    type: String,
     trim: true,
   },
   dob: {
-    type: Date,
+    type: String,
     trim: true,
   },
   medical_patient:{
     type:Boolean,
+  },
+  medical_patient_card:{
+    type:String,
   }
-
 });
 
 const Customer = model('Customer', CustomerSchema);

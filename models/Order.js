@@ -1,42 +1,55 @@
 const { Schema, model } = require('mongoose');
 
 const OrderSchema = new Schema({
-  order_id: {
+  order_number: {
     type: String,
     trim: true,
   },
-  customer_number: {
+  onfleet_task_id:{
+    type: String,
+    trim: true,
+    unique:true
+  },
+  total_items_on_order:{
+    type: Number,
+    trim: true,
+    sparse: true,
+  },
+  mobile: {
+    type: String,
+    trim: true,
+    sparse: true,
+  },
+  created_at: {
+    type: String,
+  },
+  subtotal: {
+    type: Number,
+    trim: true,
+  },
+  order_total: {
+    type: Number,
+    trim: true,
+  },
+  view_order_url: {
     type: String,
     trim: true,
   },
-  product_id: {
+  order_detail: {
     type: Array,
+    trim: true,
   },
-  variant_id: {
+  pos_system_used:{
     type: String,
     trim: true,
   },
-  discount: {
-    type: Number,
-    trim: true,
-  },
-  order_date: {
-    type: Date,
-    trim: true,
-  },
-  price: {
-    type: Number,
-    trim: true,
-  },
-  quantity: {
-    type: Number,
-    trim: true,
-  },
-  total: {
+  NOTES:{
     type: String,
     trim: true,
   },
-
+  minutes_to_complete:{
+    type:Number
+  }
 });
 
 const Order = model('Order', OrderSchema);

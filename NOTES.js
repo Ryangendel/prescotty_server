@@ -99,3 +99,106 @@
 // // Extract information and totals
 // const info1 = lines1.map(extractInfo).filter(Boolean);
 // const totals1 = extractTotals(lines1);
+
+//--------------WORKING DUTCHIE, EXCEPT THE TOTAL/SUBTOTAL
+// console.log("************************************")
+// dataObj.pos_system_used = "Dutchie"
+
+// function extractOrderInfo(input) {
+//     const orderInfo = {};
+
+//     // Extract DOB, Drivers License, Onfleet Task ID, View Order, Order Number
+//     const dobMatch = input.match(/DOB: ([^\n]+)/);
+//     const driversLicenseMatch = input.match(/Drivers License: ([^\n]+)/);
+//     const onFleetTaskIDMatch = input.match(/Onfleet Task ID:  ([^\n]+)/);
+//     const viewOrderMatch = input.match(/View order: ([^\n]+)/);
+//     const orderNumberMatch = input.match(/Order Number: ([^\n]+)/);
+
+//     orderInfo.dob = dobMatch ? dobMatch[1].trim() : null;
+//     orderInfo.drivers_license = driversLicenseMatch ? driversLicenseMatch[1].trim() : null;
+
+//     // Split "created at" time from "on_fleet_task_id"
+//     if (onFleetTaskIDMatch) {
+//         const onFleetTaskIDParts = onFleetTaskIDMatch[1].split(" created at ");
+//         orderInfo.on_fleet_task_id = onFleetTaskIDParts[0].trim();
+//         const created_at_timestamp = parseInt(onFleetTaskIDParts[1]);
+//         orderInfo.created_at = new Date(created_at_timestamp).toISOString();
+//     } else {
+//         orderInfo.on_fleet_task_id = null;
+//         orderInfo.created_at = null;
+//     }
+
+//     orderInfo.view_order = viewOrderMatch ? viewOrderMatch[1].trim() : null;
+//     orderInfo.order_number = orderNumberMatch ? orderNumberMatch[1].trim() : null;
+
+//     // Extract Product Info
+//     const productInfo = [];
+
+//     const productBlocks = input.match(/Products:(.*?)productSubtotal:/s);
+//     if (productBlocks) {
+//         const productLines = productBlocks[1].split("\n");
+//         let product = {};
+
+//         for (let i = 0; i < productLines.length; i++) {
+//             const line = productLines[i].trim();
+//             if (line === "-----------") {
+//                 if (Object.keys(product).length > 0) {
+//                     // Convert quantity and price to integers
+//                     product.quantity = parseInt(product.quantity);
+//                     product.price = parseFloat(product.price);
+//                     productInfo.push(product);
+//                     product = {};
+//                 }
+//             } else {
+//                 const keyValue = line.split(":");
+//                 if (keyValue.length === 2) {
+//                     const key = keyValue[0].trim();
+//                     const value = keyValue[1].trim();
+//                     product[key.toLowerCase()] = key === "price" ? parseFloat(value) : value;
+//                 }
+//             }
+//         }
+
+//         if (Object.keys(product).length > 0) {
+//             // Convert quantity and price to integers for the last product
+//             product.quantity = parseInt(product.quantity);
+//             product.price = parseFloat(product.price);
+//             productInfo.push(product);
+//         }
+//     }
+
+//     orderInfo.products = productInfo;
+
+//     // Extract productSubtotal, deliveryFee, total, medical card, etc.
+//     const productSubtotalMatch = input.match(/productSubtotal: \$(\d+\.\d+)/);
+//     const deliveryFeeMatch = input.match(/deliveryFee: \$([\d.]+)/);
+//     const totalMatch = input.match(/total: \$(\d+\.\d+)/);
+//     const medicalCardMatch = input.match(/Medical Card: ([^\n]+)/);
+//     const emailMatch = input.match(/Email: ([^\n]+)/);
+//     const expirationDateMatch = input.match(/Exp: ([^\n]+)/);
+
+//     orderInfo.productSubtotal = productSubtotalMatch ? parseFloat(productSubtotalMatch[1]) : null;
+//     orderInfo.deliveryFee = deliveryFeeMatch ? parseFloat(deliveryFeeMatch[1]) : null;
+//     orderInfo.total = totalMatch ? parseFloat(totalMatch[1]) : null;
+//     orderInfo.medical = medicalCardMatch ? true : false;
+//     orderInfo.email = emailMatch ? emailMatch[1].trim() : null;
+//     orderInfo.expiration_date = expirationDateMatch ? expirationDateMatch[1].trim() : null;
+
+//     return orderInfo;
+// }
+
+// const orderInfo = extractOrderInfo(data.Notes);
+// dataObj.NOTES = data.Notes
+// dataObj.dob = orderInfo.dob
+// dataObj.drivers_license = orderInfo.drivers_license
+// dataObj.on_fleet_task_id = orderInfo.on_fleet_task_id
+// dataObj.created_at = orderInfo.created_at
+// dataObj.order_number = orderInfo.order_number
+// dataObj.order_detail = orderInfo.products
+// dataObj.subtotal = orderInfo.productSubtotal
+// dataObj.drivers_license = orderInfo.drivers_license
+// dataObj.delivery_fee = orderInfo.deliveryFee
+// dataObj.order_total = orderInfo.total
+// dataObj.medical = orderInfo.medical
+// dataObj.customer_email = orderInfo.email
+// dataObj.med_card_expiration_date = orderInfo.expiration_date

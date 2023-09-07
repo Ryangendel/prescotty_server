@@ -6,22 +6,45 @@ const PORT = process.env.PORT || 3001;
 const fs = require('fs')
 // var parse = require('csv-parse')
 const csv = require('csv-parser')
-
-const { Customer } = require('./models/Customer');
-const { Product } = require('./models/Product');
-const { Order } = require('./models/Order');
+const { Customer, Order, Product } = require('./models');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+let db;
 //un: gendelryan
 //pw: 6NlDYpx8QPujyaZQ
+const resetDatabase = async () => {
+    await mongoose.connection.dropDatabase();
+    console.log('Database reset');
+};
+
+// Connect to MongoDB
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
+    //     process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
+    'mongodb://127.0.0.1:27017/prescotty',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
     }
-);
+)
+    .then(() => {
+        console.log('Connected successfully to MongoDB');
+        resetDatabase()
+        // You can use mongoose.connection to interact with the database
+        const db = mongoose.connection;
+        var PORT = 3002
+        // Start up the express server
+        // Replace with your port number
+        const app = require('express')();  // Add your express initialization here
+
+        app.listen(PORT, async () => {
+            // await resetDatabase();  // Reset database
+            console.log(`Server is running on port ${PORT}`);
+        });
+    })
+    .catch((err) => {
+        console.error('Mongo connection error: ', err.message);
+    });
 
 mongoose.set('debug', true);
 
@@ -34,23 +57,30 @@ app.post('/submit', ({ body }, res) => {
             res.json(err);
         });
 });
-var count = 0
+
+var results = []
+
 app.get('/all', (req, res) => {
-    var results = []
+
     fs.createReadStream('./contacts_live.csv')
         .pipe(csv())
         .on('data', async (data) => {
 
             var dataObj = {}
-            //LOOOP OF DATA OBJECTS
 
+            function removeLeadingOne(str) {
+                if (str.startsWith('1')) {
+                    return str.substring(1);
+                }
+                return str;
+            }
 
             dataObj.full_name = data.Name
-            dataObj.mobile = data["Phone 1 - Value"]
+            dataObj.mobile = removeLeadingOne(data["Phone 1 - Value"])
             dataObj.address1 = data["Address 1 - Street"]
             dataObj.city = data["Address 1 - City"]
             dataObj.state = data["Address 1 - Region"]
-            dataObj.zip = data["Address 1 - Postal Code"]
+            dataObj.zip = parseInt(data["Address 1 - Postal Code"])
             const dobRegex = /DOB: (\d{2}\/\d{2}\/\d{4})/;
             const dob = data.Notes.match(dobRegex);
             if (dob && dob[1]) {
@@ -60,85 +90,73 @@ app.get('/all', (req, res) => {
 
             //IF DUTCHIE ORDER ---------------------------------------------       
             if (data.Notes.includes("https://dhcie")) {
-                console.log("************************************")
                 dataObj.pos_system_used = "Dutchie"
-                console.log("--------------------------------------PPPPPPPPPPP")
-                function extractOrderInfo(input) {
-                    let orderInfo = {};
-                  
-                    // Personal information
-                    const dobMatch = input.match(/DOB: (\d{2}\/\d{2}\/\d{4})/);
-                    const emailMatch = input.match(/Email: ([\w.-]+@[\w.-]+\.[a-zA-Z]{2,4})/);
-                    const medicalCardMatch = input.match(/Medical Card: (.*)/);
-                    const expDateMatch = input.match(/Exp: (\d{2}\/\d{2}\/\d{4})/);
-                  
-                    orderInfo.dob = dobMatch ? dobMatch[1] : null;
-                    orderInfo.user_email = emailMatch ? emailMatch[1] : null;
-                    orderInfo.medical = medicalCardMatch && medicalCardMatch[1].trim() ? true : false;
-                    orderInfo.medical_card = medicalCardMatch && medicalCardMatch[1].trim() ? medicalCardMatch[1].trim() : null;
-                    orderInfo.exp = expDateMatch ? expDateMatch[1] : null;
-                  
-                    // Onfleet order notes
-                    const onfleetTaskIdMatch = input.match(/Onfleet Task ID:  (\w+) created at (\d+)/);
-                    const viewOrderMatch = input.match(/View order: (https:\/\/dhcie\.(org|biz)\/c\/\w+)/);
-                    const orderNumberMatch = input.match(/Order Number: (\d+)/);
-                  
-                    orderInfo.onfleet_task_id = onfleetTaskIdMatch ? onfleetTaskIdMatch[1] : null;
-                    orderInfo.time = onfleetTaskIdMatch ? parseInt(onfleetTaskIdMatch[2]) : null;
-                    orderInfo.view_order = viewOrderMatch ? viewOrderMatch[1] : null;
-                    orderInfo.order_number = orderNumberMatch ? parseInt(orderNumberMatch[1]) : null;
-                  
-                    // Products
-                    const productsString = input.split("Products:")[1].split("productSubtotal:")[0];
-                    const productsArray = productsString.split("-----------").filter(p => p.trim().length > 0);
-                    let products = [];
-                  
-                    for (const product of productsArray) {
-                      let productInfo = {};
-                      const lines = product.trim().split("\n");
-                      productInfo.product_name = lines[0];
-                      productInfo.option = lines[1].replace("Option: ", "");
-                      productInfo.quantity = parseInt(lines[2].replace("Quantity: ", ""));
-                      productInfo.brand = lines[3].replace("Brand: ", "");
-                      productInfo.price = parseFloat(lines[4].replace("Price: ", ""));
-                  
-                      products.push(productInfo);
+                function parseOrderString(orderString) {
+                    const orderObj = {
+                        products: []
+                    };
+
+                    const lines = orderString.split('\n');
+
+                    for (const line of lines) {
+                        if (line.startsWith("DOB:")) {
+                            orderObj.dob = line.split("DOB:")[1].trim();
+                        } else if (line.startsWith("Email:")) {
+                            orderObj.user_email = line.split("Email:")[1].trim();
+                        } else if (line.startsWith("Medical Card:")) {
+                            const medicalCardInfo = line.split("Medical Card:")[1].trim();
+                            if (medicalCardInfo) {
+                                orderObj.medical = true;
+                                orderObj.medical_patient_card = medicalCardInfo.split('-')[0].trim(); // Take only the first part before hyphen
+                            }
+                        } else if (line.startsWith("Onfleet Task ID:")) {
+                            orderObj.onfleet_task_id = line.split("Onfleet Task ID:")[1].split("created at")[0].trim();
+                            orderObj.time = line.split("created at")[1].trim();
+                        } else if (line.startsWith("View order:")) {
+                            orderObj.view_order = line.split("View order:")[1].trim();
+                        } else if (line.startsWith("Order Number:")) {
+                            orderObj.order_number = line.split("Order Number:")[1].trim();
+                        } else if (line.startsWith("Products:")) {
+                            let i = lines.indexOf(line) + 1;
+                            while (lines[i] !== "" && !lines[i].startsWith("productSubtotal")) {
+                                const productObj = {
+                                    product: lines[i++],
+                                    option: lines[i++].split("Option:")[1].trim(),
+                                    quantity: parseInt(lines[i++].split("Quantity:")[1].trim()),
+                                    brand: lines[i++].split("Brand:")[1].trim(),
+                                    price: parseFloat(lines[i++].split("Price:")[1].trim())
+                                };
+                                orderObj.products.push(productObj);
+                                i++; // Skip "-----------"
+                            }
+                        } else if (line.startsWith("productSubtotal:")) {
+                            orderObj.subtotal = parseFloat(line.split("productSubtotal:")[1].replace("$", "").trim());
+                        } else if (line.startsWith("deliveryFee:")) {
+                            orderObj.delivery_fee = parseFloat(line.split("deliveryFee:")[1].replace("$", "").trim());
+                        } else if (line.startsWith("total:")) {
+                            orderObj.total = parseFloat(line.split("total:")[1].replace("$", "").trim());
+                        }
                     }
-                  
-                    orderInfo.products = products;
-                  
-                    // Summary
-                    const lines = input.split("\n");
-                    const subtotalLine = lines.find(line => line.startsWith("productSubtotal:"));
-                    const totalLine = lines.find(line => line.startsWith("total:"));
-                    
-                    orderInfo.subtotal = subtotalLine ? parseFloat(subtotalLine.replace("productSubtotal: $", "")) : null;
-                    orderInfo.delivery_fee? orderInfo.delivery_fee= parseFloat(input.match(/deliveryFee: \$(\d+(\.\d{2})?)/)[1]):null;
-                    orderInfo.total = totalLine ? parseFloat(totalLine.replace("total: $", "")) : null;
-                  
-                    return orderInfo;
-                  }
-                  
-                  // Example usage
-                  var orderInfo=extractOrderInfo(data.Notes)
-               
-                //7777777777777777777777777777777777777777777777777777777777
+
+                    return orderObj;
+                }
+
+                // Example usage
+                const orderInfo = parseOrderString(data.Notes);
+
                 dataObj.NOTES = data.Notes
                 dataObj.customers_dob = orderInfo.dob
-                dataObj.drivers_license = orderInfo.drivers_license
-                dataObj.on_fleet_task_id = orderInfo.on_fleet_task_id
-                dataObj.created_at = new Date(orderInfo.time)
+                dataObj.onfleet_task_id = orderInfo.onfleet_task_id
+                dataObj.created_at = new Date(parseInt(orderInfo.time))
                 dataObj.order_number = orderInfo.order_number
                 dataObj.order_detail = orderInfo.products
                 dataObj.subtotal = orderInfo.subtotal
-                dataObj.delivery_fee = orderInfo.delivery_fee
                 dataObj.order_total = orderInfo.total
                 dataObj.drivers_license = orderInfo.drivers_license
-                dataObj.delivery_fee = orderInfo.deliveryFee
                 dataObj.medical_patient = orderInfo.medical
-                dataObj.medical_patient_card = orderInfo.medical_card
                 dataObj.customer_email = orderInfo.user_email
-                dataObj.med_card_expiration_date = orderInfo.exp
+                dataObj.medical_patient_card = orderInfo.medical_patient_card
+                // dataObj.med_card_expiration_date = orderInfo.exp
                 dataObj.view_order_url = orderInfo.view_order
 
             }
@@ -170,20 +188,18 @@ app.get('/all', (req, res) => {
 
                 const extractedData1 = extractOrderInfo(data.Notes);
 
-                dataObj.task_id = extractedData1.task_id
 
                 //new Date(parseInt(inputString.match(timePattern)[1])).toISOString();
-                dataObj.time_stamp = new Date(extractedData1.time_stamp)
-                dataObj.order_id = extractedData1.order_id
+                dataObj.created_at = new Date(extractedData1.time_stamp)
+                dataObj.order_number = parseInt(extractedData1.order_id)
                 dataObj.order_total = extractedData1.total
+                dataObj.onfleet_task_id = extractedData1.task_id
                 dataObj.pos_system_used = "Leafly"
             }
 
             //END LEAFLY ORDERS---------------------------------
             //START Transaction ID --- NOT SURE THE POS
             if (data.Notes.includes("Transaction ID")) {
-                // console.log(data.Notes)
-                //******************************************** */
                 function extractProductInfo(input) {
                     const productInfo = [];
 
@@ -209,8 +225,6 @@ app.get('/all', (req, res) => {
                                     const [, option, type] = matchOptionType;
 
                                     const sku = parseInt(skuPart.trim().split(" ")[0], 10);
-
-                                    // Remove the number and any following characters after the option
                                     const trimmedProductKey = productKey.trim().replace(/\d+\s*(g|Gram|gram)?.*$/, "");
 
                                     productInfo.push({
@@ -227,17 +241,32 @@ app.get('/all', (req, res) => {
                         }
                     }
 
+                    const taskIDPattern = /Onfleet Task ID:\s+([^\n]+)/;
+                    const taskIDMatch = data.Notes.match(taskIDPattern);
+
+                    if (taskIDMatch) {
+                        dataObj.onfleet_task_id = taskIDMatch[1].replace(/ created at \d+/, '').trim();
+                        const timeStampPattern = /created at (\d+)/;
+                        dataObj.created_at = new Date(parseInt(data.Notes.match(timeStampPattern)[1]));
+                    }
+
+
+                    const orderIDPattern = /Transaction ID:\s+(\d+)/;
+                    data.Notes.match(orderIDPattern)[1].trim() ? dataObj.order_number = parseInt(data.Notes.match(orderIDPattern)[1].trim()) : ""
+
                     return { productInfo, subTotal, total };
                 }
 
                 const { productInfo, subTotal, total } = extractProductInfo(data.Notes);
                 dataObj.pos_system_used = "not sure1"
-                dataObj.order = productInfo
+                dataObj.order_detail = productInfo
                 dataObj.subtotal = subTotal
                 dataObj.order_total = total
             }
             //END Transaction ID --- NOT SURE THE POS
+
             if (data.Notes.includes("-------------------")) {
+
                 function extractProductInfo(line) {
                     const regex = /(\d+(\.\d+)?) x ([^\d]+)([\d.]*(?: Gram|g)?(?: Pre-Roll)?)/i;
                     const match = line.match(regex);
@@ -268,17 +297,28 @@ app.get('/all', (req, res) => {
                 const productInfo1 = lines1.slice(start1, end1).map(extractProductInfo).filter(Boolean);
                 const total1 = extractTotal(lines1);
 
+                //----
+                const taskIDPattern = /Onfleet Task ID:\s+([^\n]+)/;
+                const taskIDMatch = data.Notes.match(taskIDPattern);
 
-                // Output results
-                // console.log("Product Info from input1:", productInfo1);
-                // console.log("Total from input1:", total1);
+                if (taskIDMatch) {
+                    dataObj.onfleet_task_id = taskIDMatch[1].replace(/ created at \d+/, '').trim();
+                    const timeStampPattern = /created at (\d+)/;
+                    dataObj.created_at = new Date(parseInt(data.Notes.match(timeStampPattern)[1]));
+                }
+
+
+                const orderIDPattern = /Order #:\s+(\d+)/;
+                data.Notes.match(orderIDPattern)[1].trim() ? dataObj.order_number = parseInt(data.Notes.match(orderIDPattern)[1].trim()) : ""
+
+                //----
+
                 dataObj.pos_system_used = "not sure2"
-                dataObj.order = productInfo1
-                dataObj.order_total = total1.total
+                dataObj.order_detail = productInfo1
+                dataObj.order_total = total1
             }
             // JANE START -------------------------------------------------------------------
             if (data.Notes.includes("Jane Customer")) {
-                console.log(data.Notes)
                 function extractProductInfo(input) {
                     const lines = input.split('\n');
                     let orderTotal = null;
@@ -317,37 +357,179 @@ app.get('/all', (req, res) => {
                     return { orderTotal, productInfo };
                 }
 
+                //----
+                const taskIDPattern = /Onfleet Task ID:\s+([^\n]+)/;
+                const taskIDMatch = data.Notes.match(taskIDPattern);
+
+                if (taskIDMatch) {
+                    dataObj.onfleet_task_id = taskIDMatch[1].replace(/ created at \d+/, '').trim();
+                    const timeStampPattern = /created at (\d+)/;
+                    dataObj.created_at = new Date(parseInt(data.Notes.match(timeStampPattern)[1]));
+                }
+
+
+                // const orderIDPattern = /Order\s\w+/;
+                // dataObj.order_id = data.Notes.match(orderIDPattern)[1].trim()?dataObj.order_number = parseInt(data.Notes.match(orderIDPattern)[1].trim()):""
+                function extractOrderNumber(str) {
+                    const match = str.match(/Order\s(\w+)/);
+                    return match ? match[1] : null;
+                }
+
+                dataObj.order_number = extractOrderNumber(data.Notes);
+                //----
+
+
                 // Extract product information and order total
                 const { orderTotal, productInfo } = extractProductInfo(data.Notes);
 
-                // Output results
                 dataObj.pos_system_used = "Jane"
-                dataObj.order_total = productInfo
-                dataObj.total = orderTotal
+                dataObj.order_total = orderTotal
+                dataObj.order_detail = productInfo
 
             }
             // JANE END -------------------------------------------------------------------
-            if(dataObj.order_total > 15){
+
+
+            if (dataObj.order_total > 15) {
+                // console.log(dataObj.order_detail)
                 results.push(dataObj)
+                const options = { upsert: true, new: true, setDefaultsOnInsert: true };
+                let customer = {}
+                let order = {}
+                let product_detail = {}
+
+                if (!dataObj.mobile) {
+                    customer.mobile = undefined
+                } else {
+                    customer.mobile = dataObj.mobile
+                }
+
+                customer.full_name = dataObj.full_name
+                // customer.mobile = dataObj.mobile
+                customer.email = dataObj.email
+                customer.address1 = dataObj.address1
+                customer.city = dataObj.city
+                customer.state = dataObj.state
+                customer.zip = dataObj.zip
+                customer.dob = dataObj.dob
+                customer.medical_patient = dataObj.medical_patient
+                customer.medical_patient_card = dataObj.medical_patient_card
+
+
+                //------------------------------------------WORKING BElOW               
+                try {
+                    const newCustomer = new Customer(customer);
+                    if (newCustomer) {
+                        await newCustomer.save();
+                    } else {
+
+                        throw new Error('duplicate');
+                    }
+                } catch (error) {
+                    console.log(error)
+                }
+
+                //------------------------------------------WORKING ABOVE
+                console.log("================================")
+                console.log(dataObj.order_detail)
+                console.log(dataObj.order_detail?.length)
+                console.log("================================")
+
+                order.order_number = dataObj.order_number
+                order.onfleet_task_id = dataObj.onfleet_task_id
+                order.mobile = dataObj.mobile
+                order.created_at = dataObj.created_at
+                order.subtotal = dataObj.subtotal
+                order.order_total = dataObj.order_total
+                order.view_order_url = dataObj.view_order_url
+                order.order_detail = dataObj.order_detail
+                order.total_items_on_order = dataObj.order_detail?.length
+                order.pos_system_used = dataObj.pos_system_used
+                order.NOTES = dataObj.NOTES
+
+                //------------------------------------------WORKING BElOW
+                try {
+                    const newOrder = new Order(order);
+                    if (newOrder) {
+                        await newOrder.save();
+                    } else {
+                        throw new Error('duplicate');
+                    }
+                } catch (error) {
+                    console.log(error)
+                }
+
+                //------------------------------------------WORKING ABOVE
+                if (dataObj.order_detail) {
+                    for (let i = 0; i < dataObj.order_detail.length; i++) {
+
+                        product_detail.product = dataObj.order_detail[i].product
+                        product_detail.option = dataObj.order_detail[i].option
+                        product_detail.quantity = dataObj.order_detail[i].quantity
+                        product_detail.price = dataObj.order_detail[i].price
+                        product_detail.brand = dataObj.order_detail[i].brand
+                        product_detail.sku = dataObj.order_detail[i].sku
+                        product_detail.type = dataObj.order_detail[i].type
+                        //------------------------------------------WORKING BElOW
+                        try {
+                            const newProduct = new Product(product_detail);
+                            if (newProduct) {
+                                await newProduct.save();
+                            } else {
+                                throw new Error('duplicate');
+                            }
+                        } catch (error) {
+                            console.log(error)
+                        }
+                    }
+                    //------------------------------------------WORKING ABOVE
+                }
+
             }
+
         })
         .on('end', () => {
-
+            //res.send("CHECK DATABASE ")
             res.json(results)
         });
 });
 
-app.put('/update/:id', ({ params, body }, res) => {
-    Order.findOneAndUpdate({ _id: params.id }, body, { new: true })
-        .then((dbNote) => {
-            if (!dbNote) {
-                res.json({ message: 'No note found with this id!' });
-                return;
+app.get('/update/:month', (req, res) => {
+    fs.createReadStream(`./on_fleet_${req.params.month}.csv`)
+        .pipe(csv())
+        .on('data', async (data) => {
+
+            const startDate = new Date(data.startTime);
+            const completionDate = new Date(data.completionTime);
+
+            // Subtract to get the difference in milliseconds
+            const elapsedMilliseconds = completionDate - startDate;
+
+            // Convert milliseconds to seconds, minutes, and hours
+            const elapsedSeconds = elapsedMilliseconds / 1000;
+            const elapsedMinutes = elapsedSeconds / 60;
+            const elapsedHours = elapsedMinutes / 60;
+
+
+            if(elapsedMinutes>7){
+            Order.findOneAndUpdate({ onfleet_task_id: data.shortId }, {$set:{"minutes_to_complete": Math.round(elapsedMinutes * 1000) / 1000}},{ new: true, runValidators: true } )
+            .then((dbNote) => {
+                // if (!dbNote) {
+                //     res.json({ message: 'No note found with this id!' });
+                //     return;
+                // }
+                // res.json(dbNote);
+                console.log("worked")
+            })
+            .catch((err) => {
+                res.json(err);
+            });
             }
-            res.json(dbNote);
+            
         })
-        .catch((err) => {
-            res.json(err);
+        .on('end', () => {
+            res.send("CHECK DATABASE ")
+            //res.json(results)
         });
 });
 

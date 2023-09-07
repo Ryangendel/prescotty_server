@@ -1,0 +1,2319 @@
+Driver Number,Task Number,shortId,status,creatorOrganization,executorOrganization,workerName,destinationAddress,destinationLonLat,recipientsNames,recipientsNumbers,completeBeforeTime,completeAfterTime,creationTime,startTime,completionTime,didSucceed,completionNotes,completionLonLat,distance,taskDetails,recipientNotes,signatureUrl,photoUrl,feedbackRating,feedbackComments,forceCompletedBy,startLonLat,departureTime,departureLonLat,arrivalTime,arrivalLonLat,taskType,dependencies,failureReason,successReason,barcodesCaptured,trackingViewed,signatureText,metadata,quantity,failureNotes,successNotes,merchantOrganization,destinationNotes,idScan.entryMethod,idScan.dob
+0,,fab940e4,completed,Priscotty,Priscotty,Scott Prisco,"6500 Cathy Avenue Northeast, Albuquerque, NM 87109","`-106.576465,35.14786",Travis DeCurtis,`+15055157453,03/02/2023 14:00:00,03/02/2023 12:00:00,03/02/2023 10:14:25,03/02/2023 12:56:54,03/02/2023 13:11:14,TRUE,No notes ,"`-106.576529052,35.147978126",6.5444,"View order: https://dhcie.org/c/0arp9Ife
+
+Order Number: 615155272
+
+Products:
+Sawmill Live Sugar - Apple Rum Cake
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 60
+-----------
+Sawmill Live Sugar - Runtz
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 60
+-----------
+Sawmill Live Sugar - Zkittlez
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 60
+-----------
+
+productSubtotal: $180.00
+cannabisTax: $21.59
+salesTax: $14.19
+total: $215.78
+
+Sawmill Midtown","DOB: 04/22/1991
+Email: terrene303@hotmail.com
+Medical Card: 
+Drivers License: 642AW1203",https://d15p8tr8p0vffz.cloudfront.net/b680092cb269d3e2bf032d5a/282x.png,https://d15p8tr8p0vffz.cloudfront.net/4a8b13620c337f48eb839070/800x.png,,,,"`-106.615859298,35.109446668",03/02/2023 12:58:14,"`-106.615995827,35.109577611",03/02/2023 13:09:16,"`-106.576524812,35.148037273",dropoff,,NONE,NONE,,FALSE,Travis DeCurtis,,3,,,Priscotty,,,
+0,,92515dc8,completed,Priscotty,Priscotty,Scott Prisco,"7500 sky ct cir, Albuquerque, NM","`-106.5613728,35.1056766",Cullen Field-Vujosevic,`+15757810548,03/02/2023 15:57:18,03/02/2023 14:57:18,03/02/2023 13:57:19,03/02/2023 15:12:41,03/02/2023 15:20:48,TRUE,Cash ,"`-106.563515474,35.104905768",2.5917,"2 x Sweet and Savory PreRoll .5g, Grandpa Hulk Terps on the Rocks 1g, 3.5g Zoo Dawg x Cosa Nostra - 3.5g, 2 x Cereal Milk PreRoll .5g",,https://d15p8tr8p0vffz.cloudfront.net/e50e6b8865c56a198037cda7/282x.png,https://d15p8tr8p0vffz.cloudfront.net/28537ae5beaf080303317ff3/800x.png,,,,"`-106.579889309,35.116504369",03/02/2023 15:13:00,"`-106.581467265,35.116469469",03/02/2023 15:20:08,"`-106.561317587,35.10580442",dropoff,,NONE,NONE,,TRUE,Cullen Field-Vujosevic,,0,,,Priscotty,"House on corner, just ring doorbell plz! ",,
+0,,dc211b50,completed,Priscotty,Priscotty,Scott Prisco,"1201 Dakota Street Northeast, Albuquerque, NM 87110","`-106.57441,35.08926",Catherine Westbrook,`+15054409711,03/03/2023 12:30:00,03/03/2023 10:30:00,03/02/2023 18:14:49,03/03/2023 11:57:14,03/03/2023 13:26:25,TRUE,Dp ,"`-106.574198056,35.089375502",21.892,"View order: https://dhcie.org/c/cSdd78o2
+
+Order Number: 384854201
+
+Products:
+Penguin Space Cake Live Resin Cartridge
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 60
+-----------
+Chemdawg Live Resin Cartridge
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 60
+-----------
+Honey Capsules | 100mg
+Option: 1g
+Quantity: 1
+Brand: Elevated
+Price: 24
+-----------
+LA Kush Cake x Platinum Dosi Hash Hole
+Option: 2g
+Quantity: 1
+Brand: Z Labs
+Price: 80
+-----------
+
+productSubtotal: $224.00
+deliveryFee: $10.00
+cannabisTax: $26.87
+salesTax: $17.65
+total: $278.52
+
+Canvas Organics San Pedro","DOB: 11/30/1988
+Email: cmwstbrk@gmail.com
+Medical Card: JB3Y4P689C - Exp: 07/07/2025",https://d15p8tr8p0vffz.cloudfront.net/7eb0798897a34b5f8e5e7ead/282x.png,https://d15p8tr8p0vffz.cloudfront.net/ae6d88c6639d09c98ce6b5a5/800x.png https://d15p8tr8p0vffz.cloudfront.net/125fde8f985c76cbc3eb0ca2/800x.png https://d15p8tr8p0vffz.cloudfront.net/bd70ff61a012ac1507be08e7/800x.png,,,,"`-106.658201865,35.101153476",03/03/2023 11:57:28,"`-106.657900506,35.102198624",03/03/2023 13:22:26,"`-106.575712819,35.089092803",dropoff,,NONE,NONE,,FALSE,Catherine Westbrook,,4,,,Priscotty,,,
+0,,025b2e8e,completed,Priscotty,Priscotty,Scott Prisco,"4527 downey st, Albuquerque, NM","`-106.5756849,35.1379348",Richard Mcgovern,`+15054634956,03/03/2023 16:42:00,03/03/2023 15:42:00,03/03/2023 14:42:55,03/03/2023 15:54:46,03/03/2023 16:37:45,TRUE,Pay ,"`-106.575485099,35.137993383",8.7742,"2 x RAINBOW RUM CAKE, CHERRY DOSI X SOUR D, BANANA CAKE POPPER PRE ROLL, CHOCOLATE SHAKE 
+
+Elements - Lomas Blvd",,https://d15p8tr8p0vffz.cloudfront.net/2d2f37947c2fbe89df2cc5e7/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2fe2f37a18bde4b973ec0cae/800x.png https://d15p8tr8p0vffz.cloudfront.net/6bf96e97871f911b87b6d97b/800x.png,,,,"`-106.574515091,35.099597481",03/03/2023 15:55:32,"`-106.567294986,35.096640783",03/03/2023 16:37:06,"`-106.57554291,35.137991003",dropoff,,NONE,NONE,,FALSE,Richard Mcgovern,,0,,,Priscotty,,,
+0,,80f07cd9,completed,Priscotty,Priscotty,Scott Prisco,"5113 12th Street Northwest, Albuquerque, NM 87107","`-106.651605,35.135725",Kristina Baca,`+15053060407,03/04/2023 12:30:00,03/04/2023 10:30:00,03/04/2023 09:27:43,03/04/2023 11:34:45,03/04/2023 11:46:09,TRUE,Notes ,"`-106.651449796,35.135698038",5.2294,"View order: https://dhcie.org/c/Ukgj2pIX
+
+Order Number: 436305819
+
+Products:
+Cherry Gummies 10-Pack | 250mg
+Option: 2.5g
+Quantity: 1
+Brand: Derived
+Price: 25
+-----------
+Cherry Gummies 10-Pack | 100mg
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 18
+-----------
+Champagne Kush Classic Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 46
+-----------
+NMBM Diesel
+Option: 3.5g
+Quantity: 1
+Brand: LX Farms
+Price: 38.5
+-----------
+Raspberry Diesel PreRoll
+Option: .5g
+Quantity: 1
+Brand: High Desert Relief
+Price: 4
+-----------
+
+productSubtotal: $134.50
+discount: $3.00
+deliveryFee: $10.00
+cannabisTax: $15.78
+salesTax: $10.36
+total: $167.64
+
+Canvas san pedro","DOB: 01/31/1978
+Email: angelrosesmom@yahoo.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/15bfdb5dd828f15428eba24a/282x.png,https://d15p8tr8p0vffz.cloudfront.net/216f1657401bf06750eab506/800x.png https://d15p8tr8p0vffz.cloudfront.net/84bf977c254b11e455b8a1e9/800x.png,,,,"`-106.578945596,35.116484025",03/04/2023 11:34:56,"`-106.580594094,35.116481222",03/04/2023 11:45:12,"`-106.651316735,35.13558768",dropoff,,NONE,NONE,,TRUE,Kristina Baca,,5,,,Priscotty,,,
+0,,6b774c91,completed,Priscotty,Priscotty,Scott Prisco,"10433 Milano Street Northwest, Albuquerque, NM 87114","`-106.694725,35.205765",Dylan Waters,`+15059175867,03/04/2023 16:00:00,03/04/2023 14:00:00,03/04/2023 12:36:05,03/04/2023 13:55:07,03/04/2023 14:08:17,TRUE,No notes ,"`-106.694422289,35.205723714",3.7491,"View order: https://dhcie.biz/c/QabpZkXW
+
+Order Number: 624369824
+
+Products:
+(S) Star Dawg
+Option: 1/4oz
+Quantity: 1
+Brand: 
+Price: 70
+-----------
+(I) Purple Urkle
+Option: 2g
+Quantity: 2
+Brand: 
+Price: 32
+-----------
+Runtz
+Option: 1/8oz
+Quantity: 2
+Brand: 
+Price: 63.0
+-----------
+(I) Punch Breath
+Option: 1/8oz
+Quantity: 2
+Brand: 
+Price: 70
+-----------
+Vegan Dark Chocolate High Flyer Bar | 100mg
+Option: .1g
+Quantity: 2
+Brand: High 5 Edibles
+Price: 24
+-----------
+Sawmill Live Rosin Gummies 100mg - Watermelon
+Option: .1g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 18
+-----------
+Sawmill Live Rosin Cold Cure - El Chapo
+Option: .5g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 40
+-----------
+1861 Live Resin - Jungle Diamonds
+Option: .5g
+Quantity: 1
+Brand: 1861 Gold
+Price: 30
+-----------
+
+productSubtotal: $347.00
+total: $347.00
+
+Sawmill - Cotonwood","DOB: 03/15/1990
+Email: waters.dylan123@gmail.com
+Medical Card: SC253LHK62 - Exp: 03/29/2025
+Drivers License: 504586782",https://d15p8tr8p0vffz.cloudfront.net/4b60c7dc1fe25c1d6ecfdc64/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2084636e0dbe1c3b7597a926/800x.png https://d15p8tr8p0vffz.cloudfront.net/de350e36e5abc8823a53a6b7/800x.png,,,,"`-106.655374429,35.212278781",03/04/2023 13:55:26,"`-106.655968978,35.211285962",03/04/2023 14:04:46,"`-106.694112049,35.205024757",dropoff,,NONE,NONE,,FALSE,Dylan Waters,,12,,,Priscotty,,,
+0,,8037b46e,completed,Priscotty,Priscotty,Scott Prisco,"6005 La Corrida Rd NE, Albuquerque, NM 87110","`-106.5787248,35.1229528",Melissa Berry,`+15055262220,03/04/2023 16:30:00,03/04/2023 14:30:00,03/04/2023 13:48:44,03/04/2023 14:12:26,03/04/2023 14:49:15,TRUE,No note ,"`-106.578818701,35.122937623",13.788,"View order: https://dhcie.org/c/tfgssgpu
+
+Order Number: 208276873
+
+Products:
+Honey Capsules | 100mg
+Option: 1g
+Quantity: 1
+Brand: Elevated
+Price: 24
+-----------
+Karma Original Lemonade | 100mg
+Option: 1g
+Quantity: 1
+Brand: Budder Pros
+Price: 25
+-----------
+Blue Dream Cartridge | 0.5g
+Option: .5g
+Quantity: 1
+Brand: 
+Price: 41.4
+-----------
+Blueberry Gushers Live Resin Cartridge | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 45
+-----------
+Fruity Cereal Snack Bar | 100mg
+Option: 1g
+Quantity: 1
+Brand: Elevated
+Price: 18
+-----------
+
+productSubtotal: $163.00
+discount: $9.60
+deliveryFee: $10.00
+cannabisTax: $18.41
+salesTax: $12.08
+total: $193.89
+
+Canvas Organics","DOB: 02/12/1980
+Email: mberry@phs.org
+Medical Card: 5368545522574119 - Exp: 07/22/2022
+Drivers License: 110607270",https://d15p8tr8p0vffz.cloudfront.net/103e1cca10dc04706c7156fc/282x.png,https://d15p8tr8p0vffz.cloudfront.net/500d51f48e9bdd0dd8b47413/800x.png https://d15p8tr8p0vffz.cloudfront.net/693bc49dc1f4c798f90d4cbe/800x.png,,,,"`-106.669668349,35.205828766",03/04/2023 14:12:50,"`-106.664444138,35.206025681",03/04/2023 14:47:15,"`-106.577587939,35.122314835",dropoff,,NONE,NONE,,TRUE,Melissa Berry,,5,,,Priscotty,,,
+0,,ba8b21bc,completed,Priscotty,Priscotty,Scott Prisco,"3011 Jane Place Northeast, 149, Albuquerque, NM 87111","`-106.5205,35.11721",Tamas Geczy,`+14196998953,03/04/2023 16:30:00,03/04/2023 14:30:00,03/04/2023 13:38:59,03/04/2023 14:50:22,03/04/2023 15:02:58,TRUE,No notes ,"`-106.5204733,35.11765412",4.0283,"View order: https://dhcie.biz/c/B7xHgBjP
+
+Order Number: 386548675
+
+Products:
+Gaschata Live Hash Rosin Mixed Micron
+Option: 1g
+Quantity: 1
+Brand: Olio
+Price: 75
+-----------
+Clementine Kush Live Diamonds
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 60
+-----------
+
+productSubtotal: $135.00
+deliveryFee: $10.00
+total: $145.00","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/803cd77d3cab29e5122210c5/282x.png,https://d15p8tr8p0vffz.cloudfront.net/e9b58c7cedb601db838dffe4/800x.png https://d15p8tr8p0vffz.cloudfront.net/a593c9aaab5cec324d899132/800x.png,,,,"`-106.579620707,35.12514814",03/04/2023 14:50:53,"`-106.577395951,35.12500622",03/04/2023 14:58:10,"`-106.51985202,35.117078491",dropoff,,NONE,NONE,,FALSE,Tamas Geczy,,2,,,Priscotty,"Fully blind. Small walk-through gate should be opened across from duck pond, same side as welcome center, at retreat apartments",,
+0,,7e40bccd,completed,Priscotty,Priscotty,Scott Prisco,"4401 San Pedro Drive Northeast, 709, Albuquerque, NM 87109","`-106.57864,35.136225",Ivan Leonard,`+15204479702,03/04/2023 19:45:00,03/04/2023 18:00:00,03/04/2023 12:48:45,03/04/2023 19:26:00,03/04/2023 19:33:17,TRUE,Order ,"`-106.579317466,35.136507949",2.3048,"View order: https://dhcie.org/c/6DBXHjgW
+
+Order Number: 711621079
+
+Products:
+Hybrid Dark Chocolate | 100mg
+Option: .1g
+Quantity: 1
+Brand: Bhang
+Price: 12
+-----------
+Vegan Dark Chocolate High Flyer Bar | 100mg
+Option: .1g
+Quantity: 3
+Brand: High 5 Edibles
+Price: 36
+-----------
+
+productSubtotal: $48.00
+deliveryFee: $10.00
+cannabisTax: $5.75
+salesTax: $3.79
+total: $67.54
+
+Sawmill - Midtown","DOB: 05/14/1994
+Email: ivanleonard14@gmail.com
+Medical Card: 0519381QPJP809678001 - Exp: 05/12/2023
+Drivers License: 518906089",https://d15p8tr8p0vffz.cloudfront.net/7754c7814443d175ab128bd3/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5d132ccfcd6957d80aef7462/800x.png,,,,"`-106.607603113,35.131383401",03/04/2023 19:26:37,"`-106.604342614,35.130906239",03/04/2023 19:29:57,"`-106.577899128,35.13574403",dropoff,,NONE,NONE,,FALSE,Ivan Leonard,,4,,,Priscotty,,,
+0,,5158ac89,completed,Priscotty,Priscotty,Scott Prisco,"3844 ophelia ave nw, Albuquerque, NM","`-106.6742996289546,35.17658985356794",Brian Hurley,`+16262230134,03/04/2023 19:56:00,03/04/2023 18:56:00,03/04/2023 17:56:28,03/04/2023 19:33:25,03/04/2023 19:50:02,TRUE,Cash ,"`-106.674184739,35.176712945",8.4658,"Sour Diesel x Kush Mints PreRoll 1g, Gorilla Wreck #4 PreRoll 1g, Blue Lime Pie PreRoll 1g, Glittlez PreRoll 1g, Sweet and Savory PreRoll .5g, OG  Chem PreRoll 1g, Cereal Milk PreRoll .5g, Chem x Long Valley OG PreRoll .5g, Grape Ape PreRoll .5g, Casper OG PreRoll .5g, GSC PreRoll .5g, White Truffle PreRoll .5g, Apple Fritter PreRoll .5g, SkyDancer PreRoll 1g
+
+Canvas Organics","DOB: 12/20/1972
+Email: bhurley@gmail.com
+Medical Card: 5Y8S3X2J7J - Exp: 07/06/2025",https://d15p8tr8p0vffz.cloudfront.net/3f2b6c29af01e60e105b8541/282x.png,https://d15p8tr8p0vffz.cloudfront.net/be7a8083e83115142521f1fa/800x.png https://d15p8tr8p0vffz.cloudfront.net/50a907fc4f09b110432253ee/800x.png https://d15p8tr8p0vffz.cloudfront.net/9cab85dac2fd958cd1ba6264/800x.png,,,,"`-106.57931543,35.136308791",03/04/2023 19:34:48,"`-106.577539143,35.136188447",03/04/2023 19:46:37,"`-106.674242174,35.17670643",dropoff,,NONE,NONE,,FALSE,Brian Hurley,,0,,,Priscotty,,,
+0,,f9c73256,completed,Priscotty,Priscotty,Scott Prisco,"4401 San Pedro Drive Northeast, 709, Albuquerque, NM 87109","`-106.57864,35.136225",Ivan Leonard,`+15204479702,03/04/2023 18:30:00,03/04/2023 16:30:00,03/04/2023 12:28:23,03/04/2023 19:55:29,03/04/2023 19:55:51,FALSE,Canceled ,"`-106.592896208,35.174366517",0.21862,"View order: https://dhcie.org/c/PzoEoQUT
+
+Order Number: 954204547
+
+Products:
+Blueberry Dark Chocolate | 300mg
+Option: 3g
+Quantity: 2
+Brand: Bhang
+Price: 54
+-----------
+
+productSubtotal: $54.00
+deliveryFee: $10.00
+total: $64.00
+
+Canvas Organics","DOB: 05/14/1994
+Email: ivanleonard14@gmail.com
+Medical Card: 0519381QPJP809678001 - Exp: 05/12/2023
+Drivers License: 518906089",,,,,,"`-106.596767142,35.17436438",03/04/2023 19:55:34,"`-106.596767142,35.17436438",03/04/2023 19:55:49,"`-106.592896208,35.174366517",dropoff,,OTHER,NONE,,FALSE,,,2,Canceled ,,Priscotty,,,
+0,,606a2411,completed,Priscotty,Priscotty,Scott Prisco,"201 Unser Blvd NW, 120, Albuquerque, NM 87121","`-106.7242775,35.0789218",Melissa Fondy,`+15053616983,03/05/2023 16:00:00,03/05/2023 14:00:00,03/05/2023 12:25:53,03/05/2023 14:02:15,03/05/2023 14:40:55,TRUE,No notes ,"`-106.724537566,35.078604583",8.8606,"View order: https://dhcie.org/c/P3f6CdHv
+
+Order Number: 506307222
+
+Products:
+King Louie Cartridge | 500mg
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 41
+-----------
+Sour Watermelon Gummies | 100mg
+Option: .1g
+Quantity: 1
+Brand: Mountaintop Extracts
+Price: 13
+-----------
+
+productSubtotal: $54.00
+deliveryFee: $10.00
+cannabisTax: $6.47
+salesTax: $4.77
+total: $75.24
+
+Pecos Valley - 251 98th St NW","DOB: 03/12/1973
+Email: nfondy@icloud.com",https://d15p8tr8p0vffz.cloudfront.net/25374db6a829a845d1ff29da/282x.png,https://d15p8tr8p0vffz.cloudfront.net/bf1062850f31784f385bc4f6/800x.png https://d15p8tr8p0vffz.cloudfront.net/2bd3a5c8f42037991cfb3bb9/800x.png,,,,"`-106.658135158,35.109215632",03/05/2023 14:02:35,"`-106.658192783,35.110795016",03/05/2023 14:21:05,"`-106.725550498,35.078082527",dropoff,,NONE,NONE,,TRUE,Melissa Fondy,,2,,,Priscotty,,,
+0,,5db3ee0f,completed,Priscotty,Priscotty,Scott Prisco,"2933 Georgia Street Northeast, Albuquerque, NM 87110","`-106.57177,35.11596",Robin Weaver,`+15053502126,03/07/2023 14:00:00,03/07/2023 12:00:00,03/06/2023 16:44:38,03/07/2023 12:08:20,03/07/2023 12:24:41,TRUE,Cash 88.20,"`-106.571648641,35.115977505",1.48,"View order: https://dhcie.org/c/1YKPrBtT
+
+Order Number: 731383044
+
+Products:
+Honey Capsules | 100mg
+Option: 1g
+Quantity: 3
+Brand: Elevated
+Price: 68.4
+-----------
+
+productSubtotal: $72.00
+discount: $3.60
+deliveryFee: $10.00
+cannabisTax: $8.21
+salesTax: $5.38
+total: $91.99
+
+Canvas Organics",DOB: 03/03/1964,https://d15p8tr8p0vffz.cloudfront.net/12b30450f1b87df096dd1601/282x.png,https://d15p8tr8p0vffz.cloudfront.net/3f10ba3dd099e00bbaf9ddca/800x.png https://d15p8tr8p0vffz.cloudfront.net/69f3c69d651df0061bb8ee17/800x.png,,,,"`-106.588324,35.116515017",03/07/2023 12:08:40,"`-106.58858265,35.1175294",03/07/2023 12:11:32,"`-106.572948167,35.116340767",dropoff,,NONE,NONE,,TRUE,Robin Weaver,,3,,,Priscotty,,,
+0,,aa0899dc,completed,Priscotty,Priscotty,Scott Prisco,"6350 eubank blvd, 612, Albuquerque, NM","`-106.5245732,35.1508794",Walker Thurman,`+18285502355,03/07/2023 18:55:00,03/07/2023 17:55:00,03/07/2023 16:55:17,03/07/2023 17:33:24,03/07/2023 18:51:54,TRUE,Cash 258,"`-106.523661328,35.152588055",9.3467,"28.0g WHITE RUNTZ, 4.0g CHERRY DOSI X SOUR D, 3 x 2.0g Original Glue, 3.5g ICE CREAM PUNCH 3.5G 
+
+Elements - Lomas Blvd",,https://d15p8tr8p0vffz.cloudfront.net/ad6d19510476a3bfaa4eed76/282x.png,https://d15p8tr8p0vffz.cloudfront.net/e0577ab12c0133bfbe41f0dc/800x.png https://d15p8tr8p0vffz.cloudfront.net/bf4dd5511b14a56bc0599f81/800x.png https://d15p8tr8p0vffz.cloudfront.net/46a01f9ae788592c93057d3a/800x.png https://d15p8tr8p0vffz.cloudfront.net/991d186dc7cea1b16413d2c7/800x.png,,,,"`-106.570878054,35.100313538",03/07/2023 17:34:42,"`-106.570755687,35.100410303",03/07/2023 18:47:23,"`-106.525043285,35.151008247",dropoff,,NONE,NONE,,TRUE,Walker Thurman,,0,,,Priscotty,Please deliver after 6:00 if you can! Call me with any issues,,
+0,,6f35acf2,completed,Priscotty,Priscotty,Scott Prisco,"8 La Villita Ct NE, Albuquerque, NM 87112","`-106.493121,35.1134067",Kimberly  Curry,`+13107700311,03/08/2023 12:00:00,03/08/2023 10:00:00,03/08/2023 10:02:44,03/08/2023 12:28:32,03/08/2023 12:29:06,FALSE,"Sp
+
+Picked up product ","`-106.644090371,35.113402038",0.0059218,"View order: https://dhcie.biz/c/5gNWLZcb
+
+Order Number: 971956735
+
+Products:
+Sawmill Distillate - (I) Banana Kush
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 60
+-----------
+Sawmill Distillate Cart - Pineapple Express
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 60
+-----------
+(H) Runtz
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 31.5
+-----------
+(S) Kraft
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 31.5
+-----------
+
+productSubtotal: $183.00
+cannabisTax: $21.95
+salesTax: $14.42
+total: $219.37
+
+Sawmill - Uptown",DOB: 11/13/1958,,,,,,"`-106.644148756,35.113473205",03/08/2023 12:28:33,"`-106.644148756,35.113473205",03/08/2023 12:28:53,"`-106.644090371,35.113402038",dropoff,,OTHER,NONE,,FALSE,,,4,Picked up product ,,Priscotty,,,
+0,,580bb85d,completed,Priscotty,Priscotty,Scott Prisco,"415 Lewis Avenue Southeast, Albuquerque, NM 87102","`-106.64487,35.07177",Stephany Farley,`+15056150714,03/08/2023 12:00:00,03/08/2023 10:00:00,03/08/2023 09:24:25,03/08/2023 12:29:10,03/08/2023 12:41:53,TRUE,Dutchie pst ,"`-106.644358259,35.07219505",3.0962,"View order: https://dhcie.org/c/cEKCvsyi
+
+Order Number: 833067796
+
+Products:
+(S) Jack Herer
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 31.5
+-----------
+(I) Garlic Cookies (GMO)
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+
+productSubtotal: $47.50
+deliveryFee: $10.00
+cannabisTax: $5.70
+salesTax: $3.74
+total: $66.94
+
+Sawmill - North Valley","
+Member Group: Delivery",https://d15p8tr8p0vffz.cloudfront.net/bda2784108ce63eaa235d055/282x.png,https://d15p8tr8p0vffz.cloudfront.net/24c2ee48a1af5e0737b463d7/800x.png,,,,"`-106.644209095,35.110884499",03/08/2023 12:30:22,"`-106.645099972,35.106447467",03/08/2023 12:38:21,"`-106.645577509,35.071542669",dropoff,,NONE,NONE,,TRUE,Stephany Farley,,2,,,Priscotty,,,
+0,,12840b2b,completed,Priscotty,Priscotty,Scott Prisco,"123 Walter Street Northeast, Albuquerque, New Mexico 87102","`-106.6411001,35.0840435",Shawn Ferguson,`+15755137795,,,03/08/2023 17:13:01,03/08/2023 19:14:48,03/08/2023 19:15:02,FALSE,Notes ,"`-106.6411001,35.0840435",0,"Order 4044: 
+
+La Flor (possibly a late order that should be canceled)","DOB: 10/18/1984
+Email: shawnferguson.abqnm@gmail.com
+Medical Card:",,,,,,"`-106.6411001,35.0840435",03/08/2023 19:15:02,"`-106.6411001,35.0840435",03/08/2023 19:15:02,"`-106.6411001,35.0840435",dropoff,,OTHER,NONE,,FALSE,,,0,Notes ,,Priscotty,,,
+0,,c960951e,completed,Priscotty,Priscotty,Scott Prisco,"2605 Sun Canyon Lane Southwest, Gate code 111, Albuquerque, NM 87121","`-106.74161,35.03948",Victoria  Romero ,`+15058046528,03/08/2023 20:30:00,03/08/2023 20:00:00,03/08/2023 18:33:54,03/08/2023 19:49:14,03/08/2023 20:16:42,TRUE,59.41 cash,"`-106.741544186,35.039393321",9.0332,"View order: https://dhcie.com/c/fF42EJxs
+
+Order Number: 166468854
+
+Products:
+PVP BOGO Blueberry Muffin (IDH)
+Option: 1/8oz
+Quantity: 1
+Brand: PVP
+Price: 25
+-----------
+Lemon Cheesecake Flower by PVP
+Option: 1/8oz
+Quantity: 1
+Brand: PVP
+Price: 25
+-----------
+
+productSubtotal: $50.00
+cannabisTax: $5.99
+salesTax: $4.42
+total: $60.41
+
+Pecos Valley 98th","DOB: 06/25/1981
+Email: Vromero81@yahoo.com",https://d15p8tr8p0vffz.cloudfront.net/28e9c70d177bd41a45de79c0/282x.png,https://d15p8tr8p0vffz.cloudfront.net/db785265ee6d35d2fc0f3183/800x.png https://d15p8tr8p0vffz.cloudfront.net/2b04c3537900845a4158354a/800x.png,,,,"`-106.658941754,35.109250658",03/08/2023 19:50:31,"`-106.658827776,35.1090047",03/08/2023 20:14:11,"`-106.741202679,35.040109894",dropoff,,NONE,NONE,,TRUE,Victoria  Romero ,,2,,,Priscotty,,,
+0,,0c72ef40,completed,Priscotty,Priscotty,Scott Prisco,"1400 Sunport Place Southeast, Albuquerque, New Mexico 87106","`-106.6330448,35.0486501",Cosme Perez,`+19156423242,,,03/08/2023 16:05:01,03/08/2023 20:17:24,03/08/2023 20:44:44,TRUE,Cash ,"`-106.632628083,35.048881019",13.222,"Order 4049: 
+
+La Flor",,https://d15p8tr8p0vffz.cloudfront.net/c2d21fce5ae060cdbe036714/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5c8990c49a52743966d70c7e/800x.png https://d15p8tr8p0vffz.cloudfront.net/ca6ac729c9e3204f03bcf837/800x.png,,,,"`-106.74117847,35.039527497",03/08/2023 20:18:16,"`-106.739962536,35.040863749",03/08/2023 20:39:27,"`-106.632043299,35.049505774",dropoff,,NONE,NONE,,TRUE,Cosme Perez,,0,,,Priscotty,,,
+0,,1cf72faf,completed,Priscotty,Priscotty,Scott Prisco,"9904 Ladder Ranch Lane Southwest, Albuquerque, NM 87121","`-106.74257,35.063775",sean vigil,`+15059676881,03/09/2023 16:00:00,03/09/2023 14:00:00,03/09/2023 12:53:40,03/09/2023 14:46:51,03/09/2023 14:50:35,TRUE,Dutchie pay ,"`-106.742609649,35.063932362",0.86061,"View order: https://dhcie.org/c/3fklgCwP
+
+Order Number: 826592381
+
+Products:
+Space Face Live Resin Cartridge | 1g
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 52
+-----------
+
+productSubtotal: $65.00
+discount: $13.00
+cannabisTax: $6.24
+salesTax: $4.59
+total: $62.83
+
+Pecos 98th","DOB: 09/07/1991
+Email: vigilsean67@gmail.com
+Medical Card: 
+Drivers License: 503889293",https://d15p8tr8p0vffz.cloudfront.net/06476b29381f2c888048c9cc/282x.png,https://d15p8tr8p0vffz.cloudfront.net/6c22d8eb00964a1acd94ef33/800x.png https://d15p8tr8p0vffz.cloudfront.net/23e533676c80681f0e6b3324/800x.png,,,,"`-106.742955717,35.073966733",03/09/2023 14:47:20,"`-106.742702317,35.072018281",03/09/2023 14:48:06,"`-106.74187655,35.063765905",dropoff,,NONE,NONE,,TRUE,sean vigil,,1,,,Priscotty,,,
+0,,466f801e,completed,Priscotty,Priscotty,Scott Prisco,"10400 Sandy Ridge Road Southwest, Albuquerque, NM 87121","`-106.74622,35.041",Aliya Funmaker,`+15054896918,03/09/2023 16:00:00,03/09/2023 14:00:00,03/09/2023 12:53:40,03/09/2023 14:51:04,03/09/2023 14:57:56,TRUE,Dutchie pay ,"`-106.746173312,35.041089236",2.1063,"View order: https://dhcie.org/c/3v3oqfSe
+
+Order Number: 527128837
+
+Products:
+PVP BOGO Blueberry Muffin (IDH)
+Option: 1/8oz
+Quantity: 1
+Brand: PVP
+Price: 25
+-----------
+Bahama Breeze Artisan Series Cartridge | 0.5g
+Option: .5g
+Quantity: 1
+Brand: 
+Price: 28.8
+-----------
+
+productSubtotal: $61.00
+discount: $7.20
+total: $53.80
+
+Pecos 98th","DOB: 08/11/1997
+Email: aliyaterc@gmail.com
+Medical Card: 25E4FH49QN - Exp: 03/02/2026",https://d15p8tr8p0vffz.cloudfront.net/7cf5f99e2e6dbe2b5ada12c1/282x.png,https://d15p8tr8p0vffz.cloudfront.net/b5f50d4b799881fc08a4169c/800x.png https://d15p8tr8p0vffz.cloudfront.net/9264c02590273f8b96dc8abc/800x.png,,,,"`-106.74318974,35.063868296",03/09/2023 14:51:51,"`-106.741759967,35.06123205",03/09/2023 14:56:19,"`-106.744667971,35.041292334",dropoff,,NONE,NONE,,TRUE,Aliya Funmaker,,2,,,Priscotty,,,
+0,,d30fe6dc,completed,Priscotty,Priscotty,Scott Prisco,"2500 Carlisle Boulevard Northeast, 1049, Albuquerque, NM 87110","`-106.60096,35.10658",Liana Veltri,`+15053700125,03/09/2023 16:30:00,03/09/2023 14:30:00,03/09/2023 13:43:17,03/09/2023 15:24:54,03/09/2023 15:45:59,TRUE,Dp ,"`-106.602555336,35.108002913",4.1586,"View order: https://dhcie.org/c/cu7Ef5yO
+
+Order Number: 518808756
+
+Products:
+Granddaddy Purple Classic Surf Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 46
+-----------
+
+productSubtotal: $46.00
+deliveryFee: $10.00
+cannabisTax: $5.52
+salesTax: $3.62
+total: $65.14
+
+Canvas Organics san pedro","DOB: 01/10/1997
+Email: veltri.liana@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/2d110448c8dbd81a3c36553d/282x.png,https://d15p8tr8p0vffz.cloudfront.net/41d1bf9b04e1d5bead18e317/800x.png https://d15p8tr8p0vffz.cloudfront.net/8d59bb5108b9892d4bdf8185/800x.png,,,,"`-106.577223985,35.116613424",03/09/2023 15:26:00,"`-106.577772973,35.116516731",03/09/2023 15:43:51,"`-106.602188359,35.106493712",dropoff,,NONE,NONE,,FALSE,Liana Veltri,,1,,,Priscotty,,,
+0,,1eb29214,completed,Priscotty,Priscotty,Scott Prisco,"2500 Carlisle Boulevard Northeast, 1049, Albuquerque, NM 87110","`-106.60096,35.10658",Liana Veltri,`+15053700125,03/09/2023 16:30:00,03/09/2023 14:30:00,03/09/2023 14:02:16,03/09/2023 19:13:24,03/09/2023 19:13:33,FALSE,Double order ,"`-106.570808106,35.100302241",0,"View order: https://dhcie.com/c/KaTEQNVA
+
+Order Number: 859804470
+
+Products:
+Granddaddy Purple Classic Surf Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 46
+-----------
+
+productSubtotal: $46.00
+deliveryFee: $10.00
+cannabisTax: $5.52
+salesTax: $3.62
+total: $65.14
+
+Canvas Organics san pedro","DOB: 01/10/1997
+Email: veltri.liana@gmail.com
+Medical Card:",,,,,,"`-106.570808106,35.100302241",03/09/2023 19:13:33,"`-106.570808106,35.100302241",03/09/2023 19:13:33,"`-106.570808106,35.100302241",dropoff,,OTHER,NONE,,FALSE,,,1,Double order ,,Priscotty,,,
+0,,449fdadb,completed,Priscotty,Priscotty,Scott Prisco,"9180 coors blvd nw, 1010, Albuquerque, NM","`-106.6670059,35.178456",Emily Counts,`+15059911338,03/10/2023 11:12:00,03/10/2023 10:42:00,03/10/2023 10:12:27,03/10/2023 12:34:41,03/10/2023 13:08:02,TRUE,Cash 23,"`-106.66475144,35.178044204",13.275,"3.5g Mountain Top Mint 3.5g Flower by PVP
+
+Pecos Valley - Eubank",Jane Customer,https://d15p8tr8p0vffz.cloudfront.net/a445e0ebe76920f10e721b26/282x.png,https://d15p8tr8p0vffz.cloudfront.net/1d4d7754e73abc0e01f53823/800x.png https://d15p8tr8p0vffz.cloudfront.net/47dcd51b0a6ae3961e15ad26/800x.png,,,,"`-106.532800364,35.138413288",03/10/2023 12:35:55,"`-106.531619039,35.13841296",03/10/2023 13:04:23,"`-106.66821189,35.178613732",dropoff,,NONE,NONE,,TRUE,Emily Counts,,0,,,Priscotty,,,
+0,,25b07f52,completed,Priscotty,Priscotty,Scott Prisco,"1916 richmond dr, Albuquerque, NM","`-106.6109293,35.1055328",Alexander Long,`+15059481229,03/10/2023 12:10:00,03/10/2023 11:40:00,03/10/2023 11:10:39,03/10/2023 13:08:37,03/10/2023 13:31:25,TRUE,90 cash,"`-106.6112455,35.1054357",10.369,"14.0g Shivas Dream 14.0g Flower by NMAC
+
+Pecos Valley Eubank","DOB: 11/27/1989
+Email: alexevanslong@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/545167fd0dd7ad4c4ffee594/282x.png,https://d15p8tr8p0vffz.cloudfront.net/ffa33b80644d0c6475909c95/800x.png https://d15p8tr8p0vffz.cloudfront.net/37361d75070b8a1e12fc9307/800x.png,5,,,"`-106.66517355,35.178395693",03/10/2023 13:09:24,"`-106.666386597,35.178278186",03/10/2023 13:30:30,"`-106.611314483,35.1042738",dropoff,,NONE,NONE,,TRUE,Alex Long,,0,,,Priscotty,,,
+0,,b7526bc9,completed,Priscotty,Priscotty,Scott Prisco,"3011 Jane Place Northeast, 149, Albuquerque, NM 87111","`-106.5205,35.11721",Tamas Geczy,`+14196998953,03/10/2023 16:30:00,03/10/2023 14:30:00,03/10/2023 13:35:37,03/10/2023 15:34:05,03/10/2023 16:19:49,TRUE,Dp ,"`-106.520462251,35.117664624",12.28,"View order: https://dhcie.com/c/Slw7uQ0V
+
+Order Number: 127891862
+
+Products:
+Hybrid Cured Badder
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 40
+-----------
+Purple Squirt Live Diamonds
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 60
+-----------
+Gaschata Live Hash Rosin Mixed Micron
+Option: 1g
+Quantity: 1
+Brand: Olio
+Price: 75
+-----------
+
+productSubtotal: $175.00
+deliveryFee: $10.00
+total: $185.00
+
+Canvas Organics","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/8b24165ca02efab3b4699814/282x.png,https://d15p8tr8p0vffz.cloudfront.net/95e0c54fd683493165246d5a/800x.png https://d15p8tr8p0vffz.cloudfront.net/d82af1ad24ab89b89bd0ee6e/800x.png https://d15p8tr8p0vffz.cloudfront.net/06e85586e5930d5a1987da2a/800x.png,,,,"`-106.593170023,35.156192686",03/10/2023 15:34:28,"`-106.593273183,35.157409033",03/10/2023 16:18:04,"`-106.520543648,35.117750829",dropoff,,NONE,NONE,,FALSE,Tamas Geczy,,3,,,Priscotty,,,
+0,,d820b58f,completed,Priscotty,Priscotty,Scott Prisco,"2345 Southern Blvd SE, C13, Rio Rancho, NM 87124","`-106.6894956,35.2421005",Omar Reed,`+15052800819,03/10/2023 18:00:00,03/10/2023 16:00:00,03/10/2023 15:37:16,03/10/2023 17:11:28,03/10/2023 17:41:06,TRUE,Cash ,"`-106.68778609,35.242037991",4.8599,"View order: https://dhcie.org/c/oEnxSMAo
+
+Order Number: 48979720
+
+Products:
+Flapjacks
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 35
+-----------
+
+productSubtotal: $35.00
+deliveryFee: $10.00
+total: $45.00
+
+Sawmill Cottonwood","DOB: 09/16/1993
+Medical Card: X95R4A84RU - Exp: 03/01/2026
+Drivers License: 509489939",https://d15p8tr8p0vffz.cloudfront.net/f52835e80f5bfd1527b556ad/282x.png,https://d15p8tr8p0vffz.cloudfront.net/fae6e5c0d14af8a0783d14fc/800x.png https://d15p8tr8p0vffz.cloudfront.net/2977d684043aa04f52d2dc1d/800x.png,,,,"`-106.651010535,35.206579376",03/10/2023 17:12:18,"`-106.65246857,35.209201701",03/10/2023 17:39:32,"`-106.687878379,35.242121893",dropoff,,NONE,NONE,,FALSE,Omar Reed,,1,,,Priscotty,,,
+0,,fe23cea3,completed,Priscotty,Priscotty,Scott Prisco,"10213 snow heights blvd ne, Albuquerque, NM","`-106.5297515,35.10528600000001",George Johnston,`+15052699246,03/11/2023 12:58:00,03/11/2023 11:58:00,03/11/2023 10:58:56,03/11/2023 12:28:32,03/11/2023 12:59:43,TRUE,110 cash,"`-106.529844493,35.10525749",13.151,"28.0g SPACE RUNTZ
+
+elements",,https://d15p8tr8p0vffz.cloudfront.net/a808091b3f148dc208e51449/282x.png,https://d15p8tr8p0vffz.cloudfront.net/922086729eca90767a7d92b9/800x.png,,,,"`-106.654293032,35.070673142",03/11/2023 12:29:46,"`-106.654428517,35.07020361",03/11/2023 12:57:59,"`-106.529071896,35.10485588",dropoff,,NONE,NONE,,TRUE,George Johnston,,0,,,Priscotty,,,
+0,,93469ab0,completed,Priscotty,Priscotty,Scott Prisco,"6700 Cantata St NW, Bld.30 unit 3003, Albuquerque, NM 87114","`-106.729315,35.1845711",Alec Rael,`+15052398378,03/11/2023 14:00:00,03/11/2023 12:00:00,03/11/2023 10:14:14,03/11/2023 13:51:14,03/11/2023 14:11:27,TRUE,60 cash,"`-106.728987022,35.184109074",8.1707,"View order: https://dhcie.biz/c/vqd1D5z7
+
+Order Number: 480398466
+
+Products:
+Bonanza - (S) Strawberry Cough
+Option: .5g
+Quantity: 1
+Brand: Bonanza
+Price: 35
+-----------
+
+productSubtotal: $35.00
+deliveryFee: $10.00
+cannabisTax: $4.20
+salesTax: $2.71
+total: $51.91","DOB: 07/20/1995
+Drivers License: 510611217",https://d15p8tr8p0vffz.cloudfront.net/5d47e99e86b5d1dfbc49c733/282x.png,https://d15p8tr8p0vffz.cloudfront.net/85661f98c8401d4a2831c89a/800x.png https://d15p8tr8p0vffz.cloudfront.net/59ceeb634e0ef6cc09dd0dcc/800x.png https://d15p8tr8p0vffz.cloudfront.net/8b19d33c0cc613b31b4a5d93/800x.png,,,,"`-106.651920217,35.207895483",03/11/2023 13:51:19,"`-106.6523126,35.20884475",03/11/2023 14:07:39,"`-106.729062727,35.185130499",dropoff,,NONE,NONE,,FALSE,Alec Rael,,1,,,Priscotty,Sawmill,,
+0,,e37d09cd,completed,Priscotty,Priscotty,Scott Prisco,"355 El Rey Drive, Corrales, NM 87048","`-106.65246,35.21872",christina hoke,`+15055146345,03/11/2023 14:00:00,03/11/2023 12:00:00,03/11/2023 11:06:37,03/11/2023 14:11:35,03/11/2023 14:30:33,TRUE,80 cash,"`-106.652285326,35.218842827",7.5538,"View order: https://dhcie.org/c/OHFtSuzc
+
+Order Number: 792684654
+
+Products:
+Chocolate 100mg | Sleep
+Option: .1g
+Quantity: 3
+Brand: 
+Price: 48
+-----------
+(I) Bacio Gelato
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+
+productSubtotal: $64.00
+deliveryFee: $10.00
+total: $74.00
+
+Cotton wood sawmill","DOB: 03/12/1953
+Email: cah031253@gmail.com
+Medical Card: 1227815390768053 - Exp: 06/23/2023
+Drivers License: 515861017",https://d15p8tr8p0vffz.cloudfront.net/88be06737011e8032001e0e0/282x.png,https://d15p8tr8p0vffz.cloudfront.net/34da2eafb0d8d33e4f4674bb/800x.png https://d15p8tr8p0vffz.cloudfront.net/5c530789445236cc1bfedfbe/800x.png,,,,"`-106.729022345,35.184093317",03/11/2023 14:11:57,"`-106.729617499,35.184863188",03/11/2023 14:28:30,"`-106.650967466,35.218595226",dropoff,,NONE,NONE,,FALSE,christina hoke,,4,,,Priscotty,,,
+0,,b9d25d98,completed,Priscotty,Priscotty,Scott Prisco,"2132 Utah Street Northeast, Albuquerque, NM 87110","`-106.55397,35.105735",Cheryl Sensibaugh,`+15052520803,03/11/2023 16:30:00,03/11/2023 14:30:00,03/11/2023 11:24:38,03/11/2023 14:32:59,03/11/2023 15:09:37,TRUE,Dp ,"`-106.553997716,35.105815279",12.46,"View order: https://dhcie.biz/c/rtjvV2G5
+
+Order Number: 129713161
+
+Products:
+Pink Runtz
+Option: 28g
+Quantity: 1
+Brand: ABQ Cannabis Corp.
+Price: 175
+-----------
+Lil Bite Raspberry White Chocolate 10mg
+Option: .1g
+Quantity: 3
+Brand: Synergy Extracts
+Price: 7.38
+-----------
+
+productSubtotal: $189.79
+discount: $7.40
+deliveryFee: $10.00
+cannabisTax: $21.89
+salesTax: $14.36
+total: $228.64
+
+Canvas Organics san pedro","DOB: 11/26/1972
+Email: cheryl.sensibaugh@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/6ba97676e91d683a28b8ffcb/282x.png,https://d15p8tr8p0vffz.cloudfront.net/fcff2b7ddeec68e1d2273dc0/800x.png https://d15p8tr8p0vffz.cloudfront.net/b40dcb3fdb7668b39d8dc096/800x.png,,,,"`-106.65145564,35.208171745",03/11/2023 14:34:15,"`-106.651786058,35.20806005",03/11/2023 15:07:09,"`-106.553304199,35.105583806",dropoff,,NONE,NONE,,TRUE,Cheryl Sensibaugh,,4,,,Priscotty,I didn't see a promo code for Saturday's lil bites with $50 purchase.  Thank you!,,
+0,,435fe830,completed,Priscotty,Priscotty,Scott Prisco,"117 general arnold st, C, Albuquerque, NM","`-106.5477991,35.0746645",Cindi Lucero,`+15053474174,03/11/2023 16:59:00,03/11/2023 16:29:00,03/11/2023 15:59:56,03/11/2023 16:55:31,03/11/2023 17:12:14,TRUE,20 cash,"`-106.547679444,35.07466789",6.4355,"Nightmare Cookies 0.5g Pre-Roll by PVP, Zhits Fire 0.5g Pre-Roll by PVP, Jelly's Breath 0.5g Pre-Roll by PVP, Lemon Cheesecake 0.5g Pre-Roll by PVP
+
+Pecos Valley - Eubank",,https://d15p8tr8p0vffz.cloudfront.net/ae6b10c90fa9fe1bd49d0d88/282x.png,https://d15p8tr8p0vffz.cloudfront.net/d89e6dd7c71e421d467e47c9/800x.png https://d15p8tr8p0vffz.cloudfront.net/103f9223bc98bcd103a647cf/800x.png,,,,"`-106.53170147,35.138616446",03/11/2023 16:56:50,"`-106.531475443,35.138445747",03/11/2023 17:09:22,"`-106.547405232,35.073999675",dropoff,,NONE,NONE,,FALSE,Cindi Lucero,,0,,,Priscotty,,,
+0,,d116963b,completed,Priscotty,Priscotty,Scott Prisco,"9208 Colima Avenue Northwest, Albuquerque, NM 87120","`-106.74263,35.09301",Jason Penhollow,`+17756003218,03/12/2023 18:30:00,03/12/2023 16:30:00,03/12/2023 16:10:20,03/12/2023 17:06:47,03/12/2023 17:25:33,TRUE,220,"`-106.742737431,35.093040226",12.567,"View order: https://dhcie.biz/c/UGZZvYnX
+
+Order Number: 316689310
+
+Products:
+Grape Ape PreRoll
+Option: 1g
+Quantity: 3
+Brand: Colfax Cannabis Company
+Price: 27
+-----------
+Kush Mints PreRoll
+Option: 1g
+Quantity: 3
+Brand: Colfax Cannabis Company
+Price: 27
+-----------
+Manzano Express PreRoll
+Option: 1g
+Quantity: 4
+Brand: LX Farms
+Price: 36
+-----------
+Pootie Tang Pie PreRoll
+Option: 1g
+Quantity: 4
+Brand: Colfax Cannabis Company
+Price: 36
+-----------
+Rozay PreRoll
+Option: .5g
+Quantity: 4
+Brand: Colfax Cannabis Company
+Price: 21.0
+-----------
+White Truffle PreRoll
+Option: .5g
+Quantity: 4
+Brand: Iron Fist Cannabis
+Price: 21.0
+-----------
+SkyDancer PreRoll
+Option: 1g
+Quantity: 4
+Brand: LX Farms
+Price: 36
+-----------
+
+productSubtotal: $272.00
+discount: $68.00
+deliveryFee: $15.00
+total: $219.00
+
+Canvas Organics","DOB: 11/23/1981
+Email: Penhollow360@gmail.com
+Medical Card: RPM49J94K8 - Exp: 12/06/2025
+Drivers License: 518998111",https://d15p8tr8p0vffz.cloudfront.net/732e89f1f4562d03b27ae68d/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8eed7237ee852e2e7810ada3/800x.png,,,,"`-106.577456517,35.116426567",03/12/2023 17:08:14,"`-106.580170877,35.116467428",03/12/2023 17:23:47,"`-106.7425313,35.093430667",dropoff,,NONE,NONE,,TRUE,Jason Penhollow,,26,,,Priscotty,,,
+0,,082e1471,completed,Priscotty,Priscotty,Scott Prisco,"1901 University Boulevard Northeast, Albuquerque, New Mexico 87102","`-106.6249858,35.1082715",Julian   Trillo Oneil,`+15206682009,,,03/14/2023 22:29:26,03/14/2023 22:42:56,03/14/2023 22:43:18,TRUE,160 cash,"`-106.627973562,35.106445507",0.037512,"Order 4314: 
+
+La Flor",,https://d15p8tr8p0vffz.cloudfront.net/c16e6dd0edcbb9fd0bffb8e0/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f3605d073ccf130343bf6621/800x.png,,,,"`-106.627340826,35.106609098",03/14/2023 22:43:07,"`-106.627340826,35.106609098",03/14/2023 22:43:12,"`-106.627973562,35.106445507",dropoff,,NONE,NONE,,FALSE,Julian   Trillo Oneil,,0,,,Priscotty,,,
+0,,215aaac8,completed,Priscotty,Priscotty,Scott Prisco,"2711 Haines Avenue Northeast, Albuquerque, NM 87106","`-106.61481,35.1009",Kyle Martinez,`+15053123306,03/15/2023 12:30:00,03/15/2023 10:30:00,03/15/2023 09:53:43,03/15/2023 10:49:42,03/15/2023 10:59:32,TRUE,Cash ,"`-106.614817282,35.100755204",3.2933,"View order: https://dhcie.biz/c/vlMghVYY
+
+Order Number: 817373755
+
+Products:
+Granddaddy Purp
+Option: 28g
+Quantity: 1
+Brand: Manzano Partners
+Price: 100
+-----------
+Las Frescas Pink Runtz Disposable Vape
+Option: 1g
+Quantity: 1
+Brand: Head Space
+Price: 49.5
+-----------
+
+productSubtotal: $166.00
+discount: $16.50
+deliveryFee: $10.00
+cannabisTax: $17.93
+salesTax: $11.78
+total: $189.21
+
+Canvas Organics","DOB: 06/21/1992
+Email: sk8er10641991@yahoo.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/023764555b5a14c24d9a38c4/282x.png,https://d15p8tr8p0vffz.cloudfront.net/01e540e93e03d3baea31fe94/800x.png,,,,"`-106.577605939,35.119935464",03/15/2023 10:50:09,"`-106.579457883,35.120422801",03/15/2023 10:57:13,"`-106.615624736,35.10077582",dropoff,,NONE,NONE,,FALSE,Kyle Martinez,,2,,,Priscotty,,,
+0,,e9ce8dd0,completed,Priscotty,Priscotty,Scott Prisco,"415 Lewis Avenue Southeast, Albuquerque, NM 87102","`-106.64487,35.07177",Stephany Farley,`+15056150714,03/15/2023 12:00:00,03/15/2023 10:00:00,03/14/2023 18:37:22,03/15/2023 11:00:07,03/15/2023 11:18:43,TRUE,Notes ,"`-106.645682333,35.071656767",7.6995,"View order: https://dhcie.org/c/hHty9lv9
+
+Order Number: 819266878
+
+Products:
+(S) Jack Herer
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 31.5
+-----------
+(I) Purple Runtz
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+1861 | Gummy 100mg - Blackberry
+Option: .1g
+Quantity: 1
+Brand: 1861 Gold
+Price: 12
+-----------
+1861 | Gummy 100mg - Sour Watermelon
+Option: .1g
+Quantity: 1
+Brand: 1861 Gold
+Price: 12
+-----------
+
+productSubtotal: $71.50
+discount: $6.00
+deliveryFee: $10.00
+cannabisTax: $7.86
+salesTax: $5.16
+total: $88.52
+
+Sawmill north valley","
+Member Group: Delivery",https://d15p8tr8p0vffz.cloudfront.net/2e8469fa1ded89e14975de9e/282x.png,https://d15p8tr8p0vffz.cloudfront.net/e6b5d42315612ee1e0a3f917/800x.png,,,,"`-106.615766816,35.101863772",03/15/2023 11:01:11,"`-106.624949032,35.101175291",03/15/2023 11:17:26,"`-106.645715733,35.072107217",dropoff,,NONE,NONE,,FALSE,Stephany Farley,,4,,,Priscotty,,,
+0,,e08f9442,completed,Priscotty,Priscotty,Scott Prisco,"1401 Moon Street Northeast, Albuquerque, New Mexico 87112","`-106.5420649,35.094765",Dale Yim,`+14245277780,,,03/15/2023 21:57:59,03/15/2023 22:09:20,03/15/2023 22:18:33,TRUE,40,"`-106.541941424,35.094782132",3.3662,"Order 4344: 
+
+La Flor",,https://d15p8tr8p0vffz.cloudfront.net/308b99c49a05a8c2dd276fd1/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2415e81e27e8e8ab0cf8140c/800x.png https://d15p8tr8p0vffz.cloudfront.net/c4f4dcefef4fc3151a1b470b/800x.png,,,,"`-106.586610138,35.089298335",03/15/2023 22:09:54,"`-106.588576639,35.089291996",03/15/2023 22:16:57,"`-106.5416813,35.094898017",dropoff,,NONE,NONE,,FALSE,Jay  Yim,,0,,,Priscotty,,,
+0,,2bdae167,completed,Priscotty,Priscotty,Scott Prisco,"7628 Florence Avenue Northeast, Albuquerque, NM 87122","`-106.558595,35.19143",Jaime Rehbein,`+15053318351,03/16/2023 14:00:00,03/16/2023 12:00:00,03/16/2023 09:40:22,03/16/2023 13:26:33,03/16/2023 13:37:49,TRUE,Dp,"`-106.558692166,35.191391447",3.7625,"View order: https://dhcie.biz/c/7Q3lovlH
+
+Order Number: 354932941
+
+Products:
+1861 | Gummy 100mg - Sour Watermelon
+Option: .1g
+Quantity: 1
+Brand: 1861 Gold
+Price: 12
+-----------
+Sawmill Live Rosin Gummies 100mg - Blue Raspberry
+Option: .1g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 18
+-----------
+
+productSubtotal: $30.00
+deliveryFee: $10.00
+cannabisTax: $3.59
+salesTax: $2.37
+total: $45.96
+
+Sawmill - Cottonwood","DOB: 05/09/1985
+Email: Jaimeleebusybee@msn.com
+Drivers License: 125405045",https://d15p8tr8p0vffz.cloudfront.net/741bbcf5ec68af8818f8c6fb/282x.png,https://d15p8tr8p0vffz.cloudfront.net/d700b28f9d170bbe1fd12bff/800x.png https://d15p8tr8p0vffz.cloudfront.net/d0a8076d41029927c5a00890/800x.png,,,,"`-106.593699033,35.17319094",03/16/2023 13:27:37,"`-106.593472565,35.171787426",03/16/2023 13:36:04,"`-106.560071807,35.191575524",dropoff,,NONE,NONE,,FALSE,Jaime Rehbein,,2,,,Priscotty,,,
+0,,35c0d1c4,completed,Priscotty,Priscotty,Scott Prisco,"2500 Carlisle Boulevard Northeast, 1049, Albuquerque, NM 87110","`-106.60096,35.10658",Liana Veltri,`+15053700125,03/16/2023 14:30:00,03/16/2023 12:30:00,03/16/2023 11:11:56,03/16/2023 13:40:03,03/16/2023 15:17:03,TRUE,51.36,"`-106.602590972,35.10790801",10.679,"View order: https://dhcie.org/c/cE5q7kE8
+
+Order Number: 235493386
+
+Products:
+Maui Wowie Classic Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 34.5
+-----------
+
+productSubtotal: $46.00
+discount: $11.50
+deliveryFee: $10.00
+cannabisTax: $4.14
+salesTax: $2.72
+total: $51.36
+
+Canvas Organics","DOB: 01/10/1997
+Email: veltri.liana@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/ddd58bdb79b4242f2c165081/282x.png,https://d15p8tr8p0vffz.cloudfront.net/b8871a833dbbc8f623a206ac/800x.png https://d15p8tr8p0vffz.cloudfront.net/6d36f6d7a4b74fbba2723a22/800x.png,,,,"`-106.559922867,35.179507817",03/16/2023 13:40:44,"`-106.55998322,35.174730183",03/16/2023 15:16:48,"`-106.602590972,35.10790801",dropoff,,NONE,NONE,,FALSE,Liana Veltri,,1,,,Priscotty,,,
+0,,e5d88920,completed,Priscotty,Priscotty,Scott Prisco,"3011 Jane Place Northeast, 149, Albuquerque, NM 87111","`-106.5205,35.11721",Tamas Geczy,`+14196998953,03/16/2023 16:30:00,03/16/2023 14:30:00,03/16/2023 12:39:57,03/16/2023 15:17:27,03/16/2023 15:35:31,TRUE,Noted ,"`-106.520144649,35.117644992",5.5935,"View order: https://dhcie.biz/c/kFV2RuyO
+
+Order Number: 617822028
+
+Products:
+Hybrid Cured Badder
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 30
+-----------
+Papaya Mixed Micron Live Hash Rosin
+Option: 1g
+Quantity: 1
+Brand: Olio
+Price: 56.25
+-----------
+Grape Jelly Terp Sugar
+Option: 1g
+Quantity: 1
+Brand: Yerba Cannabis Co.
+Price: 33.75
+-----------
+
+productSubtotal: $160.00
+discount: $40.00
+deliveryFee: $10.00
+total: $130.00
+
+Canvas Organics","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/bb3493b34a53f35b201a0efc/282x.png,https://d15p8tr8p0vffz.cloudfront.net/a7f6a4dd3b26b49ea397bf76/800x.png,,,,"`-106.602575934,35.108204669",03/16/2023 15:18:44,"`-106.60314935,35.10828905",03/16/2023 15:31:41,"`-106.520120949,35.116982795",dropoff,,NONE,NONE,,FALSE,Tamas Geczy,,3,,,Priscotty,I'm fully blind. The fire entrance gate should be open.,,
+0,,5eeb5919,completed,Priscotty,Priscotty,Scott Prisco,"1401 Moon Street Northeast, Albuquerque, New Mexico 87112","`-106.5420649,35.094765",Dale Yim,`+14245277780,,,03/15/2023 21:57:59,03/16/2023 15:35:48,03/16/2023 15:36:20,FALSE,Duplicate ,"`-106.5420649,35.094765",0,"Order 4344: 
+
+La Flor (might be a duplicate)",,,,,,,"`-106.5420649,35.094765",03/16/2023 15:36:20,"`-106.5420649,35.094765",03/16/2023 15:36:20,"`-106.5420649,35.094765",dropoff,,OTHER,NONE,,FALSE,,,0,Duplicate ,,Priscotty,,,
+0,,05a77dcf,completed,Priscotty,Priscotty,Scott Prisco,"2020 Menaul Boulevard Northeast, Ramada hotel room 161, Albuquerque, NM 87107","`-106.62305,35.10804",Brian Johnson,`+12089109197,03/16/2023 18:00:00,03/16/2023 16:00:00,03/16/2023 14:08:26,03/16/2023 16:58:15,03/17/2023 00:17:48,FALSE,Fail,"`-106.6541218,35.073209674",14.865,"View order: https://dhcie.com/c/2ltwIcBx
+
+Order Number: 287248706
+
+Products:
+Dogwalker 5PK - (I) Jungle Diamonds
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 22
+-----------
+
+productSubtotal: $22.00
+deliveryFee: $10.00
+cannabisTax: $2.64
+salesTax: $1.73
+total: $36.37
+
+Sawmill - North Valley",DOB: 02/18/1992,,https://d15p8tr8p0vffz.cloudfront.net/aca8faef00f236ce0b3069db/800x.png https://d15p8tr8p0vffz.cloudfront.net/107458be9282199b16238093/800x.png,,,,"`-106.643858764,35.113389998",03/16/2023 16:58:39,"`-106.645856717,35.113643517",03/16/2023 17:23:53,"`-106.62302767,35.108729824",dropoff,,OTHER,NONE,,TRUE,,,1,Fail,,Priscotty,,,
+0,,f449ab83,completed,Priscotty,Priscotty,Scott Prisco,"201 98th Street Northwest, Albuquerque, NM 87121","`-106.74411,35.07609",DEVIN ALAN PRUITT (STOKES),`+15758025082,03/15/2023 14:00:00,03/15/2023 12:00:00,03/15/2023 10:52:42,03/17/2023 00:18:05,03/17/2023 00:18:18,FALSE,Faik,"`-106.74411,35.07609",0,"View order: https://dhcie.com/c/TBp5kugw
+
+Order Number: 510219913
+
+Products:
+PVP ECO Mac 2 (HYB)
+Option: 1/2oz
+Quantity: 1
+Brand: PVP
+Price: 55
+-----------
+
+productSubtotal: $55.00
+deliveryFee: $10.00
+cannabisTax: $6.60
+salesTax: $4.85
+total: $76.45
+
+Pecos Valley - 251 98th St.","DOB: 08/16/2000
+Email: devinastokes@gmail.com
+Medical Card: 8557446786532 - Exp: 04/08/2024",,,,,,"`-106.74411,35.07609",03/17/2023 00:18:18,"`-106.74411,35.07609",03/17/2023 00:18:18,"`-106.74411,35.07609",dropoff,,UNAVAILABLE,NONE,,FALSE,,,1,Faik,,Priscotty,,,
+0,,3a86ccf3,completed,Priscotty,Priscotty,Scott Prisco,"201 98th Street Northwest, Albuquerque, NM 87121","`-106.74411,35.07609",DEVIN ALAN PRUITT (STOKES),`+15758025082,03/15/2023 14:00:00,03/15/2023 12:00:00,03/15/2023 10:46:40,03/17/2023 00:18:22,03/17/2023 00:18:36,FALSE,Fail,"`-106.74411,35.07609",0,"View order: https://dhcie.com/c/9YpkupeS
+
+Order Number: 630331279
+
+Products:
+120u Alien Cross Bubble Hash
+Option: 1g
+Quantity: 1
+Brand: Press Labs
+Price: 48
+-----------
+
+productSubtotal: $60.00
+discount: $12.00
+deliveryFee: $10.00
+cannabisTax: $5.76
+salesTax: $4.23
+total: $67.99
+
+Pecos Valley - 251 98th St.","DOB: 08/16/2000
+Email: devinastokes@gmail.com
+Medical Card: 8557446786532 - Exp: 04/08/2024",,,,,,"`-106.74411,35.07609",03/17/2023 00:18:36,"`-106.74411,35.07609",03/17/2023 00:18:36,"`-106.74411,35.07609",dropoff,,UNABLE_TO_LOCATE,NONE,,FALSE,,,1,Fail,,Priscotty,test order yo,,
+0,,b2394a7b,completed,Priscotty,Priscotty,Scott Prisco,"8000 Montgomery Boulevard Northeast, Albuquerque, NM 87110","`-106.55517,35.12954",Kristen Looney,`+12024234869,03/17/2023 12:00:00,03/17/2023 10:00:00,03/17/2023 11:10:06,03/17/2023 11:54:20,03/17/2023 12:20:55,TRUE,Dutchie pay ,"`-106.554557762,35.127533825",12.42,"View order: https://dhcie.biz/c/Adbx38MB
+
+Order Number: 343154384
+
+Products:
+Sawmill Live Rosin Cold Cure - Flap Jacks
+Option: .5g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 40
+-----------
+Flapjacks
+Option: 1/8oz
+Quantity: 2
+Brand: 
+Price: 70
+-----------
+
+productSubtotal: $110.00
+cannabisTax: $13.20
+salesTax: $8.66
+total: $131.86","DOB: 04/11/1974
+Email: kmlooney001@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/5860d4e3247245f8e5369c3e/282x.png,https://d15p8tr8p0vffz.cloudfront.net/18f36cc242231592cb2b237b/800x.png https://d15p8tr8p0vffz.cloudfront.net/1b1712bc26d9288f48d94a43/800x.png,,,,"`-106.646137293,35.069629792",03/17/2023 11:54:51,"`-106.64428635,35.069650944",03/17/2023 12:18:03,"`-106.555700982,35.130651521",dropoff,,NONE,NONE,,FALSE,Kristen Looney,,3,,,Priscotty,"It's Calero Apartments #903, go all the way to the back (you'll cross a road) txt me when you get to the lot (look for blue and yellow recycling bin) txt me and I'll come out. Txt me if you get lost!
+
+sawmill",,
+0,,3f0bce82,completed,Priscotty,Priscotty,Scott Prisco,"7019 Red Sky Court Northeast, Albuquerque, NM 87111","`-106.54842,35.15889",Ashley Rangel,`+18179019514,03/17/2023 12:30:00,03/17/2023 10:30:00,03/17/2023 09:21:25,03/17/2023 12:22:42,03/17/2023 12:43:40,TRUE,No notes ,"`-106.548328041,35.158916217",8.3296,"View order: https://dhcie.org/c/yExZ1daw
+
+Order Number: 306691916
+
+Products:
+Banana Cream Cake PreRoll
+Option: .5g
+Quantity: 2
+Brand: True Roots
+Price: 9.0
+-----------
+Blue Kush PreRoll
+Option: .5g
+Quantity: 2
+Brand: Yerba Cannabis Co.
+Price: 9.0
+-----------
+Chem x Long Valley OG PreRoll
+Option: 1g
+Quantity: 1
+Brand: True Roots
+Price: 9
+-----------
+Apple Fritter PreRoll
+Option: .5g
+Quantity: 2
+Brand: True Roots
+Price: 10.5
+-----------
+Chocolate Kush PreRoll
+Option: 1g
+Quantity: 1
+Brand: Colfax Cannabis Company
+Price: 9
+-----------
+Rozay PreRoll
+Option: .5g
+Quantity: 2
+Brand: Colfax Cannabis Company
+Price: 10.5
+-----------
+Manzano Express PreRoll
+Option: 1g
+Quantity: 1
+Brand: LX Farms
+Price: 9
+-----------
+Lemon Kush PreRoll
+Option: 1g
+Quantity: 1
+Brand: Oui'd
+Price: 9
+-----------
+
+productSubtotal: $100.00
+discount: $25.00
+deliveryFee: $10.00
+cannabisTax: $8.99
+salesTax: $5.92
+total: $99.91
+
+Canvas","DOB: 01/15/1991
+Email: ashrangel09@yahoo.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/7573368f4072ac3378e3033d/282x.png,https://d15p8tr8p0vffz.cloudfront.net/1557ba1ad63127fc68ea456c/800x.png https://d15p8tr8p0vffz.cloudfront.net/d6976b45ece70f5ee701cf3e/800x.png,,,,"`-106.554422631,35.130428624",03/17/2023 12:23:08,"`-106.552488689,35.130650303",03/17/2023 12:41:53,"`-106.548044923,35.158172809",dropoff,,NONE,NONE,,TRUE,Ashley Rangel,,12,,,Priscotty,,,
+0,,0ce762e9,completed,Priscotty,Priscotty,Scott Prisco,"1916 richmond dr, Albuquerque, NM","`-106.6109293,35.1055328",Alexander Long,`+15059481229,03/17/2023 13:27:00,03/17/2023 12:27:00,03/17/2023 11:27:14,03/17/2023 12:56:43,03/17/2023 13:17:43,TRUE,Notes ,"`-106.610338773,35.103710764",8.2483,"14.0g PVP Mac 2 14.0g (HYB)
+
+Pecos Eubank","DOB: 11/27/1989
+Email: alexevanslong@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/d9e94349820bf758aa576071/282x.png,https://d15p8tr8p0vffz.cloudfront.net/addace671aa6a2a3948b8e8c/800x.png,,,,"`-106.531798475,35.138435038",03/17/2023 12:57:04,"`-106.529994967,35.13893535",03/17/2023 13:13:14,"`-106.6113136,35.105328217",dropoff,,NONE,NONE,,TRUE,Alex Long,,0,,,Priscotty,,,
+0,,d218ac92,completed,Priscotty,Priscotty,Scott Prisco,"9904 Ladder Ranch Lane Southwest, Albuquerque, NM 87121","`-106.74257,35.063775",sean vigil,`+15059676881,03/17/2023 14:30:00,03/17/2023 12:30:00,03/17/2023 12:02:10,03/17/2023 14:23:23,03/17/2023 14:45:53,TRUE,Notes ,"`-106.742689292,35.063893566",12.983,"View order: https://dhcie.biz/c/O5eOhOmP
+
+Order Number: 66516546
+
+Products:
+Las Frescas Gushaz Disposable Vape
+Option: 1g
+Quantity: 1
+Brand: Head Space
+Price: 49.5
+-----------
+
+productSubtotal: $66.00
+discount: $16.50
+deliveryFee: $15.00
+cannabisTax: $5.94
+salesTax: $3.90
+total: $74.34
+
+Canvas Organics San Pedro","DOB: 09/07/1991
+Email: vigilsean67@gmail.com
+Medical Card: 
+Drivers License: 503889293",https://d15p8tr8p0vffz.cloudfront.net/3fd44e2bf8d41a25914e99f0/282x.png,https://d15p8tr8p0vffz.cloudfront.net/6dd504375d22666ea7ee1f71/800x.png https://d15p8tr8p0vffz.cloudfront.net/874016a2dffec20ea4d2a2e3/800x.png,,,,"`-106.569121467,35.101894133",03/17/2023 14:24:05,"`-106.568684561,35.103208013",03/17/2023 14:42:44,"`-106.742354591,35.063548133",dropoff,,NONE,NONE,,TRUE,sean vigil,,1,,,Priscotty,,,
+0,,57de443e,completed,Priscotty,Priscotty,Scott Prisco,"4501 Morris St NE, 2118, Albuquerque, NM 87111","`-106.5262993,35.1331904",Ken Robert,`+15733822067,03/17/2023 16:00:00,03/17/2023 14:00:00,03/17/2023 13:21:52,03/17/2023 15:43:31,03/17/2023 15:57:44,TRUE,Notes ,"`-106.526848913,35.132724389",1.6748,"View order: https://dhcie.com/c/2Z3ulna4
+
+Order Number: 928005644
+
+Products:
+Blood Orange Select Distillate Cartridge | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Pharmers Quality
+Price: 30
+-----------
+D2D Gummies Strawberry Diesel 100mg
+Option: .1g
+Quantity: 3
+Brand: Dairy 2 Dank
+Price: 30
+-----------
+
+productSubtotal: $60.00
+deliveryFee: $10.00
+cannabisTax: $7.19
+salesTax: $5.30
+total: $82.49
+
+Pecos Valley Eubank","DOB: 12/29/1966
+Email: kengrobert@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/bbb6714204964da5be910bed/282x.png,https://d15p8tr8p0vffz.cloudfront.net/c3978b119ed883637f43a149/800x.png https://d15p8tr8p0vffz.cloudfront.net/37f0e176ce487b9fde26f0a2/800x.png,,,,"`-106.531391107,35.13863117",03/17/2023 15:44:55,"`-106.531665464,35.138843976",03/17/2023 15:46:51,"`-106.524822867,35.133289333",dropoff,,NONE,NONE,,TRUE,Ken Robert,,4,,,Priscotty,,,
+0,,e3154b68,completed,Priscotty,Priscotty,Scott Prisco,"813 Parkside Drive Northeast, Albuquerque, NM 87123","`-106.488495,35.08032",Beth Pixley,`+15053215863,03/17/2023 18:30:00,03/17/2023 16:30:00,03/17/2023 14:42:49,03/17/2023 16:39:04,03/17/2023 16:57:30,TRUE,60,"`-106.488428802,35.080369138",8.3302,"View order: https://dhcie.org/c/z3qGK52z
+
+Order Number: 85941287
+
+Products:
+Chem x Long Valley OG PreRoll
+Option: 1g
+Quantity: 2
+Brand: True Roots
+Price: 18
+-----------
+Skywalker OG PreRoll
+Option: 1g
+Quantity: 2
+Brand: High Desert Relief
+Price: 24
+-----------
+
+productSubtotal: $48.00
+discount: $6.00
+deliveryFee: $15.00
+total: $57.00
+
+Canvas organics san pedro","DOB: 05/07/1964
+Email: bthpixley@gmail.com
+Medical Card: B339WD63VU - Exp: 09/02/2024",https://d15p8tr8p0vffz.cloudfront.net/05d7f967eed51815ff18f23c/282x.png,https://d15p8tr8p0vffz.cloudfront.net/7ee8ef053927a04ee0de8b70/800x.png https://d15p8tr8p0vffz.cloudfront.net/e881794db6685ec408c682aa/800x.png,,,,"`-106.577581317,35.12241615",03/17/2023 16:39:25,"`-106.577393389,35.124406075",03/17/2023 16:55:30,"`-106.489197043,35.079150413",dropoff,,NONE,NONE,,FALSE,Beth Pixley,,4,,,Priscotty,,,
+0,,60795336,completed,Priscotty,Priscotty,Scott Prisco,"4104 El Cajon Court Southeast, Rio Rancho, NM 87124","`-106.65366,35.24518",Arian Wellman,`+15056208579,03/17/2023 18:00:00,03/17/2023 16:00:00,03/17/2023 15:08:26,03/17/2023 17:32:39,03/17/2023 17:42:37,TRUE,Dp,"`-106.653742181,35.245331673",4.5356,"View order: https://dhcie.com/c/oESR3bwl
+
+Order Number: 512483402
+
+Products:
+Peanut Buttercups - 80mg
+Option: 0.8g
+Quantity: 1
+Brand: 
+Price: 15
+-----------
+Sawmill Live Rosin Gummies 100mg (SLEEP) - Black Berry
+Option: .1g
+Quantity: 1
+Brand: 
+Price: 20
+-----------
+Vegan Dark Chocolate High Flyer Bar | 100mg
+Option: .1g
+Quantity: 1
+Brand: High 5 Edibles
+Price: 12
+-----------
+1861 | Gummy 100mg - Blackberry
+Option: .1g
+Quantity: 1
+Brand: 1861 Gold
+Price: 12
+-----------
+
+productSubtotal: $59.00
+deliveryFee: $10.00
+cannabisTax: $7.08
+salesTax: $4.57
+total: $80.65
+
+Sawmill cottonwood","DOB: 11/24/1975
+Email: ari.wellman@gmail.com
+Medical Card: 
+Drivers License: 111001260",https://d15p8tr8p0vffz.cloudfront.net/f2c8a718bc5e1924793da48b/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2a18cd700dc6469424f0bbe4/800x.png https://d15p8tr8p0vffz.cloudfront.net/d58ec5cf19239188de6dfb03/800x.png,,,,"`-106.650170533,35.20919765",03/17/2023 17:33:04,"`-106.651790632,35.208360943",03/17/2023 17:41:06,"`-106.652091383,35.244943767",dropoff,,NONE,NONE,,FALSE,Arian Wellman,,4,,,Priscotty,,,
+0,,60af46b2,completed,Priscotty,Priscotty,Scott Prisco,"4610 Eubank Boulevard Northeast, 708, Albuquerque, NM 87111","`-106.531755,35.13318",Jeremy Begay,`+15757069557,03/18/2023 18:30:00,03/18/2023 16:30:00,03/18/2023 15:28:52,03/18/2023 17:40:35,03/18/2023 17:58:29,TRUE,Dp ,"`-106.531198953,35.132991234",5.8733,"View order: https://dhcie.org/c/yv457psK
+
+Order Number: 848211398
+
+Products:
+Pink Runtz
+Option: 3.5g
+Quantity: 1
+Brand: ABQ Cannabis Corp.
+Price: 31.5
+-----------
+
+productSubtotal: $31.50
+deliveryFee: $0.01
+cannabisTax: $3.78
+salesTax: $2.48
+total: $37.77
+
+Canvas Organics","DOB: 12/25/1985
+Email: jpbegay27@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/e4902aa1f640f69e5792b6aa/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f142f364a87ca02442e5af6e/800x.png https://d15p8tr8p0vffz.cloudfront.net/4e6c0a2ad228f56fe26defd5/800x.png,,,,"`-106.59103721,35.11654593",03/18/2023 17:41:10,"`-106.594901105,35.116555176",03/18/2023 17:55:08,"`-106.532772167,35.133705014",dropoff,,NONE,NONE,,FALSE,Jeremy Begay,,1,,,Priscotty,,,
+0,,06f84d18,completed,Priscotty,Priscotty,Scott Prisco,"6901 arvada ave, Albuquerque, NM","`-106.5674715,35.1048992",Vanessa Ibarra,`+13234009289,03/18/2023 20:34:00,03/18/2023 19:34:00,03/18/2023 18:34:42,03/18/2023 18:36:00,03/18/2023 18:45:47,TRUE,60 cash,"`-106.567724299,35.10510101",1.5626,"Peaches & Dream Cartridge 1g, Chem x Long Valley OG PreRoll .5g
+
+Canvas organics",,https://d15p8tr8p0vffz.cloudfront.net/21b1cca8e8a1f22a4af921b7/282x.png,https://d15p8tr8p0vffz.cloudfront.net/6ca4797b31293e952666fd04/800x.png https://d15p8tr8p0vffz.cloudfront.net/cd2c4aed4f654a5c56a765fd/800x.png,,,,"`-106.576975606,35.116465264",03/18/2023 18:37:05,"`-106.57756655,35.110779267",03/18/2023 18:40:26,"`-106.568997467,35.104624325",dropoff,,NONE,NONE,,FALSE,Vanessa Ibarra,,0,,,Priscotty,Hyatt place hotel. Please pull around the back to the parking lot I will meet you there :) ,,
+0,,926afda8,completed,Priscotty,Priscotty,Scott Prisco,"1825 Richmond Drive Northeast, Albuquerque, NM 87106","`-106.61169,35.10468",Elias Adams-Roberts,`+15054337137,03/19/2023 16:00:00,03/19/2023 14:00:00,03/19/2023 13:13:57,03/19/2023 16:17:10,03/19/2023 16:24:29,TRUE,Dp,"`-106.611478528,35.1047596",1.8453,"View order: https://dhcie.org/c/u0T1iSEO
+
+Order Number: 262599166
+
+Products:
+1861 | Gummy 100mg - Blackberry
+Option: .1g
+Quantity: 4
+Brand: 1861 Gold
+Price: 48
+-----------
+
+productSubtotal: $48.00
+deliveryFee: $10.00
+cannabisTax: $5.76
+salesTax: $3.78
+total: $67.54
+
+Sawmill midtown","DOB: 04/27/1985
+Email: eliroberts9@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/0c63c17edcfb27a0af56ace4/282x.png,https://d15p8tr8p0vffz.cloudfront.net/ad3f487282cd9126670077cb/800x.png https://d15p8tr8p0vffz.cloudfront.net/83945b220128ec98d9f7a24a/800x.png,5,People are saying it was one of the best deliveries ever.,,"`-106.616376041,35.109598951",03/19/2023 16:18:26,"`-106.616280076,35.109491667",03/19/2023 16:23:18,"`-106.611350577,35.104371583",dropoff,,NONE,NONE,,TRUE,Elias Adams-Roberts,,4,,,Priscotty,,,
+0,,1d3be586,completed,Priscotty,Priscotty,Scott Prisco,"4401 San Pedro Drive Northeast, 709, Albuquerque, NM 87109","`-106.57864,35.136225",Ivan Leonard,`+15204479702,03/19/2023 18:30:00,03/19/2023 16:30:00,03/19/2023 14:31:37,03/19/2023 18:04:04,03/19/2023 18:11:08,TRUE,Dp,"`-106.579368353,35.136560706",2.1971,"View order: https://dhcie.com/c/hatmZ5Ey
+
+Order Number: 529696057
+
+Products:
+Blueberry Dark Chocolate | 300mg
+Option: 3g
+Quantity: 2
+Brand: Bhang
+Price: 40.5
+-----------
+
+productSubtotal: $54.00
+discount: $13.50
+deliveryFee: $0.01
+total: $40.51
+
+Canvas Organics san pedro","DOB: 05/14/1994
+Email: ivanleonard14@gmail.com
+Medical Card: 0519381QPJP809678001 - Exp: 05/12/2023
+Drivers License: 518906089",https://d15p8tr8p0vffz.cloudfront.net/2a7c95f82b6961723d42d62f/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8d89851c63b4b5cca219d8ba/800x.png,,,,"`-106.580471081,35.116482942",03/19/2023 18:04:18,"`-106.582319212,35.116481758",03/19/2023 18:09:50,"`-106.577524899,35.135283549",dropoff,,NONE,NONE,,FALSE,Ivan Leonard,,2,,,Priscotty,,,
+0,,9b3167f0,completed,Priscotty,Priscotty,Scott Prisco,"3011 Jane Place Northeast, 149, Albuquerque, NM 87111","`-106.5205,35.11721",Tamas Geczy,`+14196998953,03/20/2023 14:30:00,03/20/2023 12:30:00,03/20/2023 11:22:52,03/20/2023 14:38:54,03/20/2023 14:58:39,TRUE,Dp,"`-106.520345576,35.117798964",5.9483,"View order: https://dhcie.com/c/6VFjGxyR
+
+Order Number: 332096565
+
+Products:
+Hybrid Cured Badder
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 30
+-----------
+Grandpa Hulk Terps On The Rocks
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 56.25
+-----------
+
+productSubtotal: $115.00
+discount: $28.75
+deliveryFee: $10.00
+total: $96.25
+
+Canvas Organics","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/860fb7c24993a18128efbe8c/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8cd64f741fff0bf927f4e15d/800x.png https://d15p8tr8p0vffz.cloudfront.net/6dca005f4e245fe2ddcfaa98/800x.png,,,,"`-106.584066292,35.116496249",03/20/2023 14:39:08,"`-106.585746455,35.116570458",03/20/2023 14:50:54,"`-106.521003083,35.116186714",dropoff,,NONE,NONE,,FALSE,Tamas Geczy,,2,,,Priscotty,"Fully blind, hoping none of my choices are slushy / liquid wax, if so please let me know. Fire entrace should be open!",,
+0,,f2513a52,completed,Priscotty,Priscotty,Scott Prisco,"8808 Vallejo Place Northeast, Albuquerque, NM 87122","`-106.54487,35.18056",Leslie duBois,`+19174453314,03/21/2023 14:00:00,03/21/2023 12:00:00,03/21/2023 11:23:49,03/21/2023 13:08:33,03/21/2023 13:26:27,TRUE,None ,"`-106.545006372,35.180623193",7.1873,"View order: https://dhcie.biz/c/VtLhhI9f
+
+Order Number: 452570571
+
+Products:
+Blueberry Gushers Surf Live Resin Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: 
+Price: 47
+-----------
+Skywalker Classic Surf Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 43
+-----------
+Super Lemon Haze Classic Surf Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 43
+-----------
+
+productSubtotal: $133.00
+deliveryFee: $10.00
+cannabisTax: $15.96
+salesTax: $11.73
+total: $170.69
+
+Pecso valley Eubank",Jane Customer,https://d15p8tr8p0vffz.cloudfront.net/ff93c241aebd920e2bff5f6b/282x.png,https://d15p8tr8p0vffz.cloudfront.net/bda7ed617b049d508c92622c/800x.png,,,,"`-106.585948892,35.116520461",03/21/2023 13:09:10,"`-106.586352687,35.117530318",03/21/2023 13:24:24,"`-106.544358558,35.180081638",dropoff,,NONE,NONE,,FALSE,Leslie duBois,,3,,,Priscotty,,,
+0,,0130d452,completed,Priscotty,Priscotty,Scott Prisco,"2500 Carlisle Boulevard Northeast, 1049, Albuquerque, NM 87110","`-106.60096,35.10658",Liana Veltri,`+15053700125,03/21/2023 14:00:00,03/21/2023 12:00:00,03/21/2023 11:39:25,03/21/2023 13:31:23,03/21/2023 14:23:02,TRUE,Dp ,"`-106.602581303,35.108029844",16.365,"View order: https://dhcie.org/c/aMOCA5MG
+
+Order Number: 766721813
+
+Products:
+Midnight Berry Disposable
+Option: .5g
+Quantity: 1
+Brand: Dompen
+Price: 34.5
+-----------
+California Citrus Disposable
+Option: .5g
+Quantity: 1
+Brand: Dompen
+Price: 34.5
+-----------
+
+productSubtotal: $92.00
+discount: $23.00
+deliveryFee: $10.00
+cannabisTax: $8.27
+salesTax: $5.44
+total: $92.71
+
+canvas organics","DOB: 01/10/1997
+Email: veltri.liana@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/43137b5fc8e942ff5b84e15f/282x.png,https://d15p8tr8p0vffz.cloudfront.net/814824223a8dd2bf40ef24ff/800x.png,,,,"`-106.540015413,35.152900772",03/21/2023 13:31:32,"`-106.539971666,35.151793209",03/21/2023 14:23:01,"`-106.602581303,35.108029844",dropoff,,NONE,NONE,,FALSE,Liana Veltri,,2,,,Priscotty,,,
+0,,dc2ff35d,completed,Priscotty,Priscotty,Scott Prisco,"14314 Central Avenue Southwest, Albuquerque, New Mexico 87121","`-106.9486345,35.029219",Daniel  Henry Henry,`+13462189316,,,03/19/2023 15:00:31,03/21/2023 16:30:53,03/21/2023 16:31:19,TRUE,Cash ,"`-106.570670511,35.099274819",0,Order 4491:,,https://d15p8tr8p0vffz.cloudfront.net/9d3f1530a54c05085aac6d9e/282x.png,https://d15p8tr8p0vffz.cloudfront.net/55c3b5d73645146ff402afe9/800x.png,,,,"`-106.570670511,35.099274819",03/21/2023 16:30:54,"`-106.570670511,35.099274819",03/21/2023 16:31:19,"`-106.570670511,35.099274819",dropoff,,NONE,NONE,,FALSE,Daniel  Henry Henry,,0,,,Priscotty,,,
+0,,7edf2888,completed,Priscotty,Priscotty,Scott Prisco,"1000 Lead Ave SW, 1002, Albuquerque, NM 87102","`-106.6594802,35.0823722",Marissa Lovato,`+15057202040,03/21/2023 18:00:00,03/21/2023 16:00:00,03/21/2023 14:51:50,03/21/2023 16:31:28,03/21/2023 18:10:30,TRUE,Dutchie ,"`-106.659489756,35.082499372",18.264,"View order: https://dhcie.com/c/Gfq1rVLI
+
+Order Number: 557765505
+
+Products:
+PEX Drop | 0.8g
+Option: 0.8g
+Quantity: 1
+Brand: Bloom
+Price: 38
+-----------
+Maui Wowie Drop | 0.8g
+Option: 0.8g
+Quantity: 1
+Brand: Bloom
+Price: 38
+-----------
+
+productSubtotal: $76.00
+deliveryFee: $20.00
+total: $96.00
+
+Eubank Blvd","DOB: 09/25/1989
+Email: lovm025@gmail.com
+Medical Card: 3776714250379397 - Exp: 08/10/2025",https://d15p8tr8p0vffz.cloudfront.net/c9eb0edf71870d7b763e09ad/282x.png,https://d15p8tr8p0vffz.cloudfront.net/43403e0c9dca1f8c746ea8d5/800x.png https://d15p8tr8p0vffz.cloudfront.net/ae6d87072a8deb4209f9f5c8/800x.png,,,,"`-106.570700869,35.099241076",03/21/2023 16:36:21,"`-106.570659069,35.099197438",03/21/2023 18:07:51,"`-106.658727933,35.082492583",dropoff,,NONE,NONE,,TRUE,Marissa Lovato,,2,,,Priscotty,,,
+0,,b123ac23,completed,Priscotty,Priscotty,Scott Prisco,"1540 Glendale Court Southeast, Rio Rancho, NM 87124","`-106.70417,35.24268",Omar Reed,`+15052800819,03/21/2023 18:30:00,03/21/2023 18:00:00,03/21/2023 17:02:07,03/21/2023 18:41:42,03/21/2023 18:53:21,TRUE,70,"`-106.704099424,35.24284222",4.7696,"View order: https://dhcie.biz/c/HAheP3mX
+
+Order Number: 911977071
+
+Products:
+Sawmill Live Rosin - (H) Wedding Pie
+Option: .5g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 45
+-----------
+
+productSubtotal: $45.00
+deliveryFee: $10.00
+total: $55.00
+
+Cottonwood","DOB: 09/16/1993
+Medical Card: X95R4A84RU - Exp: 03/01/2026
+Drivers License: 509489939",https://d15p8tr8p0vffz.cloudfront.net/e45b0bb8e9f4be7d15b85dd8/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f9dc341d188ad87b2d3d37c3/800x.png https://d15p8tr8p0vffz.cloudfront.net/a1a76cefeba696cc9b86ac5a/800x.png,,,,"`-106.650876181,35.206635031",03/21/2023 18:42:35,"`-106.651795683,35.2076991",03/21/2023 18:50:58,"`-106.703287962,35.243298451",dropoff,,NONE,NONE,,TRUE,Omar Reed,,1,,,Priscotty,,,
+0,,e6f2701f,completed,Priscotty,Priscotty,Scott Prisco,"1936 Summer Breeze Dr NW, Albuquerque, NM 87120","`-106.7416397,35.1037534",David Dillard,`+13607088212,03/21/2023 20:00:00,03/21/2023 18:00:00,03/21/2023 16:44:24,03/21/2023 18:53:27,03/21/2023 19:27:53,TRUE,Dp,"`-106.741753277,35.103715323",17.714,"View order: https://dhcie.biz/c/iAACiTbu
+
+Order Number: 40806749
+
+Products:
+PVP ECO Mac 2 (HYB)
+Option: 1/2oz
+Quantity: 1
+Brand: PVP
+Price: 55
+-----------
+
+productSubtotal: $55.00
+deliveryFee: $10.00
+cannabisTax: $6.60
+salesTax: $4.85
+total: $76.45
+
+Pecos 98th","DOB: 01/18/1988
+Email: Daviddillard6@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/452390cd52dbbf0a26387d70/282x.png,https://d15p8tr8p0vffz.cloudfront.net/926d51ad93d9629dfc1c6c44/800x.png https://d15p8tr8p0vffz.cloudfront.net/efd3b056069f4fc24aa5752e/800x.png,,,,"`-106.703064771,35.243233822",03/21/2023 18:54:16,"`-106.7027369,35.241937967",03/21/2023 19:26:05,"`-106.742285728,35.103037304",dropoff,,NONE,NONE,,TRUE,David Dillard,,1,,,Priscotty,,,
+0,,f7cb61e3,completed,Priscotty,Priscotty,Scott Prisco,"4401 San Pedro Dr NE, 709, Albuquerque, NM 87109","`-106.5794467,35.1365171",Ivan Leonard,`+15204479702,03/22/2023 14:30:00,03/22/2023 12:30:00,03/22/2023 12:15:13,03/22/2023 17:25:04,03/22/2023 17:25:25,TRUE,None ,"`-106.568642383,35.076376967",0,"View order: https://dhcie.com/c/GLEoL8CG
+
+Order Number: 32799251
+
+Products:
+Blueberry Dark Chocolate | 300mg
+Option: 3g
+Quantity: 2
+Brand: Bhang
+Price: 40.5
+-----------
+
+productSubtotal: $54.00
+discount: $13.50
+deliveryFee: $10.00
+total: $50.50
+
+Canvas Organics","DOB: 05/14/1994
+Email: ivanleonard14@gmail.com
+Medical Card: 0519381QPJP809678001 - Exp: 05/12/2023
+Drivers License: 518906089",https://d15p8tr8p0vffz.cloudfront.net/64308b92483e2f8a6a726805/282x.png,https://d15p8tr8p0vffz.cloudfront.net/d675f1f3171fff6fa4fe6c6a/800x.png,,,,"`-106.568642383,35.076376967",03/22/2023 17:25:05,"`-106.568642383,35.076376967",03/22/2023 17:25:25,"`-106.568642383,35.076376967",dropoff,,NONE,NONE,,FALSE,Ivan Leonard,,2,,,Priscotty,,,
+0,,51e01521,completed,Priscotty,Priscotty,Scott Prisco,"5419 Darlington Place Northwest, Albuquerque, NM 87114","`-106.69302,35.211195",Dustin Richey,`+15055829091,03/22/2023 18:30:00,03/22/2023 18:00:00,03/22/2023 15:58:12,03/22/2023 18:11:29,03/22/2023 18:29:28,TRUE,120 cash,"`-106.693179947,35.210995383",4.4298,"View order: https://dhcie.biz/c/shu8OYCB
+
+Order Number: 867220266
+
+Products:
+Sawmill Rosin Pod - (H) Unicorn Poop
+Option: .5g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 45
+-----------
+Sawmill Live Rosin Disposable Pod - Frozen Papaya
+Option: .5g
+Quantity: 1
+Brand: 
+Price: 45
+-----------
+Sawmill Live Rosin Gummies 100mg - Blue Raspberry
+Option: .1g
+Quantity: 1
+Brand: Sawmill Rosin
+Price: 18
+-----------
+
+productSubtotal: $108.00
+total: $108.00
+
+Sawmill cottonwood","DOB: 06/09/2003
+Email: richeyt58@gmail.com
+Medical Card: 8069671146261377 - Exp: 05/12/2023
+Drivers License: 516996081",https://d15p8tr8p0vffz.cloudfront.net/35bfa2617a9cfb3831343821/282x.png,https://d15p8tr8p0vffz.cloudfront.net/70c2ba74b156511a2c376550/800x.png https://d15p8tr8p0vffz.cloudfront.net/88241101866e6ec3c99a3e97/800x.png,,,,"`-106.65250109,35.209303838",03/22/2023 18:11:43,"`-106.654129621,35.210968727",03/22/2023 18:27:59,"`-106.693587545,35.211606644",dropoff,,NONE,NONE,,TRUE,Dustin Richey,,3,,,Priscotty,,,
+0,,c26b2706,completed,Priscotty,Priscotty,Scott Prisco,"2201 Ambassador Road Northeast, 416, Albuquerque, NM 87112","`-106.544833,35.10686",Tianna Williams,`+15053228862,03/22/2023 19:45:00,03/22/2023 18:00:00,03/22/2023 14:16:30,03/22/2023 18:32:59,03/23/2023 21:23:45,FALSE,"
+
+Store did it ","`-106.61868553,35.078667271",116.9,"View order: https://dhcie.com/c/g6kGjrgf
+
+Order Number: 832087248
+
+Products:
+Sawmill Battery + Charger
+Option: N/A
+Quantity: 1
+Brand: 
+Price: 20
+-----------
+
+productSubtotal: $20.00
+deliveryFee: $10.00
+salesTax: $1.58
+total: $31.58
+
+Sawmill upotown","DOB: 04/22/1993
+Email: williams_tianna83@yahoo.com",,https://d15p8tr8p0vffz.cloudfront.net/3a85346fa11ab9536708db4e/800x.png,,,,"`-106.674238121,35.205611091",03/22/2023 18:33:44,"`-106.668244,35.205720033",03/23/2023 21:22:11,"`-106.61868553,35.078667271",dropoff,,OTHER,NONE,,TRUE,,,1,Store did it ,,Priscotty,,,
+0,,47cc107d,completed,Priscotty,Priscotty,Scott Prisco,"408 Rainbow Court Southeast, Albuquerque, New Mexico 87123","`-106.5063046,35.0649167",Su  Kil Menasion,`+15809514015,,,03/23/2023 21:01:50,03/23/2023 21:29:52,03/23/2023 21:53:37,TRUE,40,"`-106.50660068,35.064999593",9.0491,Order 4626:,,https://d15p8tr8p0vffz.cloudfront.net/03967805c27038ee0cf6026f/282x.png,https://d15p8tr8p0vffz.cloudfront.net/afa54653a7ddf30b70b5d631/800x.png https://d15p8tr8p0vffz.cloudfront.net/de7803f15bccaf90f8802966/800x.png,,,,"`-106.61837655,35.078713533",03/23/2023 21:30:49,"`-106.622043535,35.079932545",03/23/2023 21:51:15,"`-106.50688635,35.06439922",dropoff,,NONE,NONE,,TRUE,Su  Kil Menasion,,0,,,Priscotty,,,
+0,,cc60621a,completed,Priscotty,Priscotty,Scott Prisco,"6565 Americas Parkway Northeast, Albuquerque, NM 87110","`-106.570995,35.100515",Tia Huffman,`+19084250052,03/24/2023 18:00:00,03/24/2023 16:00:00,03/24/2023 14:26:44,03/24/2023 14:27:41,03/24/2023 14:27:59,TRUE,None ,"`-106.570900084,35.10056036",0,"View order: https://dhcie.org/c/8xPUkSf8
+
+Order Number: 400977588
+
+Products:
+All Gas Flower by PVP
+Option: 1/8oz
+Quantity: 1
+Brand: PVP
+Price: 18.75
+-----------
+
+productSubtotal: $25.00
+discount: $6.25
+deliveryFee: $15.00
+cannabisTax: $2.25
+salesTax: $1.65
+total: $37.65
+
+Eubank Pecos",DOB: 03/20/1995,https://d15p8tr8p0vffz.cloudfront.net/203eb542bf6944fee59c52d5/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5bca0fafe83f202acd9c8e43/800x.png,,,,"`-106.570900084,35.10056036",03/24/2023 14:27:41,"`-106.570900084,35.10056036",03/24/2023 14:27:59,"`-106.570900084,35.10056036",dropoff,,NONE,NONE,,FALSE,Scott  Prisco,,1,,,Priscotty,,,
+0,,f7c736dc,completed,Priscotty,Priscotty,Scott Prisco,"1215 Summer Avenue Northwest, Albuquerque, NM 87104","`-106.659755,35.098015",Tia Huffman,`+19084250052,03/24/2023 18:00:00,03/24/2023 16:00:00,03/24/2023 14:39:17,03/24/2023 14:39:34,03/24/2023 14:39:51,TRUE,None ,"`-106.659755,35.098015",0,"View order: https://dhcie.org/c/2BNs8Au6
+
+Order Number: 483727914
+
+Products:
+Alien Rock Candy Pre-Roll by PVP
+Option: .5g
+Quantity: 1
+Brand: PVP
+Price: 3.75
+-----------
+
+productSubtotal: $5.00
+discount: $1.25
+deliveryFee: $15.00
+cannabisTax: $0.45
+salesTax: $0.33
+total: $19.53",DOB: 03/20/1995,https://d15p8tr8p0vffz.cloudfront.net/52afae99b4a1444ac6f87ec6/282x.png,https://d15p8tr8p0vffz.cloudfront.net/1933a0b1c612cacf486b009d/800x.png,,,,"`-106.659755,35.098015",03/24/2023 14:39:51,"`-106.659755,35.098015",03/24/2023 14:39:51,"`-106.659755,35.098015",dropoff,,NONE,NONE,,FALSE,Scott  Priscotty,,1,,,Priscotty,,,
+0,,2f87f560,completed,Priscotty,Priscotty,Scott Prisco,"1215 summer ave nw, Albuquerque, NM","`-106.6598257,35.0979597",Tia Huffman,`+19084250052,03/24/2023 17:02:13,03/24/2023 16:02:13,03/24/2023 15:02:13,03/24/2023 15:02:42,03/24/2023 15:02:57,TRUE,Notes ,"`-106.570860498,35.100540742",0,3.5g MC Bling 3.5g Flower by PVP,DOB: 03/20/1995,https://d15p8tr8p0vffz.cloudfront.net/32208bdefd8733eac4a20943/282x.png,https://d15p8tr8p0vffz.cloudfront.net/355711bba1a9ac242375461c/800x.png,,,,"`-106.570860498,35.100540742",03/24/2023 15:02:42,"`-106.570860498,35.100540742",03/24/2023 15:02:57,"`-106.570860498,35.100540742",dropoff,,NONE,NONE,,FALSE,Scott  Prisco,,0,,,Priscotty,,,
+0,,eef46917,completed,Priscotty,Priscotty,Scott Prisco,"1215 summer ave nw, Albuquerque, NM","`-106.6598257,35.0979597",Tia Huffman,`+19084250052,03/24/2023 17:12:12,03/24/2023 16:12:12,03/24/2023 15:12:13,03/24/2023 15:13:00,03/24/2023 15:13:14,TRUE,Notes ,"`-106.5708066,35.10066224",0,London Pound Cake 1g Flower by PVP,DOB: 03/20/1995,https://d15p8tr8p0vffz.cloudfront.net/c0568e27942af4af9e770a99/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5b7275c78554a7d9acd5577a/800x.png,,,,"`-106.5708066,35.10066224",03/24/2023 15:13:01,"`-106.5708066,35.10066224",03/24/2023 15:13:14,"`-106.5708066,35.10066224",dropoff,,NONE,NONE,,FALSE,scott prisco,,0,,,Priscotty,,,
+0,,1cb37b1c,completed,Priscotty,Priscotty,Scott Prisco,"8410 hampton ave, Albuquerque, NM","`-106.5503279,35.1823093",Jonathan Woodward,`+15059807202,03/24/2023 16:42:28,03/24/2023 15:42:28,03/24/2023 14:42:29,03/24/2023 16:39:10,03/24/2023 19:44:00,FALSE,Not home ,"`-106.74388794,35.076957696",57.001,"Nightmare Cookies 0.5g Pre-Roll by PVP, Spiced Punch 0.5g Pre-Roll by PVP, Holy Grail 0.5g Pre-Roll by PVP, LR BCC .5g Cart",,,https://d15p8tr8p0vffz.cloudfront.net/b0f9faa5598bee5f1480f9b2/800x.png,,,,"`-106.568730783,35.108974",03/24/2023 16:39:31,"`-106.5687535,35.111381967",03/24/2023 17:19:56,"`-106.548874885,35.182574467",dropoff,,OTHER,NONE,,FALSE,,,0,Not home ,,Priscotty,,,
+0,,9.56543E+05,completed,Priscotty,Priscotty,Scott Prisco,"9701 Travina Ct SW, Albuquerque, NM 87121","`-106.7402114,35.0618313",Michael Engelhardt,`+15055144255,03/24/2023 20:00:00,03/24/2023 18:00:00,03/24/2023 17:24:59,03/24/2023 19:44:03,03/24/2023 19:47:24,TRUE,None ,"`-106.740106702,35.06180495",0.94206,"View order: https://dhcie.biz/c/HrpneEhY
+
+Order Number: 818548080
+
+Products:
+Kush Mint Flower by PVP
+Option: 1/8oz
+Quantity: 2
+Brand: PVP
+Price: 50
+-----------
+Super Runtz Pre-Roll by PVP
+Option: .5g
+Quantity: 2
+Brand: PVP
+Price: 10
+-----------
+
+productSubtotal: $60.00
+deliveryFee: $10.00
+cannabisTax: $7.20
+salesTax: $5.29
+total: $82.49
+
+pecos 98th","DOB: 06/23/1976
+Email: biggz0313@gmail.com",https://d15p8tr8p0vffz.cloudfront.net/fbe8ee910fc0270ff2798b8f/282x.png,https://d15p8tr8p0vffz.cloudfront.net/961babac9e4db96d38d84545/800x.png https://d15p8tr8p0vffz.cloudfront.net/f3fb2f4e1c2673b1a17453d1/800x.png,,,,"`-106.742847733,35.0735025",03/24/2023 19:44:20,"`-106.742673783,35.071901617",03/24/2023 19:45:26,"`-106.740356117,35.062780283",dropoff,,NONE,NONE,,TRUE,Michael Engelhardt,,4,,,Priscotty,,,
+0,,1726cc2d,completed,Priscotty,Priscotty,Scott Prisco,"640 Grove Street Northeast, Albuquerque, New Mexico 87108","`-106.5616908,35.0851076",Chloe  Sweeney,`+15059177824,,,03/24/2023 21:02:38,03/24/2023 21:19:36,03/24/2023 21:58:17,FALSE,Not there,"`-106.618713974,35.07864959",14.775,Order 4666:,,,,,,,"`-106.618578194,35.078673871",03/24/2023 21:20:31,"`-106.61700775,35.079112984",03/24/2023 21:33:30,"`-106.563084927,35.085213224",dropoff,,OTHER,NONE,,FALSE,,,0,Not there,,Priscotty,,,
+0,,f24b8c95,completed,Priscotty,Priscotty,Scott Prisco,"6405 Trujillo Road Southwest, Albuquerque, NM 87121","`-106.70595,35.07406",JEFFERY A FINNEGAN,`+15053479296,03/25/2023 14:00:00,03/25/2023 12:00:00,03/25/2023 11:53:38,03/25/2023 14:22:37,03/25/2023 14:33:31,TRUE,Cash ,"`-106.705994909,35.073949577",2.9998,"View order: https://dhcie.org/c/TIKANe9r
+
+Order Number: 580946196
+
+Products:
+Gary Payton by PVP
+Option: 1/2oz
+Quantity: 1
+Brand: PVP
+Price: 48.75
+-----------
+PVP ECO Don Carlos (IDH)
+Option: 1/2oz
+Quantity: 1
+Brand: PVP
+Price: 41.25
+-----------
+Juicy J Papers Grape
+Option: N/A
+Quantity: 1
+Brand: Phresh Picks
+Price: 3
+-----------
+
+productSubtotal: $123.00
+discount: $30.00
+deliveryFee: $10.00
+cannabisTax: $10.79
+salesTax: $8.18
+total: $121.97
+
+98th","DOB: 10/27/1978
+Email: Buckshot505@yahoo.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/eb3c8e038347c8e05b70ea1c/282x.png,https://d15p8tr8p0vffz.cloudfront.net/1021bdfeb5d6b8b793a703f5/800x.png https://d15p8tr8p0vffz.cloudfront.net/684b962d3d007cd6c8a9722f/800x.png,,,,"`-106.744997922,35.076547992",03/25/2023 14:24:05,"`-106.744598504,35.07656087",03/25/2023 14:31:12,"`-106.706125123,35.075144367",dropoff,,NONE,NONE,,TRUE,Jeff Finnegan,,3,,,Priscotty,,,
+0,,0a710791,completed,Priscotty,Priscotty,Scott Prisco,"1215 Summer Avenue Northwest, Albuquerque, NM 87104","`-106.659755,35.098015",Tia Huffman,`+19084250052,03/25/2023 12:00:00,03/25/2023 10:00:00,03/25/2023 09:30:00,03/25/2023 14:38:11,03/25/2023 17:50:00,FALSE,"Test 
+
+Test ","`-106.571082522,35.100304676",21.687,"View order: https://dhcie.org/c/KBHdeNkl
+
+Order Number: 304415808
+
+Products:
+Sawmill Live Rosin Disposable Pod - Wedding Cake
+Option: .5g
+Quantity: 1
+Brand: 
+Price: 45
+-----------
+
+productSubtotal: $45.00
+deliveryFee: $10.00
+cannabisTax: $5.40
+salesTax: $3.54
+total: $63.94",DOB: 03/20/1995,,,,,,"`-106.687980155,35.08493714",03/25/2023 14:38:43,"`-106.68576226,35.085424388",03/25/2023 17:49:56,"`-106.571082522,35.100304676",dropoff,,OTHER,NONE,,FALSE,,,1,Test ,,Priscotty,,,
+0,,69e99475,completed,Priscotty,Priscotty,Scott Prisco,"8000 Paseo Del Norte Blvd NE, Albuquerque, NM 87122","`-106.5574313,35.173564",Tia Huffman,`+19084250052,03/25/2023 12:00:00,03/25/2023 10:00:00,03/25/2023 10:18:05,03/25/2023 17:50:05,03/25/2023 17:50:15,FALSE,Test ,"`-106.571027845,35.10034367",0,"View order: https://dhcie.org/c/yrjmK0Jy
+
+Order Number: 251478316
+
+Products:
+(S) NMBM Diesel
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 35
+-----------
+
+productSubtotal: $35.00
+deliveryFee: $10.00
+cannabisTax: $4.20
+salesTax: $2.76
+total: $51.96",DOB: 03/20/1995,,,,,,"`-106.571027845,35.10034367",03/25/2023 17:50:05,"`-106.571027845,35.10034367",03/25/2023 17:50:15,"`-106.571027845,35.10034367",dropoff,,OTHER,NONE,,FALSE,,,1,Test ,,Priscotty,,,
+0,,2d928229,completed,Priscotty,Priscotty,Scott Prisco,"1208 4th Street Southwest, Albuquerque, NM 87102","`-106.65357,35.0733",Tia Huffman,`+19084250052,,,03/25/2023 18:09:18,03/25/2023 18:49:30,03/25/2023 18:49:39,FALSE,Test ,"`-106.744854652,35.076523157",0,"View order: https://dhcie.com/c/RKnerWln
+
+Order Number: 709450124
+
+Products:
+Birthday Face
+Option: 3.5g
+Quantity: 1
+Brand: The Grower Circle
+Price: 50
+-----------
+
+productSubtotal: $50.00
+deliveryFee: $15.00
+cannabisTax: $6.00
+salesTax: $3.94
+total: $74.94",DOB: 03/20/1995,,,,,,"`-106.744854652,35.076523157",03/25/2023 18:49:30,"`-106.744854652,35.076523157",03/25/2023 18:49:39,"`-106.744854652,35.076523157",dropoff,,UNABLE_TO_LOCATE,NONE,,FALSE,,,1,,,Priscotty,,,
+0,,b1ed834e,completed,Priscotty,Priscotty,Scott Prisco,"1215 summer ave nw, Albuquerque, NM","`-106.6598257,35.0979597",Tia Huffman,`+19084250052,03/25/2023 20:04:03,03/25/2023 19:04:03,03/25/2023 18:04:04,03/25/2023 18:49:50,03/25/2023 18:49:59,FALSE,Test ,"`-106.6598257,35.0979597",0,LA Kush Cake - 1g,DOB: 03/20/1995,,,,,,"`-106.6598257,35.0979597",03/25/2023 18:49:59,"`-106.6598257,35.0979597",03/25/2023 18:49:59,"`-106.6598257,35.0979597",dropoff,,OTHER,NONE,,FALSE,,,0,Test ,,Priscotty,,,
+0,,12c746f9,completed,Priscotty,Priscotty,Scott Prisco,"9101 schooner rd nw, Albuquerque, NM","`-106.7345008,35.0798878",Megan Waters,`+15055079058,03/25/2023 19:37:00,03/25/2023 18:37:00,03/25/2023 17:37:58,03/25/2023 18:53:22,03/25/2023 18:59:16,TRUE,Cash ,"`-106.734530991,35.079755291",0.9553,"Gummies Blueberry Hibiscus 100mg, Gummies Pineapple Cherry 100mg, 1:1 Salve 1000mg, 14.0g Eco Forbidden Fruit 14.0g Flower by PVP, 3.5g Nightmare Cookies 3.5g Flower by PVP
+
+Pecos 98th",,https://d15p8tr8p0vffz.cloudfront.net/31262452d59bb4889b956b55/282x.png,https://d15p8tr8p0vffz.cloudfront.net/a694d9b83ca810036008aee1/800x.png https://d15p8tr8p0vffz.cloudfront.net/54cce99e3f46a810b12f80ed/800x.png,,,,"`-106.745068481,35.076550153",03/25/2023 18:55:11,"`-106.74454372,35.076221262",03/25/2023 18:56:45,"`-106.735989646,35.080097968",dropoff,,NONE,NONE,,FALSE,Megan Waters,,0,,,Priscotty,,,
+0,,ae9b3dbe,completed,Priscotty,Priscotty,Scott Prisco,"8123 Westover Place Northwest, Albuquerque, NM 87120","`-106.73476,35.09898",Melissa Campbell,`+17158922947,03/25/2023 20:00:00,03/25/2023 18:00:00,03/25/2023 16:55:32,03/25/2023 18:59:23,03/25/2023 19:06:55,TRUE,Cash ,"`-106.734895059,35.098794224",2.9831,"View order: https://dhcie.biz/c/cmu46h9D
+
+Order Number: 78914201
+
+Products:
+Kush Mint Flower by PVP
+Option: 1/8oz
+Quantity: 4
+Brand: PVP
+Price: 75.0
+-----------
+
+productSubtotal: $100.00
+discount: $25.00
+deliveryFee: $10.00
+cannabisTax: $8.99
+salesTax: $6.62
+total: $100.61
+
+Pecos 98th","DOB: 12/07/1971
+Email: mjc12771@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/90388be2f868dfaeec1d0265/282x.png,https://d15p8tr8p0vffz.cloudfront.net/3acf9246fa9f63d159609ad5/800x.png https://d15p8tr8p0vffz.cloudfront.net/a203def8d0eff9aa0f1a54ff/800x.png,,,,"`-106.734585309,35.079828838",03/25/2023 18:59:45,"`-106.733305504,35.079915337",03/25/2023 19:05:25,"`-106.734285533,35.098489117",dropoff,,NONE,NONE,,FALSE,Melissa Campbell ,,4,,,Priscotty,,,
+0,,3a4ab82f,completed,Priscotty,Priscotty,Scott Prisco,"9904 Ladder Ranch Lane Southwest, Albuquerque, NM 87121","`-106.74257,35.063775",sean vigil,`+15059676881,03/25/2023 20:00:00,03/25/2023 18:00:00,03/25/2023 17:27:14,03/25/2023 19:07:12,03/25/2023 19:17:05,TRUE,You ,"`-106.742780255,35.0638984",3.4178,"View order: https://dhcie.com/c/6o3VsJyu
+
+Order Number: 688581800
+
+Products:
+GSCookies Cartridge | 1000mg
+Option: 1g
+Quantity: 1
+Brand: Bloom
+Price: 60
+-----------
+
+productSubtotal: $60.00
+deliveryFee: $10.00
+cannabisTax: $7.20
+salesTax: $5.29
+total: $82.49
+
+Pecos 98th","DOB: 09/07/1991
+Email: vigilsean67@gmail.com
+Medical Card: 
+Drivers License: 503889293",https://d15p8tr8p0vffz.cloudfront.net/bfb4ff674fb98551fde3044d/282x.png,https://d15p8tr8p0vffz.cloudfront.net/ed9751403694de420b44a342/800x.png,,,,"`-106.735494332,35.099181101",03/25/2023 19:07:36,"`-106.734030946,35.098242217",03/25/2023 19:13:59,"`-106.741802185,35.064780388",dropoff,,NONE,NONE,,TRUE,sean vigil,,1,,,Priscotty,,,
+0,,4d9dbdcc,completed,Priscotty,Priscotty,Scott Prisco,"7100 Louisiana Boulevard Northeast, #E207, Albuquerque, NM 87109","`-106.5679,35.16137",Aimee Broussard,`+15055151755,,,03/25/2023 19:28:09,03/25/2023 19:45:49,03/25/2023 20:00:46,TRUE,Dp ,"`-106.567200134,35.161333162",4.6212,"View order: https://dhcie.com/c/vNZfzw6c
+
+Order Number: 344043417
+
+Products:
+Psychedelic Sugar Cookies
+Option: 1g
+Quantity: 1
+Brand: Herbal Edibles
+Price: 9.75
+-----------
+Skywalker OG PreRoll
+Option: 1g
+Quantity: 3
+Brand: High Desert Relief
+Price: 18
+-----------
+Mimosa preroll
+Option: 1g
+Quantity: 2
+Brand: Colfax Cannabis Company
+Price: 18
+-----------
+Grape Ape PreRoll
+Option: 1g
+Quantity: 1
+Brand: Colfax Cannabis Company
+Price: 9
+-----------
+Kush Mints PreRoll
+Option: 1g
+Quantity: 2
+Brand: Colfax Cannabis Company
+Price: 18
+-----------
+Shake2Bake Kiwi 100mg
+Option: 1g
+Quantity: 1
+Brand: Lift Equation
+Price: 9.75
+-----------
+Glittlez PreRoll
+Option: 1g
+Quantity: 1
+Brand: High Desert Relief
+Price: 6
+-----------
+Louis XIII PreRoll
+Option: .5g
+Quantity: 2
+Brand: High Desert Relief
+Price: 8
+-----------
+
+productSubtotal: $148.00
+discount: $51.50
+deliveryFee: $10.00
+cannabisTax: $11.57
+salesTax: $7.61
+total: $125.68
+
+Canvas Organics","DOB: 08/12/1951
+Email: Lucidindigo@aol.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/1661a3efde9c868629df92c7/282x.png,https://d15p8tr8p0vffz.cloudfront.net/7beaca3225999bc232b527ed/800x.png https://d15p8tr8p0vffz.cloudfront.net/3977c98421c196bc915d77eb/800x.png https://d15p8tr8p0vffz.cloudfront.net/0b63e00708190c59af56563d/800x.png,,,,"`-106.576936592,35.116544266",03/25/2023 19:46:31,"`-106.578579733,35.120115083",03/25/2023 19:55:24,"`-106.568677367,35.161051567",dropoff,,NONE,NONE,,TRUE,Aimee Broussard,,13,,,Priscotty,,,
+0,,59339589,completed,Priscotty,Priscotty,Scott Prisco,"6565 Americas Pkwy, Albuquerque, NM 87110","`-106.5710479,35.1005361",Tia Huffman,`+19084250052,03/26/2023 12:00:00,03/26/2023 10:00:00,03/25/2023 09:37:48,03/26/2023 11:33:16,03/26/2023 12:41:41,FALSE,Test ,"`-106.604174861,35.101841832",2.5043,"View order: https://dhcie.org/c/9G3wfe0z
+
+Order Number: 948322102
+
+Products:
+Bonanza - (H) Fruit Punch
+Option: .5g
+Quantity: 1
+Brand: Bonanza
+Price: 35
+-----------
+
+productSubtotal: $35.00
+deliveryFee: $10.00
+cannabisTax: $4.20
+salesTax: $2.76
+total: $51.96
+
+sawmill lomas",DOB: 03/20/1995,,https://d15p8tr8p0vffz.cloudfront.net/245eb43df9c345ee037418c3/800x.png,,,,"`-106.61869809,35.078689989",03/26/2023 11:34:51,"`-106.61869809,35.078689989",03/26/2023 12:41:36,"`-106.604174861,35.101841832",dropoff,,OTHER,NONE,,FALSE,,,1,Test ,,Priscotty,,,
+0,,67459ac0,completed,Priscotty,Priscotty,Scott Prisco,"3011 Jane Place Northeast, 149, Albuquerque, NM 87111","`-106.5205,35.11721",Tamas Geczy,`+14196998953,,,03/26/2023 10:44:46,03/26/2023 12:51:38,03/26/2023 13:02:20,TRUE,Notes ,"`-106.520332646,35.117753562",3.3801,"View order: https://dhcie.com/c/LPm2pcEA
+
+Order Number: 848511893
+
+Products:
+Strawnanna Live Hash Rosin
+Option: 1g
+Quantity: 1
+Brand: Z Labs
+Price: 60
+-----------
+Grape Jelly Terp Sugar
+Option: 1g
+Quantity: 1
+Brand: Yerba Cannabis Co.
+Price: 33.75
+-----------
+Gaschata Live Hash Rosin Mixed Micron
+Option: 1g
+Quantity: 1
+Brand: Olio
+Price: 56.25
+-----------
+
+productSubtotal: $200.00
+discount: $50.00
+deliveryFee: $10.00
+total: $160.00
+
+canvas","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/d30bacaf111c3920a7d9f327/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f15c5ba4f6d03bde7be3b85d/800x.png,,,,"`-106.577369283,35.116879391",03/26/2023 12:52:46,"`-106.577437248,35.116475174",03/26/2023 12:58:56,"`-106.52104275,35.116186714",dropoff,,NONE,NONE,,FALSE,Tamas Geczy,,3,,,Priscotty,,,
+0,,61e97033,completed,Priscotty,Priscotty,Scott Prisco,"6115 Eubank Boulevard Northeast, A/D, Albuquerque, NM 87111","`-106.52611,35.15049",Audi Santos,`+12068160738,,,03/26/2023 12:16:44,03/26/2023 13:35:41,03/26/2023 13:39:36,FALSE,Canceled ,"`-106.577529385,35.116944352",0.067295,"View order: https://dhcie.com/c/Fq7MKQOk
+
+Order Number: 290387197
+
+Products:
+Cereal Milk PreRoll
+Option: .5g
+Quantity: 2
+Brand: Oui'd
+Price: 10.5
+-----------
+Creme Rose PreRoll
+Option: .5g
+Quantity: 2
+Brand: High Desert Relief
+Price: 8
+-----------
+Peanut Butter Breath PreRoll
+Option: 1g
+Quantity: 2
+Brand: High Desert Relief
+Price: 12
+-----------
+Orange Cookies PreRoll
+Option: .5g
+Quantity: 2
+Brand: High Desert Relief
+Price: 8
+-----------
+Banana Cream Cake PreRoll
+Option: .5g
+Quantity: 2
+Brand: True Roots
+Price: 9.0
+-----------
+Honey Capsules | 100mg
+Option: 1g
+Quantity: 1
+Brand: Elevated
+Price: 18
+-----------
+
+productSubtotal: $102.00
+discount: $36.50
+deliveryFee: $10.00
+cannabisTax: $7.85
+salesTax: $5.17
+total: $88.52
+
+Canvas Organics","DOB: 05/17/1983
+Email: audrey.m.forbes.83@gmail.com
+Medical Card:",,,,,,"`-106.577418672,35.116953893",03/26/2023 13:37:15,"`-106.577528641,35.116827492",03/26/2023 13:39:26,"`-106.577529385,35.116944352",dropoff,,OTHER,NONE,,FALSE,,,11,Canceled ,,Priscotty,,,
+0,,f3498249,completed,Priscotty,Priscotty,Scott Prisco,"7504 Prairie Falcon Ave NW, Albuquerque, NM 87114","`-106.7429336,35.1975251",Maureen Fernando ,`+15055145432,,,03/26/2023 12:56:59,03/26/2023 14:04:07,03/26/2023 14:29:51,TRUE,Notes ,"`-106.743031264,35.197640899",12.987,"View order: https://dhcie.com/c/tD7C7XKa
+
+Order Number: 194496624
+
+Products:
+Star Dog
+Option: 3.5g
+Quantity: 1
+Brand: Manzano Partners
+Price: 28
+-----------
+
+productSubtotal: $28.00
+deliveryFee: $15.00
+cannabisTax: $3.36
+salesTax: $2.21
+total: $48.57
+
+Delivery Canvas",DOB: 03/22/1985,https://d15p8tr8p0vffz.cloudfront.net/1be927077d9acbe1e14b3fe5/282x.png,https://d15p8tr8p0vffz.cloudfront.net/bfc933c9d43ca24b6210044e/800x.png https://d15p8tr8p0vffz.cloudfront.net/950caa068cbaf16b0b1d3318/800x.png https://d15p8tr8p0vffz.cloudfront.net/8515ad19a06904c790fec016/800x.png,5,,,"`-106.57751715,35.116428217",03/26/2023 14:05:49,"`-106.58638025,35.12031435",03/26/2023 14:28:10,"`-106.741654617,35.19707055",dropoff,,NONE,NONE,,TRUE,Maureen Fernando ,,1,,,Priscotty,,,
+0,,c89b78b2,completed,Priscotty,Priscotty,Scott Prisco,"1825 Richmond Drive Northeast, Albuquerque, NM 87106","`-106.61169,35.10468",Elias Adams-Roberts,`+15054337137,03/26/2023 16:00:00,03/26/2023 14:00:00,03/26/2023 12:32:00,03/26/2023 14:30:24,03/26/2023 15:13:53,TRUE,Dp ,"`-106.611585639,35.104654318",24.217,"View order: https://dhcie.biz/c/zZH3Aa85
+
+Order Number: 817388892
+
+Products:
+1861 | Gummy 100mg - Blackberry
+Option: .1g
+Quantity: 4
+Brand: 1861 Gold
+Price: 48
+-----------
+
+productSubtotal: $48.00
+deliveryFee: $10.00
+cannabisTax: $5.76
+salesTax: $3.78
+total: $67.54
+
+Midtown","DOB: 04/27/1985
+Email: eliroberts9@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/dc5f9179cd4274d8528c6277/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5a4af758c428de4df778e621/800x.png https://d15p8tr8p0vffz.cloudfront.net/dfd9e94e37f69c9e03c89b7e/800x.png,5,A++ would buy again.,,"`-106.744836744,35.198367319",03/26/2023 14:30:46,"`-106.74274415,35.198490517",03/26/2023 15:12:08,"`-106.610299352,35.104161233",dropoff,,NONE,NONE,,TRUE,Elias Adams-Roberts,,4,,,Priscotty,,,
+0,,40982ec6,completed,Priscotty,Priscotty,Scott Prisco,"6115 Eubank Boulevard Northeast, A/D, Albuquerque, NM 87111","`-106.52611,35.15049",Audi Santos,`+12068160738,,,03/26/2023 14:36:07,03/26/2023 15:15:30,03/26/2023 15:43:39,TRUE,Cash ,"`-106.526148969,35.15062015",10.09,"View order: https://dhcie.biz/c/GcE1tKjd
+
+Order Number: 811725043
+
+Products:
+Star Dog
+Option: 3.5g
+Quantity: 1
+Brand: Manzano Partners
+Price: 28
+-----------
+Creme Rose PreRoll
+Option: .5g
+Quantity: 2
+Brand: High Desert Relief
+Price: 8
+-----------
+Orange Cookies PreRoll
+Option: .5g
+Quantity: 2
+Brand: High Desert Relief
+Price: 8
+-----------
+Peanut Butter Breath PreRoll
+Option: 1g
+Quantity: 2
+Brand: High Desert Relief
+Price: 12
+-----------
+Banana Cream Cake PreRoll
+Option: .5g
+Quantity: 2
+Brand: True Roots
+Price: 9.0
+-----------
+Cereal Milk PreRoll
+Option: .5g
+Quantity: 2
+Brand: Oui'd
+Price: 10.5
+-----------
+Rozay PreRoll
+Option: .5g
+Quantity: 2
+Brand: Colfax Cannabis Company
+Price: 10.5
+-----------
+
+productSubtotal: $120.00
+discount: $34.00
+deliveryFee: $10.00
+cannabisTax: $10.30
+salesTax: $6.79
+total: $113.09
+
+Canvas San pedro","DOB: 05/17/1983
+Email: audrey.m.forbes.83@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/413a5c69a7e30ff393910b3d/282x.png,https://d15p8tr8p0vffz.cloudfront.net/1508c561ce558afca8be5175/800x.png https://d15p8tr8p0vffz.cloudfront.net/552b0347aed61fa0ac5b2008/800x.png https://d15p8tr8p0vffz.cloudfront.net/c9c6ff9b2a242fa1746ea836/800x.png,,,,"`-106.607748184,35.101964843",03/26/2023 15:16:17,"`-106.604932217,35.101973067",03/26/2023 15:41:36,"`-106.52622945,35.150665383",dropoff,,NONE,NONE,,TRUE,Audi Santos,,13,,,Priscotty,,,
+0,,1cf71590,completed,Priscotty,Priscotty,Scott Prisco,"810 Hydra Road Southeast, Rio Rancho, NM 87124","`-106.70702,35.246865",Nicholas Garcia,`+15052059770,,,03/26/2023 19:09:43,03/26/2023 19:57:08,03/26/2023 20:34:08,TRUE,Dp ,"`-106.707325068,35.246868641",17.662,"View order: https://dhcie.biz/c/1Ez3iYCH
+
+Order Number: 224916731
+
+Products:
+Glittlez PreRoll
+Option: 1g
+Quantity: 2
+Brand: High Desert Relief
+Price: 12
+-----------
+Skywalker OG PreRoll
+Option: .5g
+Quantity: 1
+Brand: High Desert Relief
+Price: 4
+-----------
+Banana Bomb PreRoll
+Option: .5g
+Quantity: 1
+Brand: Gila River Organics
+Price: 4.5
+-----------
+Banana Cream Cake PreRoll
+Option: .5g
+Quantity: 1
+Brand: True Roots
+Price: 4.5
+-----------
+Chem x Long Valley OG PreRoll
+Option: 1g
+Quantity: 1
+Brand: True Roots
+Price: 9
+-----------
+Apple Fritter PreRoll
+Option: .5g
+Quantity: 1
+Brand: True Roots
+Price: 5.25
+-----------
+Manzano Express PreRoll
+Option: 1g
+Quantity: 1
+Brand: LX Farms
+Price: 9
+-----------
+
+productSubtotal: $74.00
+discount: $25.75
+deliveryFee: $15.00
+cannabisTax: $5.79
+salesTax: $3.80
+total: $72.84","DOB: 01/03/1999
+Email: nickgar147@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/9a6b450fdd26bbf3ae904a58/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8d95a6bea451cd733861e7ab/800x.png https://d15p8tr8p0vffz.cloudfront.net/9d181f56ce7d8403f0891d3c/800x.png,,,,"`-106.570896874,35.100221402",03/26/2023 19:59:02,"`-106.569876365,35.100538936",03/26/2023 20:32:51,"`-106.707165383,35.246028033",dropoff,,NONE,NONE,,TRUE,Nicholas Garcia,,8,,,Priscotty,,,
+0,,70cff04c,completed,Priscotty,Priscotty,Scott Prisco,"10609 Monte De Neve Drive Northwest, Albuquerque, NM 87114","`-106.691055,35.20995",Tonya Griego,`+15053073719,,,03/27/2023 11:20:35,03/27/2023 11:55:47,03/27/2023 12:02:31,TRUE,Dp,"`-106.690938051,35.210004431",2.6346,"View order: https://dhcie.com/c/KOTCqIe6
+
+Order Number: 859671854
+
+Products:
+(I) Hell's Fire
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 35
+-----------
+Bonanza - (H) Pineapple Express
+Option: .5g
+Quantity: 1
+Brand: Bonanza
+Price: 35
+-----------
+
+productSubtotal: $70.00
+deliveryFee: $10.00
+total: $80.00","DOB: 08/04/1971
+Email: griegort@yahoo.com
+Medical Card: 4C8HGJL235 - Exp: 12/28/2025
+Drivers License: 037936618",https://d15p8tr8p0vffz.cloudfront.net/dfcc1e65739a07bf15a0307a/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2cf55b4601753c21995713c3/800x.png https://d15p8tr8p0vffz.cloudfront.net/f7c581fd76ee5d3f12f5643c/800x.png,,,,"`-106.650152067,35.206997383",03/27/2023 11:56:17,"`-106.651086483,35.206521",03/27/2023 12:00:58,"`-106.690580803,35.210815372",dropoff,,NONE,NONE,,FALSE,Tonya Griego,,2,,,Priscotty,,,
+0,,af065f6c,completed,Priscotty,Priscotty,Scott Prisco,"10433 Milano Street Northwest, Albuquerque, NM 87114","`-106.694725,35.205765",Dylan Waters,`+15059175867,,,03/27/2023 14:41:16,03/27/2023 17:01:53,03/27/2023 17:12:10,TRUE,Dp,"`-106.69469294,35.205750551",3.0938,"View order: https://dhcie.biz/c/NwJi2hbO
+
+Order Number: 56442499
+
+Products:
+(I) Cotton Candy
+Option: 1/4oz
+Quantity: 1
+Brand: 
+Price: 70
+-----------
+(I) Hell's Fire
+Option: 1/4oz
+Quantity: 1
+Brand: 
+Price: 70
+-----------
+(I) Hypothermia
+Option: 1/4oz
+Quantity: 1
+Brand: 
+Price: 70
+-----------
+Flapjacks
+Option: 1/4oz
+Quantity: 1
+Brand: 
+Price: 70
+-----------
+
+productSubtotal: $280.00
+total: $280.00","DOB: 03/15/1990
+Email: waters.dylan123@gmail.com
+Medical Card: SC253LHK62 - Exp: 03/29/2025
+Drivers License: 504586782",https://d15p8tr8p0vffz.cloudfront.net/4f7815c5dc4e20250e664cd1/282x.png,https://d15p8tr8p0vffz.cloudfront.net/599009dbeb0f157553ea24ce/800x.png https://d15p8tr8p0vffz.cloudfront.net/9a6484cc7cf388a695431348/800x.png,,,,"`-106.64928974,35.20811231",03/27/2023 17:02:22,"`-106.65064535,35.20880715",03/27/2023 17:10:05,"`-106.693860459,35.205134851",dropoff,,NONE,NONE,,FALSE,Dylan Waters,,4,,,Priscotty,,,
+0,,f5bfebd5,completed,Priscotty,Priscotty,Scott Prisco,"7500 Sky Court Circle Northeast, Albuquerque, New Mexico 87110","`-106.5613728,35.1056766",Cullen Field-Vujosevic,`+15757810548,,,03/27/2023 16:26:41,03/27/2023 17:51:14,03/27/2023 18:00:17,TRUE,280 cash,"`-106.562471643,35.105280132",3.0983,Order 4754:,,https://d15p8tr8p0vffz.cloudfront.net/020a783e5665f005215fd9b6/282x.png,https://d15p8tr8p0vffz.cloudfront.net/785e27d9604584b60741aeec/800x.png https://d15p8tr8p0vffz.cloudfront.net/4abc2b54fae39e9e86eb9679/800x.png https://d15p8tr8p0vffz.cloudfront.net/74be27f9cb220b5a226df3e0/800x.png https://d15p8tr8p0vffz.cloudfront.net/91a6222780a22530f42584b9/800x.png,,,,"`-106.586313475,35.087950414",03/27/2023 17:52:16,"`-106.586312013,35.087821421",03/27/2023 17:57:59,"`-106.560250095,35.105561873",dropoff,,NONE,NONE,,FALSE,Cullen Field-Vujosevic,,0,,,Priscotty,,,
+0,,7e5f693a,completed,Priscotty,Priscotty,Scott Prisco,"415 Lewis Avenue Southeast, Albuquerque, NM 87102","`-106.64487,35.07177",Stephany Farley,`+15056150714,03/29/2023 12:00:00,03/29/2023 10:00:00,03/29/2023 09:20:11,03/29/2023 11:53:01,03/29/2023 12:22:31,TRUE,Notes ,"`-106.644824267,35.071702684",6.7907,"View order: https://dhcie.biz/c/ZzbbgFpM
+
+Order Number: 828568610
+
+Products:
+(I) Mendo Breath
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+(S) Jack Herer
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 31.5
+-----------
+
+productSubtotal: $47.50
+deliveryFee: $10.00
+cannabisTax: $5.70
+salesTax: $3.74
+total: $66.94
+
+phx","
+Member Group: Delivery",https://d15p8tr8p0vffz.cloudfront.net/a5ff889307e4c044d54703d0/282x.png,https://d15p8tr8p0vffz.cloudfront.net/7e2aac315bece8491b26294a/800x.png,,,,"`-106.62675275,35.0815092",03/29/2023 11:54:02,"`-106.628054967,35.081624367",03/29/2023 12:16:40,"`-106.645001914,35.071580364",dropoff,,NONE,NONE,,FALSE,Stephany Farley,,2,,,Priscotty,,,
+0,,eefe5843,completed,Priscotty,Priscotty,Scott Prisco,"319 Calle Del Rey Southwest, Albuquerque, NM 87121","`-106.734245,35.07101",Dylan Mcginn,`+15054925738,,,03/29/2023 11:27:26,03/29/2023 12:22:35,03/29/2023 12:58:57,TRUE,Notes ,"`-106.734093249,35.070950277",12.63,"View order: https://dhcie.biz/c/NCDujOV3
+
+Order Number: 676722421
+
+Products:
+Eco Forbidden Fruit Flower by PVP
+Option: 1/2oz
+Quantity: 1
+Brand: PVP
+Price: 55
+-----------
+
+productSubtotal: $55.00
+deliveryFee: $10.00
+total: $65.00
+
+pecos 98th","DOB: 04/25/1995
+Email: shabba2352@gmail.com
+Medical Card: 290751238329630 - Exp: 10/21/2023",https://d15p8tr8p0vffz.cloudfront.net/ffaf523bea04c2376cf0d679/282x.png,https://d15p8tr8p0vffz.cloudfront.net/066f1eed83773d2c2728594e/800x.png https://d15p8tr8p0vffz.cloudfront.net/69522cba02efbcfb8ad17dfc/800x.png,,,,"`-106.644522448,35.07162992",03/29/2023 12:23:01,"`-106.644408648,35.073558151",03/29/2023 12:57:30,"`-106.732698416,35.070642383",dropoff,,NONE,NONE,,TRUE,Dylan Mcginn,,1,,,Priscotty,Note for driver. Enter gate on 86th street The gate code is 271 I will buzz you in,,
+0,,53e2fc36,completed,Priscotty,Priscotty,Scott Prisco,"1000 Lead Avenue Southwest, 1002, Albuquerque, NM 87102","`-106.65949,35.08235",Marissa Lovato,`+15057202040,,,03/30/2023 11:42:12,03/30/2023 13:09:10,03/30/2023 13:43:07,TRUE,Notes ,"`-106.659533232,35.082436403",10.981,"View order: https://dhcie.org/c/LopVvWm8
+
+Order Number: 533739219
+
+Products:
+Maui Wowie Drop | 0.8g
+Option: 0.8g
+Quantity: 1
+Brand: Bloom
+Price: 30.4
+-----------
+PEX Drop | 0.8g
+Option: 0.8g
+Quantity: 2
+Brand: Bloom
+Price: 60.8
+-----------
+
+productSubtotal: $114.00
+discount: $22.80
+deliveryFee: $20.00
+total: $111.20
+
+Eubank","DOB: 09/25/1989
+Email: lovm025@gmail.com
+Medical Card: 3776714250379397 - Exp: 08/10/2025",https://d15p8tr8p0vffz.cloudfront.net/56f416555cd80ca804a55bbf/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5e5846a2f0f18f0c1088feda/800x.png https://d15p8tr8p0vffz.cloudfront.net/0ec2b351f5595f9ff38245f5/800x.png,,,,"`-106.53156145,35.138550667",03/30/2023 13:09:48,"`-106.532617432,35.138939031",03/30/2023 13:41:45,"`-106.657864767,35.08236375",dropoff,,NONE,NONE,,TRUE,Marissa Lovato,,3,,,Priscotty,,,
+0,,66e33604,completed,Priscotty,Priscotty,Scott Prisco,"3050 Shannon Ln NE, Rio Rancho, NM 87144","`-106.6742484,35.29777380000001",James Favaron,`+18014202701,,,03/30/2023 15:16:29,03/30/2023 17:15:11,03/30/2023 17:53:48,TRUE,Notes,"`-106.674327295,35.297614697",19.505,"View order: https://dhcie.com/c/vCspraqd
+
+Order Number: 301034085
+
+Products:
+Strawberry Star Dog
+Option: 28g
+Quantity: 1
+Brand: Manzano Partners
+Price: 100
+-----------
+Afghani
+Option: 3.5g
+Quantity: 1
+Brand: Manzano Partners
+Price: 28
+-----------
+King Louis XIII Distillate Cartridge | 1g
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 30
+-----------
+
+productSubtotal: $158.00
+deliveryFee: $15.00
+cannabisTax: $18.95
+salesTax: $12.45
+total: $204.40","DOB: 06/10/1988
+Email: jimmy@favaron.house
+Medical Card: 
+Drivers License: 518860283",https://d15p8tr8p0vffz.cloudfront.net/dce0211460478168f3577606/282x.png,https://d15p8tr8p0vffz.cloudfront.net/ea709c6beb3ecd2f2ba37b74/800x.png https://d15p8tr8p0vffz.cloudfront.net/73a811546f6a69eea7681ad9/800x.png https://d15p8tr8p0vffz.cloudfront.net/4c46f9893d7403ee749a420f/800x.png,,,,"`-106.577379788,35.116800098",03/30/2023 17:15:42,"`-106.577620287,35.117998429",03/30/2023 17:53:43,"`-106.674327295,35.297614697",dropoff,,NONE,NONE,,TRUE,James Favaron,,3,,,Priscotty,,,
+0,,bab12ca2,completed,Priscotty,Priscotty,Scott Prisco,"5800 Osuna Road Northeast, 98, Albuquerque, NM 87109","`-106.58383,35.14318",Meagan Smith,`+13165508774,03/31/2023 12:30:00,03/31/2023 10:30:00,03/31/2023 09:36:19,03/31/2023 13:03:52,03/31/2023 13:05:29,TRUE,Dp,"`-106.571245756,35.100325785",0.037576,"View order: https://dhcie.biz/c/pR5hhfBT
+
+Order Number: 365630381
+
+Products:
+Afghani
+Option: 28g
+Quantity: 1
+Brand: Manzano Partners
+Price: 132.3
+-----------
+
+productSubtotal: $147.00
+discount: $14.70
+deliveryFee: $10.00
+cannabisTax: $15.87
+salesTax: $10.42
+total: $168.59","DOB: 11/10/1996
+Email: Megs.ict86@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/a843c8bf1853b8156a4e900f/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2f3611bb5713aba17c1ba416/800x.png https://d15p8tr8p0vffz.cloudfront.net/23fd1a719c2dc33bcf39f185/800x.png https://d15p8tr8p0vffz.cloudfront.net/ffd395637b5ba85c27576960/800x.png,,,,"`-106.570638511,35.100309555",03/31/2023 13:04:46,"`-106.570964258,35.100208046",03/31/2023 13:05:11,"`-106.571245756,35.100325785",dropoff,,NONE,NONE,,FALSE,Meagan Smith,,1,,,Priscotty,,,
+0,,764d4b70,completed,Priscotty,Priscotty,Scott Prisco,"7019 Red Sky Court Northeast, Albuquerque, NM 87111","`-106.54842,35.15889",Ashley Rangel,`+18179019514,,,03/31/2023 12:35:24,03/31/2023 13:54:22,03/31/2023 13:54:47,TRUE,Notes ,"`-106.54842,35.15889",0,"View order: https://dhcie.com/c/fax9muEa
+
+Order Number: 626322237
+
+Products:
+Super Lemon OG PreRoll
+Option: 1g
+Quantity: 2
+Brand: Manzano Partners
+Price: 7.5
+-----------
+Star Struck PreRoll
+Option: .5g
+Quantity: 2
+Brand: Manzano Partners
+Price: 9.0
+-----------
+Kush Mints PreRoll
+Option: 1g
+Quantity: 1
+Brand: Colfax Cannabis Company
+Price: 9
+-----------
+Lemon Kush PreRoll
+Option: 1g
+Quantity: 1
+Brand: Oui'd
+Price: 9
+-----------
+Gushers PreRoll
+Option: 1g
+Quantity: 1
+Brand: ABQ Cannabis Corp.
+Price: 9
+-----------
+
+productSubtotal: $58.00
+discount: $14.50
+deliveryFee: $10.00
+cannabisTax: $5.22
+salesTax: $3.43
+total: $62.15
+
+Canvas","DOB: 01/15/1991
+Email: ashrangel09@yahoo.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/0adc42c3763cefac33969b09/282x.png,https://d15p8tr8p0vffz.cloudfront.net/9e67d9821c9a49801aaf2409/800x.png https://d15p8tr8p0vffz.cloudfront.net/8b7367b36f697bbf065f4c89/800x.png,,,,"`-106.54842,35.15889",03/31/2023 13:54:47,"`-106.54842,35.15889",03/31/2023 13:54:47,"`-106.54842,35.15889",dropoff,,NONE,NONE,,FALSE,Ashley Rangel,,7,,,Priscotty,,,
+0,,16d58def,completed,Priscotty,Priscotty,Scott Prisco,"10727 Rockcliff Boulevard Northwest, Albuquerque, NM 87114","`-106.71082,35.212985",Jackie Torrez,`+15052902601,,,03/31/2023 15:02:27,03/31/2023 15:35:28,03/31/2023 16:45:13,TRUE,Cash ,"`-106.705477833,35.214276851",18.012,"View order: https://dhcie.org/c/lj0dGg39
+
+Order Number: 792202492
+
+Products:
+(I) Cotton Candy
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+(I) Garlic Cookies (GMO)
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+Flapjacks
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 35
+-----------
+(I) Hell's Fire
+Option: 2g
+Quantity: 1
+Brand: 
+Price: 16
+-----------
+(S) NMBM Diesel
+Option: 1g
+Quantity: 1
+Brand: 
+Price: 10
+-----------
+Budroll - (H) Iceman
+Option: .7g
+Quantity: 2
+Brand: 
+Price: 17.0
+-----------
+Budroll - (H) Runtz
+Option: .7g
+Quantity: 1
+Brand: 
+Price: 8.5
+-----------
+Budroll 5PK - (H) Jungle Diamonds x Wedding Cake Kief
+Option: 1/8oz
+Quantity: 1
+Brand: 
+Price: 37
+-----------
+
+productSubtotal: $155.50
+cannabisTax: $18.66
+salesTax: $12.05
+total: $186.21
+
+Rio rancho","DOB: 07/25/1994
+Drivers License: 507254250",https://d15p8tr8p0vffz.cloudfront.net/2832c2f4f946a94560a27f4e/282x.png,https://d15p8tr8p0vffz.cloudfront.net/6cb9f869b986fa775b229c25/800x.png https://d15p8tr8p0vffz.cloudfront.net/e4a73ccd292028848d5a6c2e/800x.png,,,,"`-106.652564635,35.083638824",03/31/2023 15:36:35,"`-106.652561931,35.083592759",03/31/2023 16:42:53,"`-106.705477833,35.214276851",dropoff,,NONE,NONE,,FALSE,Jackie Torrez,,9,,,Priscotty,,,
+0,,8333dc41,completed,Priscotty,Priscotty,Scott Prisco,"251 98th Street Northwest, Albuquerque, New Mexico 87121","`-106.7451674,35.0767388",TEST 98th CATHY TEST,`+16789391369,,,03/28/2023 01:20:42,03/31/2023 18:52:25,03/31/2023 18:52:34,FALSE,Sd,"`-106.7451674,35.0767388",0,PICKUP,PICKUP,,,,,,"`-106.7451674,35.0767388",03/31/2023 18:52:34,"`-106.7451674,35.0767388",03/31/2023 18:52:34,"`-106.7451674,35.0767388",pickup,,OTHER,NONE,,FALSE,,,0,Sd,,Priscotty,,,
+0,,7a0bf5d5,completed,Priscotty,Priscotty,Scott Prisco,"413 12th Avenue, Indian Rocks Beach, Florida 33785","`-82.84182729999999,27.8965984",TEST 98th CATHY TEST,`+16789391369,,,03/28/2023 01:09:08,03/31/2023 18:52:38,03/31/2023 19:44:52,FALSE,None ,"`-106.577362607,35.1172323",6.7213,DROP OFF,PICKUP,,,,,,"`-106.655170486,35.08479217",03/31/2023 18:54:35,"`-106.655057436,35.084895571",03/31/2023 19:44:43,"`-106.577362607,35.1172323",dropoff,,OTHER,NONE,,FALSE,,,0,None ,,Priscotty,,,
+0,,a1d412d1,completed,Priscotty,Priscotty,Scott Prisco,"169 chappell dr, 314, Albuquerque, NM","`-106.6061735,35.136021",Jorden Newbegin,`+16015393480,03/31/2023 19:44:13,03/31/2023 18:44:13,03/31/2023 17:44:14,03/31/2023 19:44:57,03/31/2023 20:11:16,TRUE,Cash ,"`-106.606795832,35.136083513",4.1764,28.0g Afghani - 28g,,https://d15p8tr8p0vffz.cloudfront.net/56b3c4d7d60f7d948e7df9dc/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f498eb9196922cf720b1432b/800x.png,,,,"`-106.57737354,35.117178592",03/31/2023 19:46:33,"`-106.576837664,35.116708915",03/31/2023 20:07:13,"`-106.6070774,35.135836197",dropoff,,NONE,NONE,,FALSE,Jordan begin,,0,,,Priscotty,We’re on the third floor in 314,,
+0,,ffaa38ec,completed,Priscotty,Priscotty,Scott Prisco,"3016 Commercial Street Northeast, Albuquerque, NM 87107","`-106.63821,35.11727",Nicholas Garcia,`+15052059770,,,03/31/2023 18:21:41,03/31/2023 20:11:20,03/31/2023 20:19:25,TRUE,Dp,"`-106.638581393,35.117334966",2.6555,"View order: https://dhcie.com/c/fGIhT4wr
+
+Order Number: 477081662
+
+Products:
+Super Lemon OG PreRoll
+Option: 1g
+Quantity: 7
+Brand: Manzano Partners
+Price: 26.25
+-----------
+Blue Lime Pie PreRoll
+Option: .5g
+Quantity: 1
+Brand: High Desert Relief
+Price: 4
+-----------
+Melonade 2.0 PreRoll
+Option: 1g
+Quantity: 1
+Brand: High Desert Relief
+Price: 6
+-----------
+Star Struck PreRoll
+Option: .5g
+Quantity: 4
+Brand: Manzano Partners
+Price: 18.0
+-----------
+
+productSubtotal: $78.00
+discount: $23.75
+deliveryFee: $10.00
+cannabisTax: $6.50
+salesTax: $4.28
+total: $75.03","DOB: 01/03/1999
+Email: nickgar147@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/f0042aec100666b094012391/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8e29b7dab9ef59c91f3a270d/800x.png https://d15p8tr8p0vffz.cloudfront.net/06c406971c212eb586189cae/800x.png,,,,"`-106.606795832,35.136083513",03/31/2023 20:11:52,"`-106.606633047,35.135055033",03/31/2023 20:17:06,"`-106.637576663,35.117824575",dropoff,,NONE,NONE,,TRUE,Nicholas Garcia,,13,,,Priscotty,,,
+0,,201de92a,completed,Priscotty,Priscotty,Scott Prisco,"123 Walter Street Northeast, Albuquerque, New Mexico 87102","`-106.6411001,35.0840435",Shawn Ferguson,`+15755137795,,,03/31/2023 20:40:56,03/31/2023 20:49:36,03/31/2023 20:59:24,TRUE,Cash,"`-106.64123071,35.084074894",3.9135,Order 4898:,"DOB: 10/18/1984
+Email: shawnferguson.abqnm@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/1683aeea974885fe61df295d/282x.png,https://d15p8tr8p0vffz.cloudfront.net/d584e7de4ee6b3d27565cbfd/800x.png https://d15p8tr8p0vffz.cloudfront.net/6c928c877afdedf182fdef8b/800x.png https://d15p8tr8p0vffz.cloudfront.net/69bc63bbd51cdf63d5208475/800x.png,,,,"`-106.586308903,35.087546582",03/31/2023 20:50:18,"`-106.589569558,35.08750482",03/31/2023 20:57:28,"`-106.640995995,35.084262271",dropoff,,NONE,NONE,,FALSE,Shawn  Ferguson,,0,,,Priscotty,,,

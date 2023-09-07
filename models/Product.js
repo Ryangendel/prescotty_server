@@ -1,58 +1,34 @@
 const { Schema, model } = require('mongoose');
 
 const ProductSchema = new Schema({
-  product_id: {
+  product: {
     type: String,
     trim: true,
   },
-  product_name: {
+  option: {
     type: String,
     trim: true,
   },
-  product_description: {
-    type: String,
+  quantity: {
+    type: Number,
+    trim: true,
   },
   price: {
     type: Number,
     trim: true,
   },
-  cost: {
+  brand: {
+    type: String,
+    trim: true,
+  },
+  sku: {
     type: Number,
     trim: true,
   },
-  product_category: {
+  type: {
     type: String,
     trim: true,
   },
-  strain_type: {
-    type: String,
-    trim: true,
-  },
-  product_image1: {
-    type: String,
-    trim: true,
-  },
-  product_image2: {
-    type: String,
-    trim: true,
-  },
-  variant_id: {
-    type: String,
-    trim: true,
-  },
-  variant_name: {
-    type: String,
-    trim: true,
-  },
-  variant_sku: {
-    type: String,
-    trim: true,
-  },
-  size: {
-    type: String,
-    trim: true,
-  },
-
 });
 
 const Product = model('Product', ProductSchema);
