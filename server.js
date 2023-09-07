@@ -14,14 +14,14 @@ let db;
 //un: gendelryan
 //pw: 6NlDYpx8QPujyaZQ
 const resetDatabase = async () => {
-    await mongoose.connection.dropDatabase();
+    // await mongoose.connection.dropDatabase();
     console.log('Database reset');
 };
 
 // Connect to MongoDB
 mongoose.connect(
-    //     process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
-    'mongodb://127.0.0.1:27017/prescotty',
+    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
+    //'mongodb://127.0.0.1:27017/prescotty',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -29,7 +29,7 @@ mongoose.connect(
 )
     .then(() => {
         console.log('Connected successfully to MongoDB');
-        resetDatabase()
+        //resetDatabase()
         // You can use mongoose.connection to interact with the database
         const db = mongoose.connection;
         var PORT = 3002
@@ -533,18 +533,28 @@ app.get('/update/:month', (req, res) => {
         });
 });
 
-app.delete('/delete/:id', ({ params }, res) => {
-    Order.findOneAndDelete({ _id: params.id })
-        .then((dbNote) => {
-            if (!dbNote) {
-                res.json({ message: 'No note found with this id!' });
-                return;
-            }
-            res.json(dbNote);
+app.get('/averageminutesperorder', async (req, res) => {
+    var average 
+    const pipeline = [
+        { $match: { minutes_to_complete: { $ne: null } } },
+        { $group: { _id: null, average_minutes: { $avg: '$minutes_to_complete' } } }
+      ];
+      
+      await Order.aggregate(pipeline)
+        .then(result => {
+        
+          if (result.length > 0) {
+            average = result[0].average_minutes;
+            console.log(`The average minutes to complete tasks are: ${average}`);
+          } else {
+            console.log('No documents matched the query.');
+          }
         })
-        .catch((err) => {
-            res.json(err);
+        .catch(err => {
+          console.error('An error occurred:', err);
         });
+      
+      res.send(`The average time per delivery is ${average} minutes`)
 });
 
 app.listen(PORT, () => {
