@@ -20,8 +20,8 @@ const resetDatabase = async () => {
 
 // Connect to MongoDB
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
-    //'mongodb://127.0.0.1:27017/prescotty',
+    // process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
+    'mongodb://127.0.0.1:27017/prescotty',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -29,7 +29,7 @@ mongoose.connect(
 )
     .then(() => {
         console.log('Connected successfully to MongoDB');
-        //resetDatabase()
+        resetDatabase()
         // You can use mongoose.connection to interact with the database
         const db = mongoose.connection;
         var PORT = 3002
@@ -533,6 +533,31 @@ app.get('/update/:month', (req, res) => {
         });
 });
 
+app.get('/averageordervalue', async (req, res) => {
+    var average 
+
+    const pipeline = [
+        { $match: { order_total: { $ne: null } } },
+        { $group: { _id: null, average_order_total: { $avg: '$order_total' } } }
+      ];
+      
+      await Order.aggregate(pipeline)
+        .then(result => {
+        
+          if (result.length > 0) {
+            average = result[0].average_order_total;
+            console.log(`The average Order total is: ${average}`);
+          } else {
+            console.log('No documents matched the query.');
+          }
+        })
+        .catch(err => {
+          console.error('An error occurred:', err);
+        });
+      
+      res.send(`The average order total is ${average} dollars`)
+});
+
 app.get('/averageminutesperorder', async (req, res) => {
     var average 
     const pipeline = [
@@ -555,6 +580,58 @@ app.get('/averageminutesperorder', async (req, res) => {
         });
       
       res.send(`The average time per delivery is ${average} minutes`)
+});
+
+app.get('/averagedistanceperorder/:months', async (req, res) => {
+    fs.createReadStream(`./on_fleet_${req.params.months}.csv`)
+        .pipe(csv())
+        .on('data', async (data) => {
+          
+            if(data.taskType == "dropoff"){
+                
+                    Order.findOneAndUpdate({ onfleet_task_id: data.shortId }, {$set:{"distance_for_delivery": data.distance}},{ new: true, runValidators: true } )
+                    .then((dbNote) => {
+                        // if (!dbNote) {
+                        //     res.json({ message: 'No note found with this id!' });
+                        //     return;
+                        // }
+                        // res.json(dbNote);
+                        console.log("worked")
+                    })
+                    .catch((err) => {
+                        res.json(err);
+                    });
+                    
+                }
+            })
+   
+     
+      
+      res.send(`The average time per delivery is minutes`)
+});
+
+app.get('/averagedistanceperorder', async (req, res) => {
+    var average 
+    const pipeline = [
+        { $match: { distance_for_delivery: { $ne: null } } },
+        { $group: { _id: null, average_distance: { $avg: '$distance_for_delivery' } } }
+      ];
+      
+      await Order.aggregate(pipeline)
+        .then(result => {
+        
+          if (result.length > 0) {
+            average = result[0].average_distance;
+            console.log(`The average minutes to complete tasks are: ${average}`);
+          } else {
+            console.log('No documents matched the query.');
+          }
+        })
+        .catch(err => {
+          console.error('An error occurred:', err);
+        });
+      
+      res.send(`The average distance for each delivery is ${average} miles `)
 });
 
 app.listen(PORT, () => {

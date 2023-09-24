@@ -49,6 +49,9 @@ const OrderSchema = new Schema({
   },
   minutes_to_complete:{
     type:Number
+  },
+  distance_for_delivery:{
+    type:Number
   }
 });
 
