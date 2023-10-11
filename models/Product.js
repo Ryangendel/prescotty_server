@@ -1,7 +1,12 @@
-const { Schema, model } = require('mongoose');
+const { Schema, Types, model } = require('mongoose');
+
 
 const ProductSchema = new Schema({
-  product: {
+  priscottyId: {
+    type: Schema.Types.ObjectId,
+    default: () => new Types.ObjectId(),
+  },
+  product_name: {
     type: String,
     trim: true,
   },
@@ -33,4 +38,4 @@ const ProductSchema = new Schema({
 
 const Product = model('Product', ProductSchema);
 
-module.exports = Product;
+module.exports = {Product, ProductSchema};

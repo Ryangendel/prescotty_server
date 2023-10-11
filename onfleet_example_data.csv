@@ -1,0 +1,610 @@
+Driver Number,Task Number,shortId,status,creatorOrganization,executorOrganization,workerName,destinationAddress,destinationLonLat,recipientsNames,recipientsNumbers,completeBeforeTime,completeAfterTime,creationTime,startTime,completionTime,didSucceed,completionNotes,completionLonLat,distance,taskDetails,recipientNotes,signatureUrl,photoUrl,feedbackRating,feedbackComments,forceCompletedBy,startLonLat,departureTime,departureLonLat,arrivalTime,arrivalLonLat,taskType,dependencies,failureReason,successReason,barcodesCaptured,trackingViewed,signatureText,metadata,quantity,failureNotes,successNotes,merchantOrganization,destinationNotes,idScan.entryMethod,idScan.dob
+3,,66eac368,completed,Priscotty,Priscotty,Joseph Francois (deleted),"911 North Camino Del Pueblo, Bernalillo, New Mexico 87004","`-106.5348781,35.32647499999999",,,,,07/31/2023 14:08:41,08/01/2023 11:10:32,08/01/2023 11:11:21,TRUE,,"`-106.53523966,35.326532739",0.03206,"Minerva
+Rubina or Eric 
+Call 505-615-0714 w/ ?s",,https://d15p8tr8p0vffz.cloudfront.net/11c0209466f73ef3fc87abd5/282x.png,https://d15p8tr8p0vffz.cloudfront.net/9edc48d5e5e463f3856d1b0e/800x.png,,,,"`-106.535314992,35.32648704",08/01/2023 11:10:39,"`-106.535523545,35.326620582",08/01/2023 11:11:01,"`-106.53523966,35.326532739",dropoff,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,9ab4efc4,completed,Priscotty,Priscotty,Joseph Francois (deleted),"251 98th Street Northwest, Suite A, Albuquerque, New Mexico 87121","`-106.7451678,35.0767386",,,,,08/01/2023 11:36:32,08/01/2023 13:17:28,08/01/2023 13:21:21,TRUE,,"`-106.744972908,35.076635159",0.011548,"Transaction ID: 58157328
+3.0 x AL Fligh Prickly Pear Gummies 100mg | 6623021943324853
+1.0 x PVP Gello 14.0g (HYB) | 7929469945331334
+Sub-Total: $113.00
+Total: $123.99",,https://d15p8tr8p0vffz.cloudfront.net/056a3cd3a1022152809910d2/282x.png,https://d15p8tr8p0vffz.cloudfront.net/48ec5d36e31b6c6d3015036c/800x.png https://d15p8tr8p0vffz.cloudfront.net/cf36df4dcbb4f18165cbaab0/800x.png,,,,"`-106.74498607,35.076531712",08/01/2023 13:18:57,"`-106.744972908,35.076635159",08/01/2023 13:20:57,"`-106.744972908,35.076635159",pickup,,NONE,NONE,,FALSE,J,,4,,,Priscotty,,,
+3,,08b5ca42,completed,Priscotty,Priscotty,Joseph Francois (deleted),"5200 Eubank Boulevard Northeast, A2, Albuquerque, New Mexico 87111","`-106.5312014,35.1384196",,,,,08/01/2023 11:31:33,08/01/2023 14:13:21,08/01/2023 14:18:00,TRUE,,"`-106.531670932,35.138380396",0.080159,"Transaction ID: 58152504
+1.0 x HE Mac 1.0g Crumble | 8518117040618277
+1.0 x MTN Grass Valley Girl 1.0g Caviar | 5952500711232096
+1.0 x SCH Black Cherry Candy 1.0g Rosin | 9744270799673539
+Sub-Total: $160.00
+Total: $165.00",,https://d15p8tr8p0vffz.cloudfront.net/94263fb7abb562e4381a35fa/282x.png,https://d15p8tr8p0vffz.cloudfront.net/3360e7733c0860995fa726a4/800x.png https://d15p8tr8p0vffz.cloudfront.net/b4d17b430a6b71202cb652bb/800x.png,,,,"`-106.531539705,35.13864591",08/01/2023 14:15:07,"`-106.531624119,35.138597082",08/01/2023 14:17:37,"`-106.531670932,35.138380396",pickup,,NONE,NONE,,FALSE,J,,3,,,Priscotty,,,
+3,,94d9d4aa,completed,Priscotty,Priscotty,Joseph Francois (deleted),"2780 Butch Cassidy Drive Southwest, Albuquerque, New Mexico 87121","`-106.7297988,35.0366303",Santi  Aguilar,`+15054172208,08/01/2023 13:30:00,,08/01/2023 11:36:32,08/01/2023 13:21:28,08/01/2023 13:31:53,TRUE,,"`-106.729872842,35.036663873",3.2475,"Transaction ID: 58157328
+3.0 x AL Fligh Prickly Pear Gummies 100mg | 6623021943324853
+1.0 x PVP Gello 14.0g (HYB) | 7929469945331334
+Sub-Total: $113.00
+Total: $123.99",,https://d15p8tr8p0vffz.cloudfront.net/9071b34be9579f2ec73cc798/282x.png,https://d15p8tr8p0vffz.cloudfront.net/d989678efce17a37753cf20f/800x.png,,,,"`-106.744929076,35.076666667",08/01/2023 13:22:29,"`-106.743021138,35.074467266",08/01/2023 13:28:50,"`-106.730570262,35.037432311",dropoff,9ab4efc4,NONE,NONE,,FALSE,Santi  Aguilar,,4,,,Priscotty,,,
+3,,f79465a8,completed,Priscotty,Priscotty,Joseph Francois (deleted),"9901 Lomas Boulevard Northeast, suite e, Albuquerque, New Mexico 87112","`-106.536611,35.0876747",,,,,08/01/2023 15:20:34,08/01/2023 16:45:47,08/01/2023 16:46:42,TRUE,,"`-106.536400949,35.08765954",0,"Leafly Order ID: 13990503
+Order Total (tax incl.): 190.4
+Item Summary:
+28.0g CHEM 91
+2 x BERZERKER
+JELLIES MANGO CRUNCH 100MG",,https://d15p8tr8p0vffz.cloudfront.net/3bf3e5e68fc8bb76fc5ec6b5/282x.png,https://d15p8tr8p0vffz.cloudfront.net/a0a037f18c468ea5b12dcf0c/800x.png https://d15p8tr8p0vffz.cloudfront.net/2a421ed7b85dba0de5713178/800x.png,,,,"`-106.536400949,35.08765954",08/01/2023 16:46:39,"`-106.536400949,35.08765954",08/01/2023 16:46:42,"`-106.536400949,35.08765954",pickup,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,a1f5e64e,completed,Priscotty,Priscotty,Joseph Francois (deleted),"251 98th Street Northwest, Suite A, Albuquerque, New Mexico 87121","`-106.7451678,35.0767386",,,,,08/01/2023 15:53:17,08/01/2023 17:17:51,08/01/2023 17:19:23,TRUE,,"`-106.745008631,35.076574988",0,"Transaction ID: 58225898
+1.0 x PVP MC Bling 14.0g (IDH) | 4021149355387252
+2.0 x PVP Ocean Beach Pre-Roll .5g (HYB) | 3377825874161818
+3.0 x L-D2D Jellies Citrus 100mg | 5424956125694177
+3.0 x L-D2D Jellies Sour Apple 100mg | 5938417013890927
+Sub-Total: $147.00
+Total: $152.71",,https://d15p8tr8p0vffz.cloudfront.net/6008b8df1e2369c7d52ef7e9/282x.png,https://d15p8tr8p0vffz.cloudfront.net/19fcc741c04333792c6d4ba5/800x.png https://d15p8tr8p0vffz.cloudfront.net/73a6f766ce18a58ca8bfad5f/800x.png,,,,"`-106.745008631,35.076574988",08/01/2023 17:18:49,"`-106.745008631,35.076574988",08/01/2023 17:19:23,"`-106.745008631,35.076574988",pickup,,NONE,NONE,,FALSE,J,,9,,,Priscotty,,,
+3,,c388cc9d,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3011 Jane Place Northeast, Albuquerque, New Mexico 87111","`-106.5201947,35.11728600000001",Tamas Geczy,`+14196998953,,,08/01/2023 11:31:30,08/01/2023 14:18:43,08/01/2023 14:28:01,TRUE,,"`-106.52047857,35.117821044",2.4329,"Transaction ID: 58152504
+1.0 x HE Mac 1.0g Crumble | 8518117040618277
+1.0 x MTN Grass Valley Girl 1.0g Caviar | 5952500711232096
+1.0 x SCH Black Cherry Candy 1.0g Rosin | 9744270799673539
+Sub-Total: $160.00
+Total: $165.00","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/3e362e9af31210ba0e8d53d1/282x.png,https://d15p8tr8p0vffz.cloudfront.net/712b6649111fe337c02a6d5a/800x.png,,,,"`-106.531670932,35.138380396",08/01/2023 14:19:37,"`-106.532971019,35.137629691",08/01/2023 14:24:48,"`-106.520473474,35.116614772",dropoff,08b5ca42,NONE,NONE,,FALSE,TAMAS GECZY,,3,,,Priscotty,,,
+3,,1685db4a,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1625 utah st, Albuquerque, NM","`-106.5547012,35.10042",Candice Griego,`+15057106676,08/01/2023 17:20:29,08/01/2023 16:20:29,08/01/2023 15:20:29,08/01/2023 16:46:46,08/01/2023 16:54:31,TRUE,,"`-106.554472281,35.100440934",2.0782,"Leafly Order ID: 13990503
+Order Total (tax incl.): 190.4
+Item Summary:
+28.0g CHEM 91
+2 x BERZERKER
+JELLIES MANGO CRUNCH 100MG",,https://d15p8tr8p0vffz.cloudfront.net/dda1cb3d269ef51db8397b59/282x.png,https://d15p8tr8p0vffz.cloudfront.net/13e81eda984409a262fe9f0b/800x.png,,,,"`-106.536400949,35.08765954",08/01/2023 16:47:43,"`-106.541641706,35.087847264",08/01/2023 16:52:49,"`-106.554527113,35.10110942",dropoff,f79465a8,NONE,NONE,,TRUE,Candice Griego,,0,,,Priscotty,,,
+3,,34145dda,completed,Priscotty,Priscotty,Joseph Francois (deleted),"9901 Lomas Boulevard Northeast, suite e, Albuquerque, New Mexico 87112","`-106.536611,35.0876747",,,,,08/01/2023 18:23:15,08/01/2023 18:40:19,08/01/2023 18:44:02,TRUE,,"`-106.536568932,35.087621258",0.014771,"Leafly Order ID: 13991781
+Order Total (tax incl.): 58.68
+Item Summary:
+2 x 3.5g LEMON KUSH 
+2 x Butane",,https://d15p8tr8p0vffz.cloudfront.net/123bf4071f302adb0146b592/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5600404651ee13bc24bef2ce/800x.png https://d15p8tr8p0vffz.cloudfront.net/dc42af2c8fb451280f44ce4e/800x.png,,,,"`-106.536477699,35.087529283",08/01/2023 18:41:18,"`-106.53653928,35.087671186",08/01/2023 18:43:55,"`-106.536568932,35.087621258",pickup,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,763b17be,completed,Priscotty,Priscotty,Joseph Francois (deleted),"6001 Montaño Road Northwest, Albuquerque, New Mexico 87120","`-106.710718,35.1532259",David Hoover,`+15052368174,08/01/2023 17:44:00,,08/01/2023 15:53:12,08/01/2023 17:19:29,08/01/2023 17:33:19,TRUE,,"`-106.710697038,35.153248919",6.613,"Transaction ID: 58225898
+1.0 x PVP MC Bling 14.0g (IDH) | 4021149355387252
+2.0 x PVP Ocean Beach Pre-Roll .5g (HYB) | 3377825874161818
+3.0 x L-D2D Jellies Citrus 100mg | 5424956125694177
+3.0 x L-D2D Jellies Sour Apple 100mg | 5938417013890927
+Sub-Total: $147.00
+Total: $152.71",,https://d15p8tr8p0vffz.cloudfront.net/3d83ea4bf798b6f206710c6e/282x.png,https://d15p8tr8p0vffz.cloudfront.net/bd681b17649d5c07bbd81fc0/800x.png,,,,"`-106.744870852,35.076511899",08/01/2023 17:20:23,"`-106.744755242,35.07766988",08/01/2023 17:30:45,"`-106.709958654,35.152091344",dropoff,a1f5e64e,NONE,NONE,,FALSE,David Hoover,,9,,,Priscotty,,,
+3,,0e9906f8,completed,Priscotty,Priscotty,Joseph Francois (deleted),"251 98th Street Northwest, Suite A, Albuquerque, New Mexico 87121","`-106.7451678,35.0767386",,,,,08/02/2023 09:57:49,08/02/2023 10:34:44,08/02/2023 10:35:46,TRUE,,"`-106.745045142,35.076561182",0,"Transaction ID: 58314626
+1.0 x Bloom Batteries | 01248
+1.0 x Elevated King Louis XIII 1.0g Cartridge | 2692633325248294
+Sub-Total: $55.00
+Total: $62.75",,https://d15p8tr8p0vffz.cloudfront.net/08e18f1c5eb4bfa1158d6dc6/282x.png,https://d15p8tr8p0vffz.cloudfront.net/cc99cbb9aff82ea99d116e8c/800x.png https://d15p8tr8p0vffz.cloudfront.net/34fdb9e936630b2a1cc1dafb/800x.png,,,,"`-106.745045142,35.076561182",08/02/2023 10:35:01,"`-106.745045142,35.076561182",08/02/2023 10:35:46,"`-106.745045142,35.076561182",pickup,,NONE,NONE,,FALSE,J,,2,,,Priscotty,,,
+3,,46109928,completed,Priscotty,Priscotty,Joseph Francois (deleted),"75 hotel cir, 156, Albuquerque, NM","`-106.5266047,35.0845249",Jason Williams,`+13212910673,08/01/2023 20:23:09,08/01/2023 19:23:09,08/01/2023 18:23:10,08/01/2023 18:44:18,08/01/2023 18:50:45,TRUE,,"`-106.526193359,35.084728712",1.0692,"Leafly Order ID: 13991781
+Order Total (tax incl.): 58.68
+Item Summary:
+2 x 3.5g LEMON KUSH 
+2 x Butane",,https://d15p8tr8p0vffz.cloudfront.net/cf615d65ce29a129575f2ac4/282x.png,https://d15p8tr8p0vffz.cloudfront.net/30728b7d51e17d493f175fff/800x.png,,,,"`-106.536568932,35.087621258",08/01/2023 18:44:53,"`-106.535860737,35.088705607",08/01/2023 18:47:17,"`-106.526621148,35.0856543",dropoff,34145dda,NONE,NONE,,FALSE,Jason Williams,,0,,,Priscotty,Text me when arriving ,,
+3,,b34ae75d,completed,Priscotty,Priscotty,Joseph Francois (deleted),"401 Eubank Boulevard Southeast, suite d, Albuquerque, New Mexico 87123","`-106.5329506,35.0685206",,,,,08/02/2023 10:32:05,08/02/2023 11:00:31,08/02/2023 11:01:39,TRUE,,"`-106.532841457,35.068741915",0,"View order: https://dhcie.com/c/ekxkVgU8
+
+Order Number: 167125351
+
+Products:
+Cake n Chem
+Option: 1/8oz
+Quantity: 2
+Brand: Lava Leaf Organics
+Price: 45.0
+-----------
+Dosi Dos
+Option: 1/8oz
+Quantity: 1
+Brand: LX Farms
+Price: 31.5
+-----------
+
+productSubtotal: $85.00
+discount: $8.50
+cannabisTax: $9.18
+salesTax: $6.53
+total: $92.21",,https://d15p8tr8p0vffz.cloudfront.net/0d4651f14ad3620bcabcf4c7/282x.png,https://d15p8tr8p0vffz.cloudfront.net/05e1b0ad3bbdf38e49fa071b/800x.png https://d15p8tr8p0vffz.cloudfront.net/6f548f6d500401be2bc91eb1/800x.png https://d15p8tr8p0vffz.cloudfront.net/19913862103f344700d91e55/800x.png https://d15p8tr8p0vffz.cloudfront.net/11c1ce6eafdb25a5301b82f4/800x.png,,,,"`-106.532841457,35.068741915",08/02/2023 11:00:58,"`-106.532841457,35.068741915",08/02/2023 11:01:28,"`-106.532841457,35.068741915",pickup,,NONE,NONE,,FALSE,J,,3,,,Priscotty,,,
+3,,be5da13c,completed,Priscotty,Priscotty,Joseph Francois (deleted),"619 Lone River Tr Southwest, Albuquerque, New Mexico 87121","`-106.7433892,35.0647259",Anthony turner,`+15052500196,08/02/2023 12:00:00,08/02/2023 10:00:00,08/02/2023 09:57:44,08/02/2023 10:36:02,08/02/2023 10:41:13,TRUE,,"`-106.743331071,35.064677632",1.0489,"Transaction ID: 58314626
+1.0 x Bloom Batteries | 01248
+1.0 x Elevated King Louis XIII 1.0g Cartridge | 2692633325248294
+Sub-Total: $55.00
+Total: $62.75",,https://d15p8tr8p0vffz.cloudfront.net/a9860b189d336902965396c3/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8caac91c90509c825f2197f3/800x.png,,,,"`-106.744975934,35.076671598",08/02/2023 10:36:57,"`-106.742888881,35.073428349",08/02/2023 10:38:11,"`-106.743347831,35.063547792",dropoff,0e9906f8,NONE,NONE,,FALSE,Anthony turner,,2,,,Priscotty,,,
+3,,b2f34dc5,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3000 San Pedro Drive Northeast, Albuquerque, New Mexico 87110","`-106.577155,35.1169633",,,,,08/02/2023 13:51:10,08/02/2023 13:58:45,08/02/2023 14:01:20,TRUE,,"`-106.577314415,35.116986709",0.053635,"Canvas
+Any Manager",,https://d15p8tr8p0vffz.cloudfront.net/fa7a68b4c5a27f1f713b48dd/282x.png,https://d15p8tr8p0vffz.cloudfront.net/d6c9ea10e737da6788436425/800x.png,,,,"`-106.577415766,35.117038468",08/02/2023 14:00:06,"`-106.577442857,35.116952822",08/02/2023 14:01:15,"`-106.577314415,35.116986709",dropoff,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,79fe9578,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1139 Chiricahua Street Southeast, Albuquerque, NM 87123","`-106.526735,35.05914",Dustin Hodges,`+15059080514,08/02/2023 14:00:00,08/02/2023 12:00:00,08/02/2023 10:32:00,08/02/2023 11:04:19,08/02/2023 11:08:38,TRUE,,"`-106.526637527,35.059142334",1.5918,"View order: https://dhcie.com/c/ekxkVgU8
+
+Order Number: 167125351
+
+Products:
+Cake n Chem
+Option: 1/8oz
+Quantity: 2
+Brand: Lava Leaf Organics
+Price: 45.0
+-----------
+Dosi Dos
+Option: 1/8oz
+Quantity: 1
+Brand: LX Farms
+Price: 31.5
+-----------
+
+productSubtotal: $85.00
+discount: $8.50
+cannabisTax: $9.18
+salesTax: $6.53
+total: $92.21","DOB: 04/08/1982
+Email: dutchiepay@kustnodi.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/67f46c8bb84f35e43e188f17/282x.png,https://d15p8tr8p0vffz.cloudfront.net/86cb38d7cbc4c80244e8a1df/800x.png,,,,"`-106.538503504,35.067382086",08/02/2023 11:04:39,"`-106.53708693,35.067349583",08/02/2023 11:07:19,"`-106.52636756,35.058454383",dropoff,b34ae75d,NONE,NONE,,FALSE,Dustin Hodges,,3,,,Priscotty,,,
+3,,a2f344ca,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3000 San Pedro Drive Northeast, Albuquerque, New Mexico 87110","`-106.577155,35.1169633",,,,,08/02/2023 14:23:09,08/02/2023 14:46:30,08/02/2023 14:47:53,TRUE,,"`-106.577325832,35.116892594",0.034004,"View order: https://dhcie.biz/c/ywW700DA
+
+Order Number: 409365907
+
+Products:
+Super Lemon Haze Cartridge
+Option: 1g
+Quantity: 1
+Brand: Elevated Extracts
+Price: 30
+-----------
+Peanut Butter Breath Live Rosin Disposable
+Option: .5g
+Quantity: 1
+Brand: Press Labs
+Price: 40
+-----------
+Batteries Kurple
+Option: N/A
+Quantity: 1
+Brand: Kurple Distribution
+Price: 12.5
+-----------
+
+productSubtotal: $92.50
+discount: $10.00
+salesTax: $0.95
+total: $83.45",,https://d15p8tr8p0vffz.cloudfront.net/2fa0864bfb790b37f12703d1/282x.png,https://d15p8tr8p0vffz.cloudfront.net/805c39f32a67cdbeb9d7c798/800x.png https://d15p8tr8p0vffz.cloudfront.net/497f7c4836ae8ee5e7c54933/800x.png,,,,"`-106.57735419,35.116868642",08/02/2023 14:47:25,"`-106.577325832,35.116892594",08/02/2023 14:47:53,"`-106.577325832,35.116892594",pickup,,NONE,NONE,,FALSE,J,,3,,,Priscotty,,,
+3,,2e8e823b,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1616 Eubank Boulevard Northeast, Albuquerque, New Mexico 87112","`-106.5320402,35.0988564",,,,,08/02/2023 15:57:11,08/02/2023 16:20:15,08/02/2023 16:23:51,TRUE,,"`-106.532068729,35.098860559",0.010505,"Transaction ID: 106794527
+1.0 x Organabus CBD Cart - Super Lemon | 01296
+1.0 x 10 mg small CBD Berry gummies- 25 count bag Berry | 01452
+1.0 x Canna Cafe SuperStar Gummies | 5731575663060747
+3.0 x Black Cherry Candy | 9488945036846428
+Sub-Total: $77.47
+Total: $88.90",,https://d15p8tr8p0vffz.cloudfront.net/aeb3f7e6e4f342d5c662ed61/282x.png,https://d15p8tr8p0vffz.cloudfront.net/aae3706978170ddab5bd680b/800x.png https://d15p8tr8p0vffz.cloudfront.net/0eada29fb19d37c2a0a0f53c/800x.png https://d15p8tr8p0vffz.cloudfront.net/359f42fe1700f2ece2def4da/800x.png,,,,"`-106.532234243,35.098796543",08/02/2023 16:21:56,"`-106.532068729,35.098860559",08/02/2023 16:23:36,"`-106.532068729,35.098860559",pickup,,NONE,NONE,,FALSE,J,,4,,,Priscotty,,,
+3,,5fd229af,completed,Priscotty,Priscotty,Joseph Francois (deleted),"401 Eubank Boulevard Southeast, suite d, Albuquerque, New Mexico 87123","`-106.5329506,35.0685206",,,,,08/02/2023 16:17:21,08/02/2023 16:31:31,08/02/2023 16:32:14,TRUE,,"`-106.5329506,35.0685206",0,"View order: https://dhcie.biz/c/9z2GkuYM
+
+Order Number: 513852508
+
+Products:
+Bubba Dub
+Option: 1oz
+Quantity: 1
+Brand: Yerba Cannabis Co.
+Price: 90
+-----------
+
+productSubtotal: $100.00
+discount: $10.00
+cannabisTax: $10.80
+salesTax: $7.69
+total: $108.49",,https://d15p8tr8p0vffz.cloudfront.net/997fece4c90629239bd315d4/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f70f42112c9b2faa7edca169/800x.png https://d15p8tr8p0vffz.cloudfront.net/78f972027a60ff7f7e35cf7c/800x.png,,,,"`-106.5329506,35.0685206",08/02/2023 16:32:14,"`-106.5329506,35.0685206",08/02/2023 16:32:14,"`-106.5329506,35.0685206",pickup,,NONE,NONE,,FALSE,J,,1,,,Priscotty,,,
+3,,2c52bb01,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1101 Cielo Vista Del Norte, Corrales, NM 87048","`-106.65211,35.21206",Teena Tafoya,`+15059772127,,,08/02/2023 14:23:04,08/02/2023 14:47:59,08/02/2023 15:16:05,TRUE,,"`-106.65198003,35.212078627",12.014,"View order: https://dhcie.biz/c/ywW700DA
+
+Order Number: 409365907
+
+Products:
+Super Lemon Haze Cartridge
+Option: 1g
+Quantity: 1
+Brand: Elevated Extracts
+Price: 30
+-----------
+Peanut Butter Breath Live Rosin Disposable
+Option: .5g
+Quantity: 1
+Brand: Press Labs
+Price: 40
+-----------
+Batteries Kurple
+Option: N/A
+Quantity: 1
+Brand: Kurple Distribution
+Price: 12.5
+-----------
+
+productSubtotal: $92.50
+discount: $10.00
+salesTax: $0.95
+total: $83.45","DOB: 10/26/1976
+Email: teenat26@yahoo.com
+Medical Card: 9u479mtpx9 - Exp: 11/20/2023
+Drivers License: 121603748",https://d15p8tr8p0vffz.cloudfront.net/8d6e92b08292a4ba9f834822/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f3df246c894bc5e1263806c0/800x.png,,,,"`-106.577325832,35.116892594",08/02/2023 14:48:50,"`-106.577589101,35.117796972",08/02/2023 15:10:54,"`-106.651563199,35.211183808",dropoff,a2f344ca,NONE,NONE,,FALSE,Teena Tafoya,,3,,,Priscotty,,,
+3,,e2e4a1f8,completed,Priscotty,Priscotty,Joseph Francois (deleted),"11421 Claremont Avenue Northeast, Albuquerque, New Mexico 87112","`-106.5109285,35.1127168",Carol Lott,`+15123007777,08/02/2023 19:00:00,,08/02/2023 15:57:05,08/02/2023 16:32:43,08/02/2023 16:47:23,TRUE,,"`-106.510925548,35.112714517",4.5693,"Transaction ID: 106794527
+1.0 x Organabus CBD Cart - Super Lemon | 01296
+1.0 x 10 mg small CBD Berry gummies- 25 count bag Berry | 01452
+1.0 x Canna Cafe SuperStar Gummies | 5731575663060747
+3.0 x Black Cherry Candy | 9488945036846428
+Sub-Total: $77.47
+Total: $88.90",,https://d15p8tr8p0vffz.cloudfront.net/b656eef316c1fecece1cdf06/282x.png,https://d15p8tr8p0vffz.cloudfront.net/9cb11b9757d7be1192113815/800x.png,,,,"`-106.532867412,35.068806084",08/02/2023 16:33:26,"`-106.532597633,35.067784612",08/02/2023 16:44:19,"`-106.511109012,35.111799899",dropoff,2e8e823b,NONE,NONE,,FALSE,Carol Lott,,4,,,Priscotty,,,
+3,,180d3f28,completed,Priscotty,Priscotty,Joseph Francois (deleted),"9901 Lomas Boulevard Northeast, suite e, Albuquerque, New Mexico 87112","`-106.536611,35.0876747",,,,,08/02/2023 17:45:43,08/02/2023 18:29:12,08/02/2023 18:32:46,TRUE,,"`-106.536543968,35.087622587",0.0032319,"Leafly Order ID: 14000611
+Order Total (tax incl.): 119.75
+Item Summary:
+28.0g BANANA CAKE 21",,https://d15p8tr8p0vffz.cloudfront.net/5cf0313e72c1bcf98e3594f8/282x.png,https://d15p8tr8p0vffz.cloudfront.net/e70172e28f44898237c4a9b7/800x.png https://d15p8tr8p0vffz.cloudfront.net/955183270117ed9137aa1bc5/800x.png https://d15p8tr8p0vffz.cloudfront.net/166dd0a185bc2028c225205d/800x.png,,,,"`-106.536507694,35.087658734",08/02/2023 18:30:40,"`-106.536507694,35.087658734",08/02/2023 18:32:40,"`-106.536543968,35.087622587",pickup,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,4d41a3e5,completed,Priscotty,Priscotty,Joseph Francois (deleted),"2120 Menaul Boulevard Northeast, 1203, Albuquerque, NM 87107","`-106.620887,35.108257",Patrick Plemons,`+15055928496,,,08/02/2023 16:17:16,08/02/2023 16:47:46,08/02/2023 17:08:32,TRUE,,"`-106.620544748,35.108835962",7.1591,"View order: https://dhcie.biz/c/9z2GkuYM
+
+Order Number: 513852508
+
+Products:
+Bubba Dub
+Option: 1oz
+Quantity: 1
+Brand: Yerba Cannabis Co.
+Price: 90
+-----------
+
+productSubtotal: $100.00
+discount: $10.00
+cannabisTax: $10.80
+salesTax: $7.69
+total: $108.49","DOB: 11/04/1993
+Email: mikaelkeehl6@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/ab3b3f1e6dff760905f45fcb/282x.png,https://d15p8tr8p0vffz.cloudfront.net/fa54220597795ec5b9de6451/800x.png,,,,"`-106.51120525,35.112704803",08/02/2023 16:48:58,"`-106.512287638,35.113437329",08/02/2023 17:05:34,"`-106.620826902,35.10921754",dropoff,5fd229af,NONE,NONE,,FALSE,Patrick Plemons,,1,,,Priscotty,,,
+3,,f2f92dae,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1101 meadowlark way se, D, Rio Rancho, NM","`-106.6503611,35.239543",Kevin Trujillo,`+15056104354,08/02/2023 19:45:37,08/02/2023 18:45:37,08/02/2023 17:45:38,08/02/2023 18:33:01,08/02/2023 19:02:15,TRUE,,"`-106.650315224,35.239546765",20.678,"Leafly Order ID: 14000611
+Order Total (tax incl.): 119.75
+Item Summary:
+28.0g BANANA CAKE 21",,https://d15p8tr8p0vffz.cloudfront.net/120673dde590fb0c1d7f5341/282x.png,https://d15p8tr8p0vffz.cloudfront.net/c663ee3f96d7f5363345301e/800x.png,,,,"`-106.536543968,35.087622587",08/02/2023 18:33:24,"`-106.537944059,35.087420934",08/02/2023 18:58:19,"`-106.651634208,35.240297249",dropoff,180d3f28,NONE,NONE,,TRUE,Kevin Trujillo,,0,,,Priscotty,,,
+3,,fa9e3529,completed,Priscotty,Priscotty,Joseph Francois (deleted),"251 98th Street Northwest, Suite A, Albuquerque, New Mexico 87121","`-106.7451678,35.0767386",,,,,08/03/2023 14:51:43,08/03/2023 15:27:54,08/03/2023 15:29:31,TRUE,,"`-106.744796469,35.076652409",0.022876,"Transaction ID: 58591556
+1.0 x D2D Terp Twist Holy Grail 2.5g | 5pk (IDH) | 0674386092618117
+1.0 x PVP Dreamsicle 1.0g Cart | 9821729984016699
+Sub-Total: $65.00
+Total: $73.79",,https://d15p8tr8p0vffz.cloudfront.net/ed3c80188fa7ad39a8317149/282x.png,https://d15p8tr8p0vffz.cloudfront.net/acd529d3846ddefc313fbd85/800x.png https://d15p8tr8p0vffz.cloudfront.net/e4be49dad94f88cf8ed2173f/800x.png,,,,"`-106.744922354,35.076525892",08/03/2023 15:28:57,"`-106.744865571,35.076645601",08/03/2023 15:29:22,"`-106.744796469,35.076652409",pickup,,NONE,NONE,,FALSE,J,,2,,,Priscotty,,,
+3,,21231600,completed,Priscotty,Priscotty,Joseph Francois (deleted),"251 98th Street Northwest, Suite A, Albuquerque, New Mexico 87121","`-106.7451678,35.0767386",,,,,08/04/2023 12:01:04,08/04/2023 13:00:32,08/04/2023 13:02:24,TRUE,,"`-106.74483962,35.076676156",0.014755,"Transaction ID: 58739180
+3.0 x PVP Cake Mix Pre-Roll 0.5g (HYB) | 8456401367459406
+4.0 x PVP Macaroon Pre-Roll .5g (HYB) | 6835238201948332
+2.0 x PVP Kush Mint 14.0g (HYB) | 9667524781840399
+Sub-Total: $165.00
+Total: $154.34",,https://d15p8tr8p0vffz.cloudfront.net/2c42494d658d15ffd08ea1c8/282x.png,https://d15p8tr8p0vffz.cloudfront.net/b271a0e16b90c457782c61e8/800x.png https://d15p8tr8p0vffz.cloudfront.net/7a2118d2930be7f95861a4f0/800x.png https://d15p8tr8p0vffz.cloudfront.net/83aa79b79f903ba5e8e7a300/800x.png,,,,"`-106.745044624,35.076547655",08/04/2023 13:01:59,"`-106.74483962,35.076676156",08/04/2023 13:02:20,"`-106.74483962,35.076676156",pickup,,NONE,NONE,,FALSE,J,,9,,,Priscotty,,,
+3,,ec751900,completed,Priscotty,Priscotty,Joseph Francois (deleted),"9901 Ceja Vista Road Southwest, Albuquerque, New Mexico 87121","`-106.7429529,35.0232925",miraya molinar,`+14144583946,08/03/2023 16:28:00,,08/03/2023 14:51:39,08/03/2023 15:31:06,08/03/2023 15:47:07,TRUE,,"`-106.743230126,35.022697438",4.3388,"Transaction ID: 58591556
+1.0 x D2D Terp Twist Holy Grail 2.5g | 5pk (IDH) | 0674386092618117
+1.0 x PVP Dreamsicle 1.0g Cart | 9821729984016699
+Sub-Total: $65.00
+Total: $73.79",,https://d15p8tr8p0vffz.cloudfront.net/a1adfc8092054724286d5303/282x.png,https://d15p8tr8p0vffz.cloudfront.net/8d7b1c4dec5615b3c9673470/800x.png,,,,"`-106.744440007,35.076877301",08/03/2023 15:31:40,"`-106.743224797,35.075255285",08/03/2023 15:42:54,"`-106.742724694,35.021986892",dropoff,fa9e3529,NONE,NONE,,FALSE,miraya molinar,,2,,,Priscotty,,,
+3,,f1f354b3,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3000 San Pedro Drive Northeast, Albuquerque, New Mexico 87110","`-106.577155,35.1169633",,,,,08/04/2023 13:21:17,08/04/2023 13:56:54,08/04/2023 13:59:08,TRUE,,"`-106.577350308,35.116944063",0.030041,"View order: https://dhcie.org/c/QpgAFAfP
+
+Order Number: 478139960
+
+Products:
+Gruntz Live Cartridge
+Option: 1g
+Quantity: 1
+Brand: Bloom Brand
+Price: 40
+-----------
+Lemon Jack Live Cartridge
+Option: 1g
+Quantity: 1
+Brand: Bloom Brand
+Price: 40
+-----------
+Slurricane
+Option: 3.5g
+Quantity: 2
+Brand: Yerba Cannabis Co.
+Price: 54
+-----------
+
+productSubtotal: $160.00
+discount: $26.00
+total: $134.00",,https://d15p8tr8p0vffz.cloudfront.net/c82d9723596805baef834604/282x.png,https://d15p8tr8p0vffz.cloudfront.net/c941b1d8bca3c423d2f92c1c/800x.png https://d15p8tr8p0vffz.cloudfront.net/8f3e1a68faa397011b640016/800x.png,,,,"`-106.577410934,35.116928085",08/04/2023 13:57:23,"`-106.577269936,35.117125937",08/04/2023 13:59:04,"`-106.577350308,35.116944063",pickup,,NONE,NONE,,FALSE,J,,4,,,Priscotty,,,
+3,,4b5a4086,completed,Priscotty,Priscotty,Joseph Francois (deleted),"8123 Westover Place Northwest, Albuquerque, New Mexico 87120","`-106.7347747,35.0989589",Melissa Campbell,`+17158922947,08/04/2023 13:30:00,,08/04/2023 12:00:59,08/04/2023 13:03:19,08/04/2023 13:10:04,TRUE,,"`-106.73486611,35.098933695",2.0655,"Transaction ID: 58739180
+3.0 x PVP Cake Mix Pre-Roll 0.5g (HYB) | 8456401367459406
+4.0 x PVP Macaroon Pre-Roll .5g (HYB) | 6835238201948332
+2.0 x PVP Kush Mint 14.0g (HYB) | 9667524781840399
+Sub-Total: $165.00
+Total: $154.34","DOB: 12/07/1971
+Email: mjc12771@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/27c469999d3e5604b522ec4a/282x.png,https://d15p8tr8p0vffz.cloudfront.net/4b599a5b8908232edf95ee2d/800x.png,,,,"`-106.744183214,35.078689233",08/04/2023 13:04:59,"`-106.746185072,35.084530852",08/04/2023 13:08:27,"`-106.734557218,35.097815899",dropoff,21231600,NONE,NONE,,FALSE,Melissa Campbell,,9,,,Priscotty,,,
+3,,fdefef9b,completed,Priscotty,Priscotty,Joseph Francois (deleted),"9901 Lomas Boulevard Northeast, suite e, Albuquerque, New Mexico 87112","`-106.536611,35.0876747",,,,,08/04/2023 13:36:43,08/04/2023 14:29:59,08/04/2023 14:31:18,TRUE,,"`-106.536533994,35.087681115",0.012933,"Leafly Order ID: 14018642
+Order Total (tax incl.): 68.26
+Item Summary:
+JELLIES MANGO CRUNCH 100MG
+JELLIES ORANGE CRUNCH 
+JELLIES TROPICAL PUNCH 
+BAHAMA MAMA 
+RATTLESNAKE VENOM",,https://d15p8tr8p0vffz.cloudfront.net/7bc5653d1438696c48daca29/282x.png,https://d15p8tr8p0vffz.cloudfront.net/7ee0c4f753410b62a071e307/800x.png https://d15p8tr8p0vffz.cloudfront.net/858bf581504e93f453670f74/800x.png,,,,"`-106.536415355,35.087521133",08/04/2023 14:30:22,"`-106.536533994,35.087681115",08/04/2023 14:30:44,"`-106.536533994,35.087681115",pickup,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,3ea3eb52,completed,Priscotty,Priscotty,Joseph Francois (deleted),"392 Coyote Lane Southeast, Albuquerque, NM 87123","`-106.511092,35.066525",Yvonne Romero,`+15054151998,,,08/04/2023 13:21:16,08/04/2023 13:59:16,08/04/2023 14:14:47,TRUE,,"`-106.511192426,35.0664872",6.8234,"View order: https://dhcie.org/c/QpgAFAfP
+
+Order Number: 478139960
+
+Products:
+Gruntz Live Cartridge
+Option: 1g
+Quantity: 1
+Brand: Bloom Brand
+Price: 40
+-----------
+Lemon Jack Live Cartridge
+Option: 1g
+Quantity: 1
+Brand: Bloom Brand
+Price: 40
+-----------
+Slurricane
+Option: 3.5g
+Quantity: 2
+Brand: Yerba Cannabis Co.
+Price: 54
+-----------
+
+productSubtotal: $160.00
+discount: $26.00
+total: $134.00",,https://d15p8tr8p0vffz.cloudfront.net/5288222b2b1ebeb744a2d8d3/282x.png,https://d15p8tr8p0vffz.cloudfront.net/2cbe66e2a68242c4fb9a233b/800x.png,,,,"`-106.577439339,35.116936143",08/04/2023 14:00:15,"`-106.577646167,35.11552931",08/04/2023 14:11:15,"`-106.511164305,35.065267956",dropoff,f1f354b3,NONE,NONE,,TRUE,Yvonne Romero,,4,,,Priscotty,Back door under carport black trailer,,
+3,,91a65126,completed,Priscotty,Priscotty,Joseph Francois (deleted),"436 charleston st se, A, Albuquerque, NM","`-106.560834,35.069376",Aaron Ahasteen,`+15055216413,08/04/2023 15:36:39,08/04/2023 14:36:39,08/04/2023 13:36:40,08/04/2023 14:33:08,08/04/2023 14:42:54,TRUE,,"`-106.560918578,35.06939581",2.6695,"Leafly Order ID: 14018642
+Order Total (tax incl.): 68.26
+Item Summary:
+JELLIES MANGO CRUNCH 100MG
+JELLIES ORANGE CRUNCH 
+JELLIES TROPICAL PUNCH 
+BAHAMA MAMA 
+RATTLESNAKE VENOM",,https://d15p8tr8p0vffz.cloudfront.net/b294f59faa7f5d20540a4648/282x.png,https://d15p8tr8p0vffz.cloudfront.net/9ef5548e0797861192ddd05b/800x.png,,,,"`-106.536533994,35.087681115",08/04/2023 14:34:12,"`-106.537695423,35.087395866",08/04/2023 14:40:15,"`-106.561164109,35.070405638",dropoff,fdefef9b,NONE,NONE,,FALSE,Aaron Ahasteen,,0,,,Priscotty,,,
+3,,73e96bf7,completed,Priscotty,Priscotty,Joseph Francois (deleted),"401 Eubank Boulevard Southeast, suite d, Albuquerque, New Mexico 87123","`-106.5329506,35.0685206",,,,,08/04/2023 14:06:31,08/04/2023 14:56:03,08/04/2023 14:57:17,TRUE,,"`-106.532925882,35.068779659",0,"View order: https://dhcie.biz/c/3zFnSwtf
+
+Order Number: 767180874
+
+Products:
+Medellin X Jet Fuel Gelato
+Option: 1/8oz
+Quantity: 1
+Brand: Matchbox Farms
+Price: 25.2
+-----------
+Candy Chrome PreRoll 5 Pack
+Option: 2.5g
+Quantity: 1
+Brand: The Grower Circle
+Price: 35
+-----------
+
+productSubtotal: $63.00
+discount: $2.80
+cannabisTax: $7.23
+salesTax: $5.14
+total: $72.57",,https://d15p8tr8p0vffz.cloudfront.net/755c3902d2415fc50404e8b5/282x.png,https://d15p8tr8p0vffz.cloudfront.net/6ff7588841377dbe02520f4b/800x.png https://d15p8tr8p0vffz.cloudfront.net/8f92fa3c643238ac0d7f0288/800x.png https://d15p8tr8p0vffz.cloudfront.net/7fe9c687a410e48fb8397900/800x.png,,,,"`-106.532925882,35.068779659",08/04/2023 14:56:37,"`-106.532925882,35.068779659",08/04/2023 14:57:17,"`-106.532925882,35.068779659",pickup,,NONE,NONE,,FALSE,J,,2,,,Priscotty,,,
+3,,4b88a9e3,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1616 Eubank Boulevard Northeast, Albuquerque, New Mexico 87112","`-106.5320402,35.0988564",,,,,08/04/2023 13:19:19,08/04/2023 15:28:26,08/04/2023 15:29:43,TRUE,,"`-106.532171331,35.098869904",0.021872,"Transaction ID: 107080224
+1.0 x 710 Diamonds | Garlic Funk | 1g | 7848607834954708
+5.0 x White Widow | 1135751217181907
+1.0 x Preroll - Area 51 - 1gs | 6369161942627315
+1.0 x Elevated | 1g Vape Cartridge | Citrus Tsunami | 1099345949210879
+2.0 x Elevated | 1g Vape Cartridge | Grape Ape | 1566481119288789
+2.0 x Elevated | 1g Vape Cartridge | Super Lemon Haze | 5126913883546774
+3.0 x Elevated | 1g Vape Cartridge | Watermelon OG | 5566827172821547
+1.0 x Preroll - Gary Payton - 1gs | 9025574330171370
+5.0 x Preroll - Area 51 - 1gs | 9941811934215951
+3.0 x Elevated | 1g Vape Cartridge | Blue Dream | 5062341372679491
+1.0 x Preroll - Melon Hearts - 1g | 7775254223632787
+Sub-Total: $343.34
+Total: $368.01",,https://d15p8tr8p0vffz.cloudfront.net/9b04084f2be4ca6092251908/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f3a1af25ed9d7f8a39fc0d21/800x.png https://d15p8tr8p0vffz.cloudfront.net/3b21610c8d41b1c358799f73/800x.png https://d15p8tr8p0vffz.cloudfront.net/82d3d76a190e7cf4b4d918c2/800x.png,,,,"`-106.532241137,35.09884612",08/04/2023 15:29:03,"`-106.532137872,35.098914461",08/04/2023 15:29:07,"`-106.532171331,35.098869904",pickup,,NONE,NONE,,FALSE,J,,25,,,Priscotty,,,
+3,,28e0f4fe,completed,Priscotty,Priscotty,Joseph Francois (deleted),"12062 New Mexico Highway 14, B, Cedar Crest, NM 87008","`-106.37379,35.10888",Kira Morar,`+15052745586,,,08/04/2023 14:06:26,08/04/2023 14:57:24,08/04/2023 15:13:50,TRUE,,"`-106.373570039,35.109053459",11.818,"View order: https://dhcie.biz/c/3zFnSwtf
+
+Order Number: 767180874
+
+Products:
+Medellin X Jet Fuel Gelato
+Option: 1/8oz
+Quantity: 1
+Brand: Matchbox Farms
+Price: 25.2
+-----------
+Candy Chrome PreRoll 5 Pack
+Option: 2.5g
+Quantity: 1
+Brand: The Grower Circle
+Price: 35
+-----------
+
+productSubtotal: $63.00
+discount: $2.80
+cannabisTax: $7.23
+salesTax: $5.14
+total: $72.57","DOB: 02/04/1992
+Email: kmorar92@gmail.com
+Medical Card:",https://d15p8tr8p0vffz.cloudfront.net/1d305a9f7a1275a7496b3e7e/282x.png,https://d15p8tr8p0vffz.cloudfront.net/08030afd797459ccd1684112/800x.png,,,,"`-106.533365925,35.068482907",08/04/2023 14:58:36,"`-106.532599835,35.067656671",08/04/2023 15:12:51,"`-106.374044957,35.108182954",dropoff,73e96bf7,NONE,NONE,,TRUE,Kira Morar,,2,,,Priscotty,,,
+3,,f7e3d918,completed,Priscotty,Priscotty,Joseph Francois (deleted),"401 Eubank Boulevard Southeast, suite d, Albuquerque, New Mexico 87123","`-106.5329506,35.0685206",,,,,08/04/2023 15:28:28,08/04/2023 15:49:14,08/04/2023 15:51:22,TRUE,,"`-106.532889201,35.068788208",0.014561,"View order: https://dhcie.biz/c/SJqUiP57
+
+Order Number: 855260438
+
+Products:
+Red Bull Live Rosin
+Option: 1g
+Quantity: 1
+Brand: Botapharm
+Price: 40
+-----------
+Cherries and Cream Chocolate Bar 200mg
+Option: 2g
+Quantity: 1
+Brand: Bhang
+Price: 17.2
+-----------
+Sour Diesel  x Kush Mints Live Hash Rosin
+Option: 1g
+Quantity: 1
+Brand: Z Labs
+Price: 64
+-----------
+Cafe Noir Brownie 200mg
+Option: 2g
+Quantity: 1
+Brand: Herbal Edibles
+Price: 12
+-----------
+
+productSubtotal: $171.50
+discount: $38.30
+total: $133.20",,https://d15p8tr8p0vffz.cloudfront.net/fbb2161960d12d7df0399434/282x.png,https://d15p8tr8p0vffz.cloudfront.net/90fc8c8281ff279bf1aa67fb/800x.png https://d15p8tr8p0vffz.cloudfront.net/2ba160ac965533663b6d88d6/800x.png https://d15p8tr8p0vffz.cloudfront.net/4ebdd6a08cae1c43c8418b57/800x.png,,,,"`-106.532839251,35.068797138",08/04/2023 15:50:42,"`-106.532904075,35.068868689",08/04/2023 15:51:22,"`-106.532889201,35.068788208",pickup,,NONE,NONE,,FALSE,J,,4,,,Priscotty,,,
+3,,736e6d28,completed,Priscotty,Priscotty,Joseph Francois (deleted),"617 Pennsylvania Court Southeast, Albuquerque, New Mexico 87108","`-106.5591939,35.0662861",Jalila Brewer,`+15052897678,08/04/2023 19:00:00,,08/04/2023 13:19:14,08/04/2023 15:29:51,08/04/2023 15:41:03,TRUE,,"`-106.559082485,35.066283806",3.6855,"Transaction ID: 107080224
+1.0 x 710 Diamonds | Garlic Funk | 1g | 7848607834954708
+5.0 x White Widow | 1135751217181907
+1.0 x Preroll - Area 51 - 1gs | 6369161942627315
+1.0 x Elevated | 1g Vape Cartridge | Citrus Tsunami | 1099345949210879
+2.0 x Elevated | 1g Vape Cartridge | Grape Ape | 1566481119288789
+2.0 x Elevated | 1g Vape Cartridge | Super Lemon Haze | 5126913883546774
+3.0 x Elevated | 1g Vape Cartridge | Watermelon OG | 5566827172821547
+1.0 x Preroll - Gary Payton - 1gs | 9025574330171370
+5.0 x Preroll - Area 51 - 1gs | 9941811934215951
+3.0 x Elevated | 1g Vape Cartridge | Blue Dream | 5062341372679491
+1.0 x Preroll - Melon Hearts - 1g | 7775254223632787
+Sub-Total: $343.34
+Total: $368.01",,https://d15p8tr8p0vffz.cloudfront.net/57767b1fc5f41bf919e54a76/282x.png,https://d15p8tr8p0vffz.cloudfront.net/ed37425bd8fe6eb6b49b34fa/800x.png https://d15p8tr8p0vffz.cloudfront.net/1615fb74afa4f8de0a43ab15/800x.png,,,,"`-106.532120896,35.09884229",08/04/2023 15:30:57,"`-106.532941531,35.097940104",08/04/2023 15:38:54,"`-106.558542062,35.067243229",dropoff,4b88a9e3,NONE,NONE,,FALSE,Jalila Brewer,,25,,,Priscotty,,,
+3,,98bb5bf8,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3000 San Pedro Drive Northeast, Albuquerque, New Mexico 87110","`-106.577155,35.1169633",,,,,08/04/2023 14:33:38,08/04/2023 16:49:57,08/04/2023 16:51:38,TRUE,,"`-106.577303827,35.117043149",0.002336,"View order: https://dhcie.com/c/h1k1o7kR
+
+Order Number: 693021939
+
+Products:
+Granddaddy Purple Classic Surf Disposable | 0.5g
+Option: .5g
+Quantity: 1
+Brand: Bloom
+Price: 28.8
+-----------
+Grape Jelly Terp Sugar
+Option: 1g
+Quantity: 1
+Brand: Yerba Cannabis Co.
+Price: 36
+-----------
+Slurricane
+Option: 3.5g
+Quantity: 1
+Brand: Yerba Cannabis Co.
+Price: 27
+-----------
+
+productSubtotal: $111.00
+discount: $19.20
+cannabisTax: $11.02
+salesTax: $7.84
+total: $110.66",,https://d15p8tr8p0vffz.cloudfront.net/21c7069e4d4fac549254d804/282x.png,https://d15p8tr8p0vffz.cloudfront.net/5c62802d6c7b5ad3c7848655/800x.png https://d15p8tr8p0vffz.cloudfront.net/1e3cb331c071dfdfac64ed3d/800x.png https://d15p8tr8p0vffz.cloudfront.net/7a1bf73a08c75b9c834f1c23/800x.png,,,,"`-106.57729569,35.117076257",08/04/2023 16:50:33,"`-106.577303827,35.117043149",08/04/2023 16:50:55,"`-106.577303827,35.117043149",pickup,,NONE,NONE,,FALSE,J,,3,,,Priscotty,,,
+3,,1e52d484,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3011 Jane Place Northeast, APT 149, Albuquerque, NM 87111","`-106.5205,35.11721",Tamas Geczy,`+14196998953,,,08/04/2023 15:28:22,08/04/2023 16:13:35,08/04/2023 16:36:45,TRUE,,"`-106.52039523,35.11785677",11.064,"View order: https://dhcie.biz/c/SJqUiP57
+
+Order Number: 855260438
+
+Products:
+Red Bull Live Rosin
+Option: 1g
+Quantity: 1
+Brand: Botapharm
+Price: 40
+-----------
+Cherries and Cream Chocolate Bar 200mg
+Option: 2g
+Quantity: 1
+Brand: Bhang
+Price: 17.2
+-----------
+Sour Diesel  x Kush Mints Live Hash Rosin
+Option: 1g
+Quantity: 1
+Brand: Z Labs
+Price: 64
+-----------
+Cafe Noir Brownie 200mg
+Option: 2g
+Quantity: 1
+Brand: Herbal Edibles
+Price: 12
+-----------
+
+productSubtotal: $171.50
+discount: $38.30
+total: $133.20","DOB: 09/29/1991
+Email: gt1991@gmail.com
+Medical Card: 993XGRJ94L    - Exp: 04/27/2024
+Drivers License: 517818895",https://d15p8tr8p0vffz.cloudfront.net/45f38b71a999d25fda1a83df/282x.png,https://d15p8tr8p0vffz.cloudfront.net/935e75ea2a698a473308479a/800x.png,,,,"`-106.644368833,35.072508299",08/04/2023 16:13:53,"`-106.644343291,35.073635705",08/04/2023 16:32:34,"`-106.520716736,35.11650805",dropoff,f7e3d918,NONE,NONE,,FALSE,Tamas Geczy,,4,,,Priscotty,,,
+3,,d0fb922f,completed,Priscotty,Priscotty,Joseph Francois (deleted),"3000 San Pedro Drive Northeast, Albuquerque, New Mexico 87110","`-106.577155,35.1169633",,,,,08/04/2023 16:24:54,08/04/2023 16:56:01,08/04/2023 16:57:12,TRUE,,"`-106.577348034,35.116924717",0.0070256,"View order: https://dhcie.com/c/veJKim0z
+
+Order Number: 155823868
+
+Products:
+White Fire OG Disposable
+Option: 2g
+Quantity: 1
+Brand: Ghost
+Price: 68
+-----------
+Chemdawg Live Resin Cartridge
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 48
+-----------
+Gruntz Live Cartridge
+Option: 1g
+Quantity: 1
+Brand: Bloom Brand
+Price: 40
+-----------
+Strawnana Live Rosin Cartridge
+Option: .5g
+Quantity: 1
+Brand: Olio
+Price: 44.8
+-----------
+Sandia Gummies 10-Pack | 250mg
+Option: 2.5g
+Quantity: 1
+Brand: Derived
+Price: 20
+-----------
+Raspberry Lemonade Gummies 250mg
+Option: 2.5g
+Quantity: 1
+Brand: Derived
+Price: 20
+-----------
+
+productSubtotal: $301.00
+discount: $60.20
+total: $240.80",,https://d15p8tr8p0vffz.cloudfront.net/99ed093fbab295079c1931a9/282x.png,https://d15p8tr8p0vffz.cloudfront.net/0cce336646c23ef964488e16/800x.png https://d15p8tr8p0vffz.cloudfront.net/f01f4ccc1720d4525457d459/800x.png https://d15p8tr8p0vffz.cloudfront.net/163233e3caac9625e4e1e733/800x.png,,,,"`-106.577301765,35.117018629",08/04/2023 16:56:25,"`-106.577301765,35.117018629",08/04/2023 16:56:45,"`-106.577348034,35.116924717",pickup,,NONE,NONE,,FALSE,J,,6,,,Priscotty,,,
+3,,f793a6d5,completed,Priscotty,Priscotty,Joseph Francois (deleted),"2130 San Mateo Boulevard Northeast, Suite B, Albuquerque, New Mexico 87110","`-106.5860032,35.1011815",,,,,08/04/2023 15:37:39,08/04/2023 17:07:41,08/04/2023 17:11:54,TRUE,,"`-106.586084343,35.101391877",0.010623,"Leafly Order ID: 14020616
+Order Total (tax incl.): 22.0
+Item Summary:
+2 x Sativa Mix Pre-Roll .5g",,https://d15p8tr8p0vffz.cloudfront.net/950ce7cbb0262e9bacf7c9ab/282x.png,https://d15p8tr8p0vffz.cloudfront.net/f81cc1751535b70d240c711e/800x.png https://d15p8tr8p0vffz.cloudfront.net/42a57dd835d1b28deb1cce4d/800x.png,,,,"`-106.586186259,35.101331001",08/04/2023 17:08:55,"`-106.586059657,35.101347908",08/04/2023 17:11:05,"`-106.586084343,35.101391877",pickup,,NONE,NONE,,FALSE,J,,0,,,Priscotty,,,
+3,,5fd74205,completed,Priscotty,Priscotty,Joseph Francois (deleted),"7547 sky ct cir, Albuquerque, NM","`-106.5602232,35.1057493",Tristin Sullivan,`+15055086526,08/04/2023 16:37:38,08/04/2023 16:07:38,08/04/2023 15:37:38,08/04/2023 17:11:58,08/04/2023 17:23:55,TRUE,,"`-106.561815131,35.106238219",2.7821,"Leafly Order ID: 14020616
+Order Total (tax incl.): 22.0
+Item Summary:
+2 x Sativa Mix Pre-Roll .5g",,https://d15p8tr8p0vffz.cloudfront.net/3a88f9f8eb8f122850da7199/282x.png,https://d15p8tr8p0vffz.cloudfront.net/856e9b28e355b028a5c9cd14/800x.png,,,,"`-106.586084343,35.101391877",08/04/2023 17:13:01,"`-106.586756688,35.102857779",08/04/2023 17:18:28,"`-106.559780159,35.104596132",dropoff,f793a6d5,NONE,NONE,,TRUE,Tristin Sullivan,,0,,,Priscotty,,,
+3,,9259bf4e,completed,Priscotty,Priscotty,Joseph Francois (deleted),"1201 Dakota Street Northeast, Albuquerque, NM 87110","`-106.57441,35.08926",Catherine Westbrook,`+15054409711,,,08/04/2023 16:24:49,08/04/2023 17:25:18,08/04/2023 17:33:40,TRUE,,"`-106.574341669,35.089312479",1.7417,"View order: https://dhcie.com/c/veJKim0z
+
+Order Number: 155823868
+
+Products:
+White Fire OG Disposable
+Option: 2g
+Quantity: 1
+Brand: Ghost
+Price: 68
+-----------
+Chemdawg Live Resin Cartridge
+Option: 1g
+Quantity: 1
+Brand: Honey Hole Cannabis Co.
+Price: 48
+-----------
+Gruntz Live Cartridge
+Option: 1g
+Quantity: 1
+Brand: Bloom Brand
+Price: 40
+-----------
+Strawnana Live Rosin Cartridge
+Option: .5g
+Quantity: 1
+Brand: Olio
+Price: 44.8
+-----------
+Sandia Gummies 10-Pack | 250mg
+Option: 2.5g
+Quantity: 1
+Brand: Derived
+Price: 20
+-----------
+Raspberry Lemonade Gummies 250mg
+Option: 2.5g
+Quantity: 1
+Brand: Derived
+Price: 20
+-----------
+
+productSubtotal: $301.00
+discount: $60.20
+total: $240.80","DOB: 11/30/1988
+Email: cmwstbrk@gmail.com
+Medical Card: JB3Y4P689C - Exp: 07/07/2025",https://d15p8tr8p0vffz.cloudfront.net/d7cdad56e98b9f4f1fb38ed3/282x.png,https://d15p8tr8p0vffz.cloudfront.net/6783bb06d7eea1d653bde492/800x.png,,,,"`-106.562917645,35.106138231",08/04/2023 17:26:03,"`-106.564145038,35.104693892",08/04/2023 17:31:12,"`-106.573871157,35.089150923",dropoff,d0fb922f,NONE,NONE,,FALSE,Catherine Westbrook,,6,,,Priscotty,,,

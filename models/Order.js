@@ -1,60 +1,102 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
+const {ProductSchema} = require("./Product")
+
 
 const OrderSchema = new Schema({
-  order_number: {
+  priscotty_orderID: {
+    type: Schema.Types.ObjectId,
+    default: () => new Types.ObjectId(),
+  },
+  onfleet_task_id: 
+    {
+      type: Schema.Types.String,
+      ref: 'Customer',
+    },
+  
+  delivery_driver:{
     type: String,
     trim: true,
   },
-  onfleet_task_id:{
+  creation_time:{
+    type: Date,
+  },
+  delivery_start_time: {
+    type: Date,
+  },
+  day_of_the_week:{
+    type:String
+  },
+  destination_address: {
+    type: String,
+    trim:true
+  },
+  client_name: {
     type: String,
     trim: true,
-    unique:true
   },
-  total_items_on_order:{
+  client_phone_number: {
+    type: String,
+    trim: true,
+  },
+  delivery_distance: {
     type: Number,
+    trim: true,
+  },
+  task_details: {
+    type: String,
+    trim: true,
+  },
+  signature_picture:{
+    type: String,
     trim: true,
     sparse: true,
+    unique: true,
   },
-  mobile: {
+  client_picture:{
     type: String,
     trim: true,
     sparse: true,
+    unique: true,
   },
-  created_at: {
-    type: String,
+  driver_departure_time:{
+    type:Date,
+    trim: true,
   },
-  subtotal: {
+  driver_arrival_time:{
+    type:Date,
+    trim: true,
+  },
+  pos_system:{
+    type:String,
+    trim: true,
+  },
+  order_url:{
+    type:String,
+    trim: true,
+  },
+  transaction_id:{
+    type:String,
+    trim: true,
+  },
+  products:[ProductSchema],
+  subtotal:{
     type: Number,
     trim: true,
   },
-  order_total: {
+  discount:{
+    type: String,
+    trim: true,
+  },
+  order_total:{
     type: Number,
     trim: true,
   },
-  view_order_url: {
-    type: String,
+  quantity_of_items_in_order:{
+    type:Number,
     trim: true,
   },
-  order_detail: {
-    type: Array,
-    trim: true,
-  },
-  pos_system_used:{
-    type: String,
-    trim: true,
-  },
-  NOTES:{
-    type: String,
-    trim: true,
-  },
-  minutes_to_complete:{
-    type:Number
-  },
-  distance_for_delivery:{
-    type:Number
-  }
 });
 
 const Order = model('Order', OrderSchema);
 
-module.exports = Order;
+module.exports = {OrderSchema, Order};
