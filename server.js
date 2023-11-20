@@ -23,14 +23,18 @@ const database = require('./utils/db_queries.js')
 //un: gendelryan
 //pw: 6NlDYpx8QPujyaZQ
 const resetDatabase = async () => {
-    await mongoose.connection.dropDatabase();
+    // await mongoose.connection.dropDatabase();
+    await Order.deleteMany({});
+    await Product.deleteMany({});
+    await Pickup.deleteMany({});
+    await Customer.deleteMany({});
     console.log('Database reset');
 };
 
 // Connect to MongoDB
 mongoose.connect(
-    //process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
-    'mongodb://127.0.0.1:27017/prescotty',
+    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
+    //'mongodb://127.0.0.1:27017/prescotty',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -570,7 +574,6 @@ app.get('/all/:month', (req, res) => {
                         dataObj.pos_system = "unknown1"
                         const parseOrder = (order) => {
                             const lines = order.split('\n');
-                            const transaction_id = lines[0].match(/Transaction ID: (\d+)/)[1];
 
                             const products = [];
                             for (let i = 1; i < lines.length - 2; i++) {
@@ -618,7 +621,6 @@ app.get('/all/:month', (req, res) => {
                             }
 
                             return {
-                                transaction_id,
                                 sub_total,
                                 total,
                                 products: products.map(product => ({
