@@ -41,7 +41,20 @@ const PickupSchema = new Schema({
   driver:{
     type: String,
     trim: true,
-  }
+  },
+  quantity_of_items_in_order:{
+    type: String,
+    trim: true,
+  },
+  subtotal:{
+    type: Number,
+    trim: true,
+  },
+  order_total:{
+    type: Number,
+    trim: true,
+  },
+
 });
 
 const Pickup = model('Pickup', PickupSchema);

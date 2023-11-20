@@ -396,7 +396,7 @@ app.get('/all/:month', (req, res) => {
             }//END IF "dropoff"
 
             if (data.taskType === "pickup") {
-                if (data.didSucceed==="TRUE"){
+                if (data.didSucceed === "TRUE") {
                     console.log("---------------------------------%%%%%%%%%")
                     dataObj.signature_text = data.signatureText
                     dataObj.signature_url = data.signatureUrl
@@ -433,7 +433,7 @@ app.get('/all/:month', (req, res) => {
                     const differenceMinutes = differenceMs / (1000 * 60);
                     dataObj.time_to_complete = Math.round(differenceMinutes * 100) / 100;
                     //-------------END
-//======================
+                    //======================
                     function extractNumber(address) {
                         var regex = /\b\d{3,5}\b/;
                         var match = address.match(regex);
@@ -441,7 +441,7 @@ app.get('/all/:month', (req, res) => {
                     }
 
                     var number = extractNumber(data.destinationAddress);
-//=====================
+                    //=====================
                     for (let key in dispensariesLibrary) {
                         if (dispensariesLibrary[key].includes(`${number}`)) {
                             dataObj.pickup_dispensary = key.split("_")[0]
@@ -449,6 +449,257 @@ app.get('/all/:month', (req, res) => {
                             dataObj.pickup_dispensary_with_location = key.split("_")[0] + " " + key.split("_")[1]
                         }
                     }
+
+                    //EXTRACTING TRANSACTION TOTALS
+                    if (data.taskDetails.includes("dhcie")) {
+                        const str = data.taskDetails
+                        dataObj.pos_system = "dutchie"
+                        var total_orders = 0
+                        const productsString = str.split('Products:\n')[1].split('\nproductSubtotal:')[0];
+                        const products = productsString.split('-----------\n')
+                            .map(p => {
+                                const lines = p.trim().split('\n');
+                                if (lines.length > 1) {
+                                    return {
+                                        product_name: lines[0],
+                                        option: lines[1] ? lines[1].split(': ')[1] : null,
+                                        quantity: lines[2] ? lines[2].split(': ')[1] : null,
+                                        brand: lines[3] ? lines[3].split(': ')[1] : null,
+                                        price: lines[4] ? parseFloat(lines[4].split(': ')[1]) : null
+                                    };
+                                }
+                                return null;
+                            })
+                            .filter(p => p !== null); // Filter out null values
+
+                        var subtotal = 0
+
+                        if (parseFloat(str.match(/productSubtotal: \$(\d+\.\d+)/)[1])) {
+                            subtotal = parseFloat(str.match(/productSubtotal: \$(\d+\.\d+)/)[1])
+                        }
+
+                        var total = 0
+
+                        if (parseFloat(str.match(/total: \$(\d+\.\d+)/)[1])) {
+                            total = parseFloat(str.match(/total: \$(\d+\.\d+)/)[1]);
+                        }
+
+                        dataObj.subtotal = subtotal
+                        dataObj.order_total = total
+
+
+                        for (let i = 0; i < products.length; i++) {
+                            if (products[i].quantity !== "No match found") {
+                                var integer = parseInt(products[i].quantity)
+                                total_orders = integer + total_orders
+                            }
+                        }
+                        dataObj.quantity_of_items_in_order = total_orders
+                    }
+                    //=========DUTCHIE ABOVE
+                    if (data.taskDetails.includes("Leafly")) {
+                        const str = data.taskDetails
+                        dataObj.pos_system = "leafly"
+                        // Extract order ID and order total
+
+                        var orderTotal = ""
+
+                        if (str.match(/Order Total \(tax incl.\): (\d+\.\d+)/)) {
+                            orderTotal = parseFloat(str.match(/Order Total \(tax incl.\): (\d+\.\d+)/)[1]);
+                        }
+
+
+                        // Extract item summary and split into lines
+                        var itemSummaryStr = ""
+                        if (str.split('Item Summary:\n')) {
+                            if (str.split('Item Summary:\n')[1]) {
+                                itemSummaryStr = str.split('Item Summary:\n')[1].trim();
+                            }
+                        }
+
+                        const itemsLines = itemSummaryStr.split('\n');
+
+                        const items = itemsLines.map(line => {
+                            let option = null, quantity = null, productName = null;
+
+                            // Check for option and quantity in the line
+                            const optionMatch = line.match(/(\d+(\.\d+)?)(g|mg|MG)/);
+                            const quantityMatch = line.match(/(\d+) x /);
+
+                            if (optionMatch) {
+                                option = optionMatch[0];
+                                line = line.replace(optionMatch[0], '').trim(); // remove option from line
+                            }
+
+                            if (quantityMatch) {
+                                quantity = quantityMatch[1];
+                                line = line.replace(quantityMatch[0], '').trim(); // remove quantity from line
+                            }
+
+                            // Remaining text is product name
+                            productName = line;
+
+                            const item = {
+                                product_name: productName.toLowerCase()
+                            };
+                            if (option) item.option = option;
+                            if (quantity) item.quantity = parseInt(quantity);
+
+                            return item;
+                        });
+
+                        const result = {
+                            transaction_id: orderId,
+                            total: orderTotal,
+                            items: items
+                        };
+
+                        dataObj.order_total = orderTotal
+
+                        var total_orders = 0
+                        for (let i = 0; i < items.length; i++) {
+                            var integer = parseInt(items[i].quantity)
+                            total_orders = integer + total_orders
+
+                        }
+                        dataObj.quantity_of_items_in_order = total_orders
+                    }
+
+                    //===============================
+                    if (data.taskDetails.includes("Transaction ID:")) {
+                        dataObj.pos_system = "unknown1"
+                        const parseOrder = (order) => {
+                            const lines = order.split('\n');
+                            const transaction_id = lines[0].match(/Transaction ID: (\d+)/)[1];
+
+                            const products = [];
+                            for (let i = 1; i < lines.length - 2; i++) {
+                                const productLine = lines[i];
+                                const quantityMatch = productLine.match(/^(\d+\.?\d*) x /);
+                                const quantity = quantityMatch ? parseFloat(quantityMatch[1]) : null;
+
+                                let rest = productLine.replace(/^(\d+\.?\d*) x /, '');
+                                const skuMatch = rest.match(/\| (\d+)$/);
+                                const sku = skuMatch ? skuMatch[1] : null;
+                                rest = rest.replace(/\| \d+$/, '');
+
+                                // Updated regular expression to handle "gs" as well
+                                let option = rest.match(/ (\d+(\.\d+)?[mg|g|gs|MG|G|GS]) /i);
+                                option = option ? option[0].trim() : null;
+                                rest = rest.replace(/ \d+(\.\d+)?[mg|g|gs|MG|G|GS] /i, '');
+
+                                products.push({
+                                    quantity,
+                                    product_name: rest.trim(),
+                                    option,
+                                    sku
+                                });
+                            }
+
+                            var sub_total = 0
+
+                            let result1 = lines[lines.length - 2].match(/Sub-Total: \$([\d,]+(\.\d{2})?)/);
+
+                            if (result1 !== null && result1[1]) {
+                                sub_total = parseFloat(result1[1].replace(',', ''));
+                            } else {
+                                console.log('No match found');
+                            }
+
+                            // var total = parseFloat(lines[lines.length - 1].match(/Total: \$([\d,]+(\.\d{2})?)/)[1].replace(',', ''));
+                            var total = 0
+
+                            let result = lines[lines.length - 1].match(/Total: \$([\d,]+(\.\d{2})?)/);
+
+                            if (result !== null && result[1]) {
+                                total = parseFloat(result[1].replace(',', ''));
+                            } else {
+                                console.log('No match found');
+                            }
+
+                            return {
+                                transaction_id,
+                                sub_total,
+                                total,
+                                products: products.map(product => ({
+                                    ...product,
+                                    product_name: product.product_name.replace(/\|.*$/, '').trim()
+                                }))
+                            };
+
+                        };
+
+                        //==================
+                        var orderEverything = parseOrder(data.taskDetails);
+
+                        dataObj.order_total = orderEverything.total
+                        dataObj.subtotal = orderEverything.sub_total
+
+                        var total_orders = 0
+                        for (let i = 0; i < orderEverything.products.length; i++) {
+                            total_orders = orderEverything.products[i].quantity + total_orders
+                        }
+                        dataObj.quantity_of_items_in_order = total_orders
+                    }
+                    //================================
+                    if (data.taskDetails.includes("-------------------")) {
+                        dataObj.pos_system = "unknown2"
+                        function processInvoice(invoice) {
+                            const lines = invoice.split('\n');
+
+                            // Extracting transaction_id
+                            const orderLine = lines.find(line => line.includes('Order #:'));
+                            const transaction_id = orderLine ? orderLine.split('Order #:')[1].trim() : null;
+
+                            // Extracting total
+                            const totalLine = lines.find(line => line.includes('Total:'));
+                            const total = totalLine ? parseFloat(totalLine.split('$')[1].trim()) : null;
+
+                            // Extracting products
+                            const productsStart = lines.indexOf('Order Details') + 3;
+                            const productsEnd = totalLine ? lines.indexOf(totalLine) : lines.length;
+                            const productLines = lines.slice(productsStart, productsEnd);
+                            const products = productLines.map(line => {
+                                const [quantity, rest] = line.split(' x ');
+                                let productName = rest ? rest.trim() : null;
+                                const optionMatch = productName ? productName.match(/\d+(\.\d+)?(g|mg)/i) : null; // added 'i' flag here
+                                let option = optionMatch ? optionMatch[0] : null;
+                                if (option) {
+                                    productName = productName.replace(option, '').trim();
+                                }
+                                return {
+                                    quantity: parseFloat(quantity),
+                                    product_name: productName,
+                                    option: option
+                                };
+                            });
+
+                            return {
+                                transaction_id,
+                                total,
+                                products
+                            };
+                        }
+
+                        const result1 = processInvoice(data.taskDetails);
+
+                        if (!result1.products[result1.products.length - 1].quantity) {
+                            result1.products.pop();
+                        }
+
+                        // console.log(result1);
+
+
+                        dataObj.order_total = result1.total
+                        var total_orders = 0
+                        for (let i = 0; i < result1.products.length; i++) {
+                            total_orders = result1.products[i].quantity + total_orders
+                        }
+                        dataObj.quantity_of_items_in_order = total_orders
+
+                    }
+
+                    //EXTRACTING TRANSACTION TOTALS
                     dataObj.driver = data.workerName
                     database.pickupOrder(dataObj)
                 }

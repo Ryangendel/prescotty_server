@@ -502,15 +502,14 @@ const databaseManager = {
 
     },
     pickupOrder: async function (data) {
-        console.log("++++++++++++++++++++++++++++++++--------------------")
-        console.log(data)
-        console.log("++++++++++++++++++++++++++++++++--------------------")
         let orderDetail = {
             signature_text: data.signature_text,
             signature_url: data.signature_url,
             photo_url: data.photo_url,
             onfleet_task_id: data.onfleet_task_id,
-
+            quantity_of_items_in_order:data.quantity_of_items_in_order,
+            subtotal:data.subtotal,
+            order_total:data.order_total,
             creation_time: data.creation_time,
             completion_time: data.completion_time,
             order_id: data.order_id,
