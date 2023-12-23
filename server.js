@@ -10,6 +10,7 @@ const fastcsv = require('fast-csv');
 const dispensariesList = require('./utils/dispensary_locations.js');
 const dispensariesLibrary = require('./utils/dispensary_library.js');
 const { Customer, Order, Product, Pickup } = require('./models');
+const Onfleet = require("@onfleet/node-onfleet")
 
 var count123 = 0
 
@@ -48,7 +49,7 @@ mongoose.connect(
     //PW:4ko9PWpSQ3CUpj0P <= for the MONGO_URI
     .then(() => {
         console.log('Connected successfully to MongoDB');
-        resetDatabase()
+        //resetDatabase()
         // You can use mongoose.connection to interact with the database
         const db = mongoose.connection;
         var PORT = 3002
@@ -886,8 +887,10 @@ exportToCsv();
 res.send("done")
 })
 
-app.get('/getweektotals', async (req, res) => {
-
+app.get('/testingroute', async (req, res) => {
+    const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
+    console.log(await onfleetApi.verifyKey())
+    res.send("tested")
 })
 
 app.listen(PORT, () => {
