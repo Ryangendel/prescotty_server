@@ -18,6 +18,10 @@ const PickupSchema = new Schema({
     trim: true,
     unique:true,
   },
+  // onfleet_task_id:{
+  //    type: Schema.Types.ObjectId, 
+  //    ref: 'Order' 
+  // },
   creation_time: {
     type: Date,
     trim: true,
@@ -54,7 +58,11 @@ const PickupSchema = new Schema({
     type: Number,
     trim: true,
   },
-
+  //------------Trying assocations
+  // onfleet_taskId_relationship:{
+  //    type: Schema.Types.ObjectId, 
+  //    ref: 'Order' 
+  // }
 });
 
 const Pickup = model('Pickup', PickupSchema);

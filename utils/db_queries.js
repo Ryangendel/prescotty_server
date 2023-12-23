@@ -5,6 +5,7 @@ const databaseManager = {
 
     dutchie: async function (data) {
         let orderDetail = {
+            dependant_task:data.dependant_task,
             onfleet_task_id: data.onfleet_task_id,
             delivery_driver: data.delivery_driver,
             creation_time: data.creation_time,
@@ -26,7 +27,7 @@ const databaseManager = {
             subtotal: data.subtotal,
             discount: data.discount,
             order_total: data.order_total,
-            quantity_of_items_in_order: data.quantity_of_items_in_order
+            quantity_of_items_in_order: data.quantity_of_items_in_order,
         }
 
         let customer = {
@@ -131,6 +132,7 @@ const databaseManager = {
     },
     leafly: async function (data) {
         let orderDetail = {
+            dependant_task:data.dependant_task,
             onfleet_task_id: data.onfleet_task_id,
             delivery_driver: data.delivery_driver,
             creation_time: data.creation_time,
@@ -255,6 +257,7 @@ const databaseManager = {
     unknown1: async function (data) {
 
         let orderDetail = {
+            dependant_task:data.dependant_task,
             onfleet_task_id: data.onfleet_task_id,
             delivery_driver: data.delivery_driver,
             creation_time: data.creation_time,
@@ -379,6 +382,7 @@ const databaseManager = {
     },
     unknown2: async function (data) {
         let orderDetail = {
+            dependant_task:data.dependant_task,
             onfleet_task_id: data.onfleet_task_id,
             delivery_driver: data.delivery_driver,
             creation_time: data.creation_time,
@@ -516,6 +520,7 @@ const databaseManager = {
             pickup_dispensary: data.pickup_dispensary,
             pickup_dispensary_location: data.pickup_dispensary_location,
             driver: data.driver,
+            onfleet_taskId_relationship: data.onfleet_task_id
         }
 
         try {

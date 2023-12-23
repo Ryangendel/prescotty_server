@@ -12,7 +12,6 @@ const OrderSchema = new Schema({
       type: Schema.Types.String,
       ref: 'Customer',
     },
-  
   delivery_driver:{
     type: String,
     trim: true,
@@ -84,6 +83,10 @@ const OrderSchema = new Schema({
     trim: true,
   },
   discount:{
+    type: String,
+    trim: true,
+  },
+  dependant_task:{
     type: String,
     trim: true,
   },

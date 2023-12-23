@@ -6,6 +6,7 @@ const PORT = process.env.PORT || 3001;
 const fs = require('fs')
 // var parse = require('csv-parse')
 const csv = require('csv-parser')
+const fastcsv = require('fast-csv');
 const dispensariesList = require('./utils/dispensary_locations.js');
 const dispensariesLibrary = require('./utils/dispensary_library.js');
 const { Customer, Order, Product, Pickup } = require('./models');
@@ -33,8 +34,8 @@ const resetDatabase = async () => {
 
 // Connect to MongoDB
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
-    //'mongodb://127.0.0.1:27017/prescotty',
+    //process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/prescotty',
+    'mongodb://127.0.0.1:27017/prescotty',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -110,6 +111,7 @@ app.get('/all/:month', (req, res) => {
             dataObj.creation_time = data.creationTime
             dataObj.delivery_start_time = data.startTime
             dataObj.day_of_the_week = day_of_the_week
+            dataObj.dependant_task = data.dependencies
 
             if (data.taskType === "dropoff") {
                 if (!data.taskDetails.includes("recon") || !data.taskDetails.includes("recon")) {
@@ -401,7 +403,7 @@ app.get('/all/:month', (req, res) => {
 
             if (data.taskType === "pickup") {
                 if (data.didSucceed === "TRUE") {
-                    console.log("---------------------------------%%%%%%%%%")
+                   
                     dataObj.signature_text = data.signatureText
                     dataObj.signature_url = data.signatureUrl
                     dataObj.photo_url = data.signatureUrl
@@ -418,6 +420,7 @@ app.get('/all/:month', (req, res) => {
                             return null;
                         }
                     }
+
                     const orderId = extractOrderId(data.taskDetails);
                     dataObj.order_id = orderId
 
@@ -855,6 +858,37 @@ app.get('/averagedistanceperorder', async (req, res) => {
 
     res.send(`The average distance for each delivery is ${average} miles `)
 });
+
+app.get('/getcustomerinfo', async (req, res) => {
+// CSV file output path
+const outputPath = 'customer_info.csv';
+
+async function exportToCsv() {
+    try {
+        // Select only 'client_name' and 'client_phone_number' fields
+        const docs = await Customer.find({}, { client_name: 1, client_phone_number: 1, _id: 0 }).lean();
+        const writeStream = fs.createWriteStream(outputPath);
+        const csvStream = fastcsv.format({ headers: true });
+
+        csvStream.pipe(writeStream);
+        docs.forEach(doc => csvStream.write(doc));
+        csvStream.end();
+
+        writeStream.on('finish', () => {
+            console.log(`Successfully exported data to ${outputPath}`);
+        });
+    } catch (err) {
+        console.error('Error during export:', err);
+    }
+}
+
+exportToCsv();
+res.send("done")
+})
+
+app.get('/getweektotals', async (req, res) => {
+
+})
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
