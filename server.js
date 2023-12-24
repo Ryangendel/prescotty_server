@@ -906,7 +906,7 @@ app.get('/testingroute/webhook/createtask', async (req, res) => {
     var info = await JSON.stringify(req)
     console.log(info)
     console.log("=================================================================")
-    res.sendJSON({a:1,b:2})
+    res.status(200).send(req.query.check)
 })
 
 app.listen(PORT, () => {
