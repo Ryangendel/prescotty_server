@@ -893,9 +893,12 @@ app.get('/testingroute', async (req, res) => {
     res.send("tested")
 })
 
-app.get('/testingroute/api/createtask', async (req, res) => {
-   
-    res.send(req)
+app.post('/testingroute/api/createtask', async (req, res) => {
+    console.log("=================================================================IN POST")
+    var info = await JSON.stringify(req)
+    console.log(info)
+    console.log("=================================================================")
+    res.sendJSON({a:1,b:2})
 })
 
 app.get('/testingroute/webhook/createtask', async (req, res) => {
