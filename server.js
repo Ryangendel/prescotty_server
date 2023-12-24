@@ -895,7 +895,7 @@ app.get('/testingroute', async (req, res) => {
 
 app.get('/testingroute/api/createtask', async (req, res) => {
    
-    res.send("new order route hit")
+    res.send(req)
 })
 
 app.listen(PORT, () => {
