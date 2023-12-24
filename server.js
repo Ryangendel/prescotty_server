@@ -917,7 +917,7 @@ const hash = crypto.createHmac('sha512', secret)
                    .digest('hex');
 
 if (hash === receivedSignature) {
-    console.log('Valid signature. Processing webhook...');
+    console.log('Valid signataure. Processing webhook...');
     // Process the webhook
 } else {
     console.log('Invalid signature. Rejecting the request...');
