@@ -893,18 +893,13 @@ app.get('/testingroute', async (req, res) => {
     res.send("tested")
 })
 
-app.post('/testingroute/api/createtask', async (req, res) => {
-    console.log("=================================================================IN POST")
-    var info = await JSON.stringify(req)
-    console.log(info)
-    console.log("=================================================================")
-    res.status(200).send(req.query.check)
-})
 
 app.get('/testingroute/webhook/createtask', async (req, res) => {
+    //https://priscottyserver-c283115f95f7.herokuapp.com//testingroute/webhook/createtask
     console.log("=================================================================")
+    console.log(req)
     console.log("=================================================================")
-    res.status(200).send(req.query.check)
+    res.send("working")
 })
 
 app.listen(PORT, () => {
