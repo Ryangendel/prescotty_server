@@ -903,8 +903,6 @@ app.post('/testingroute/api/createtask', async (req, res) => {
 
 app.get('/testingroute/webhook/createtask', async (req, res) => {
     console.log("=================================================================")
-    var info = await JSON.stringify(req)
-    console.log(info)
     console.log("=================================================================")
     res.status(200).send(req.query.check)
 })
