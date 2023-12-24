@@ -12,6 +12,9 @@ const dispensariesLibrary = require('./utils/dispensary_library.js');
 const { Customer, Order, Product, Pickup } = require('./models');
 const Onfleet = require("@onfleet/node-onfleet")
 
+const crypto = require('crypto')
+const secret_in_hex = Buffer.from("72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30", 'hex');
+
 var count123 = 0
 
 app.use(express.urlencoded({ extended: true }));
@@ -893,13 +896,28 @@ app.get('/testingroute', async (req, res) => {
     res.send("tested")
 })
 
-
 app.get('/testingroute/webhook/createtask', async (req, res) => {
-    //https://priscottyserver-c283115f95f7.herokuapp.com//testingroute/webhook/createtask
     console.log("=================================================================")
-    console.log(req)
+    const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
+    if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
+        console.log(req)
+        console.log("=================================================================")
+        res.send("working")
+    }
+   res.send("not working")
+})
+
+app.post('/testingroute/webhook/createtask', async (req, res) => {
     console.log("=================================================================")
-    res.send("working")
+    // const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
+    // if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
+    //     console.log(req)
+    //     console.log("=================================================================")
+    //     res.send("working")
+    // }
+    const headerValue = req.headers['X-Onfleet-Signature'];
+    console.log(headerValue)
+   res.send("In post route")
 })
 
 app.listen(PORT, () => {
