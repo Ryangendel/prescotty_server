@@ -897,14 +897,34 @@ app.get('/testingroute', async (req, res) => {
 })
 
 app.get('/testingroute/webhook/createtask', async (req, res) => {
-    console.log("=================================================================")
-    const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
-    if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
-        console.log(req)
-        console.log("=================================================================")
-        res.send("working")
-    }
-   res.send("not working")
+//     console.log("=================================================================")
+//     const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
+//     if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
+//         console.log(req)
+//         console.log("=================================================================")
+//         res.send("working")
+//     }
+//    res.send("not working")
+
+console.log("=================================================================")
+
+const receivedSignature = req.headers['X-Onfleet-Signature'];
+const message = JSON.stringify(req.body);
+const secret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
+
+const hash = crypto.createHmac('sha512', secret)
+                   .update(message)
+                   .digest('hex');
+
+if (hash === receivedSignature) {
+    console.log('Valid signature. Processing webhook...');
+    // Process the webhook
+} else {
+    console.log('Invalid signature. Rejecting the request...');
+    return res.status(403).send('Invalid signature');
+}
+
+res.status(200).send('Webhook received');
 })
 
 app.post('/testingroute/webhook/createtask', async (req, res) => {
@@ -929,19 +949,12 @@ app.post('/testingroute/webhook/createtask', async (req, res) => {
     res.status(200).send('Webhook received');
 
 
-
-
-
-
-
     // const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
     // if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
     //     console.log(req)
     //     console.log("=================================================================")
     //     res.send("working")
     // }
-    const headerValue = req.headers['X-Onfleet-Signature'];
-    console.log(headerValue)
    res.send("In post route")
 })
 
