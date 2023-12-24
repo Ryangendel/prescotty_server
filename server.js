@@ -941,6 +941,7 @@ app.post('/testingroute/webhook/createtask', async (req, res) => {
     if (hash === receivedSignature) {
         console.log('Valid signature. Processing webhook...');
         // Process the webhook
+        res.status(200).send('');
     } 
 
     res.status(200).send('');
