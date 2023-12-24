@@ -941,12 +941,9 @@ app.post('/testingroute/webhook/createtask', async (req, res) => {
     if (hash === receivedSignature) {
         console.log('Valid signature. Processing webhook...');
         // Process the webhook
-    } else {
-        console.log('Invalid signature. Rejecting the request...');
-        return res.status(403).send('Invalid signature');
-    }
+    } 
 
-    res.status(200).send('Webhook received');
+    res.status(200).send('');
 
 
     // const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
@@ -955,7 +952,7 @@ app.post('/testingroute/webhook/createtask', async (req, res) => {
     //     console.log("=================================================================")
     //     res.send("working")
     // }
-   res.send("In post route")
+//    res.send("In post route")
 })
 
 app.listen(PORT, () => {
