@@ -931,14 +931,15 @@ app.post('/testingroute/webhook/createtask', async (req, res) => {
     console.log("=================================================================")
 
     const receivedSignature = req.headers['X-Onfleet-Signature'];
-    const message = JSON.stringify(req.body);
-    const secret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
-
-    const hash = crypto.createHmac('sha512', secret)
-                       .update(message)
+   // const message = JSON.stringify(req.body);
+    const serverSecret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
+    const secret_in_hex = Buffer.from(serverSecret, 'hex');
+    const hash = crypto.createHmac('sha512', secret_in_hex)
+                       .update(receivedSignature)
                        .digest('hex');
 
     if (hash === receivedSignature) {
+        console.log("=================================================================iiiiiiiiii")
         console.log('Valid signature. Processing webhook...');
         // Process the webhook
         res.status(200).send('');
