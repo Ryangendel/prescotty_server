@@ -11,9 +11,7 @@ const dispensariesList = require('./utils/dispensary_locations.js');
 const dispensariesLibrary = require('./utils/dispensary_library.js');
 const { Customer, Order, Product, Pickup } = require('./models');
 const Onfleet = require("@onfleet/node-onfleet")
-
 const crypto = require('crypto')
-const secret_in_hex = Buffer.from("72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30", 'hex');
 
 var count123 = 0
 
@@ -933,10 +931,14 @@ app.post('/testingroute/webhook/createtask', async (req, res) => {
     const receivedSignature = req.headers['X-Onfleet-Signature'];
    // const message = JSON.stringify(req.body);
     const serverSecret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
+    var onfleetSignature = JSON.stringify(receivedSignature)
+
     const secret_in_hex = Buffer.from(serverSecret, 'hex');
+
     const hash = crypto.createHmac('sha512', secret_in_hex)
-                       .update(receivedSignature)
+                       .update(onfleetSignature)
                        .digest('hex');
+
 
     if (hash === receivedSignature) {
         console.log("=================================================================iiiiiiiiii")
