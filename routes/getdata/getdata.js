@@ -190,8 +190,8 @@ router.get('/averagedistanceperorder', async (req, res) => {//WORKS
     res.send(`The average distance for each delivery is ${average} miles `)
 });
 
-router.get('/getcustomerinfo', async (req, res) => {
-    // CSV file output path
+router.get('/getcustomerinfo', async (req, res) => { //GETS ALL CUSTOMERS NAMES AND PHONE NUMBERS
+    
     const outputPath = 'customer_info.csv';
 
     async function exportToCsv() {
