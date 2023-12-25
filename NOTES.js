@@ -706,3 +706,89 @@ try {
 } catch (error) {
     console.log(error)
 }
+
+
+//------------from the server: 
+// app.post('/submit', ({ body }, res) => {
+//     Order.create(body)
+//         .then((dbNote) => {
+//             res.json(dbNote);
+//         })
+//         .catch((err) => {
+//             res.json(err);
+//         });
+// });
+
+
+
+
+// app.get('/update/:month', (req, res) => {
+//     fs.createReadStream(`./on_fleet_${req.params.month}.csv`)
+//         .pipe(csv())
+//         .on('data', async (data) => {
+
+//             const startDate = new Date(data.startTime);
+//             const completionDate = new Date(data.completionTime);
+
+//             // Subtract to get the difference in milliseconds
+//             const elapsedMilliseconds = completionDate - startDate;
+
+//             // Convert milliseconds to seconds, minutes, and hours
+//             const elapsedSeconds = elapsedMilliseconds / 1000;
+//             const elapsedMinutes = elapsedSeconds / 60;
+//             const elapsedHours = elapsedMinutes / 60;
+
+
+//             if (elapsedMinutes > 7) {
+//                 Order.findOneAndUpdate({ onfleet_task_id: data.shortId }, { $set: { "minutes_to_complete": Math.round(elapsedMinutes * 1000) / 1000 } }, { new: true, runValidators: true })
+//                     .then((dbNote) => {
+//                         // if (!dbNote) {
+//                         //     res.json({ message: 'No note found with this id!' });
+//                         //     return;
+//                         // }
+//                         // res.json(dbNote);
+//                         console.log("worked")
+//                     })
+//                     .catch((err) => {
+//                         res.json(err);
+//                     });
+//             }
+
+//         })
+//         .on('end', () => {
+//             res.send(`${req.params.month} was added!`)
+//             //res.json(results)
+//         });
+// });
+
+
+// app.get('/testingroute/webhook/createtask', async (req, res) => {
+// //     console.log("=================================================================")
+// //     const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
+// //     if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
+// //         console.log(req)
+// //         console.log("=================================================================")
+// //         res.send("working")
+// //     }
+// //    res.send("not working")
+
+// console.log("=================================================================")
+
+// const receivedSignature = req.headers['X-Onfleet-Signature'];
+// const message = JSON.stringify(req.body);
+// const secret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
+
+// const hash = crypto.createHmac('sha512', secret)
+//                    .update(message)
+//                    .digest('hex');
+
+// if (hash === receivedSignature) {
+//     console.log('Valid signataure. Processing webhook...');
+//     // Process the webhook
+// } else {
+//     console.log('Invalid signature. Rejecting the request...');
+//     return res.status(403).send('Invalid signature');
+// }
+
+// res.status(200).send('Webhook received');
+// })
