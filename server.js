@@ -891,6 +891,11 @@ app.get('/getcustomerinfo', async (req, res) => {
 app.get('/testingroute', async (req, res) => {
     const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
     console.log(await onfleetApi.verifyKey())
+    onfleetApi.workers.get().then((results) => { 
+        console.log("*********************")
+        console.log(results)
+        console.log("*********************")
+    });
     res.send("tested")
 })
 
@@ -949,25 +954,42 @@ app.get("/testingroute/webhook/createtask", (req, res) => {
     res.status(200).send(req.query.check)
 })
 
-// app.post("/webhooks", (req, res) => {
-//     const secret = process.env.ONFLEET_SECRET
-//     const onfleetSignature = req.headers['x-onfleet-signature'];
+app.post("/webhooks", (req, res) => {
+    const secret = process.env.ONFLEET_SECRET
+    const onfleetSignature = req.headers['x-onfleet-signature'];
     
-//     var parsedBody =  JSON.stringify(req.body)
+    var parsedBody =  JSON.stringify(req.body)
 
-//     const hmac = crypto.createHmac('sha512', Buffer.from(secret, 'hex'))
-//         .update(parsedBody)
-//         .digest('hex');
+    const hmac = crypto.createHmac('sha512', Buffer.from(secret, 'hex'))
+        .update(parsedBody)
+        .digest('hex');
 
-//     // Compare the generated HMAC with the X-Onfleet-Signature
-//     if (hmac === onfleetSignature) {
-//         console.log('Valid webhook');
-//         return res.status(200).send('Webhook received');
-//     } else {
-//         console.log('Invalid webhook');
-//         return res.status(401).send('Invalid signature');
-//     }
-// })
+    // Compare the generated HMAC with the X-Onfleet-Signature
+    if (hmac === onfleetSignature) {
+        console.log(req.body.data.task.completionDetails)
+        console.log("--------")
+        console.log(req.body.data.task.additionalQuantities)
+        console.log("--------")
+        console.log(req.body.data.task.identity)
+        console.log("--------")
+        console.log(req.body.data.task.appearance)
+        console.log("--------")
+        console.log(req.body.data.task.container)
+        console.log("--------")
+        console.log(req.body.data.task.recipients)
+        console.log("--------")
+        console.log(req.body.data.task.destination)
+
+        return res.status(200).send('Webhook received');
+    } else {
+        console.log('Invalid webhook');
+        return res.status(401).send('Invalid signature');
+    }
+})
+
+app.get("/webhooks", (req, res) => {
+    res.status(200).send(req.query.check)
+})
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
