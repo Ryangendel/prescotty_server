@@ -405,7 +405,7 @@ app.get('/all/:month', (req, res) => {
 
             if (data.taskType === "pickup") {
                 if (data.didSucceed === "TRUE") {
-                   
+
                     dataObj.signature_text = data.signatureText
                     dataObj.signature_url = data.signatureUrl
                     dataObj.photo_url = data.signatureUrl
@@ -862,30 +862,30 @@ app.get('/averagedistanceperorder', async (req, res) => {
 });
 
 app.get('/getcustomerinfo', async (req, res) => {
-// CSV file output path
-const outputPath = 'customer_info.csv';
+    // CSV file output path
+    const outputPath = 'customer_info.csv';
 
-async function exportToCsv() {
-    try {
-        // Select only 'client_name' and 'client_phone_number' fields
-        const docs = await Customer.find({}, { client_name: 1, client_phone_number: 1, _id: 0 }).lean();
-        const writeStream = fs.createWriteStream(outputPath);
-        const csvStream = fastcsv.format({ headers: true });
+    async function exportToCsv() {
+        try {
+            // Select only 'client_name' and 'client_phone_number' fields
+            const docs = await Customer.find({}, { client_name: 1, client_phone_number: 1, _id: 0 }).lean();
+            const writeStream = fs.createWriteStream(outputPath);
+            const csvStream = fastcsv.format({ headers: true });
 
-        csvStream.pipe(writeStream);
-        docs.forEach(doc => csvStream.write(doc));
-        csvStream.end();
+            csvStream.pipe(writeStream);
+            docs.forEach(doc => csvStream.write(doc));
+            csvStream.end();
 
-        writeStream.on('finish', () => {
-            console.log(`Successfully exported data to ${outputPath}`);
-        });
-    } catch (err) {
-        console.error('Error during export:', err);
+            writeStream.on('finish', () => {
+                console.log(`Successfully exported data to ${outputPath}`);
+            });
+        } catch (err) {
+            console.error('Error during export:', err);
+        }
     }
-}
 
-exportToCsv();
-res.send("done")
+    exportToCsv();
+    res.send("done")
 })
 
 app.get('/testingroute', async (req, res) => {
@@ -894,70 +894,80 @@ app.get('/testingroute', async (req, res) => {
     res.send("tested")
 })
 
-app.get('/testingroute/webhook/createtask', async (req, res) => {
-//     console.log("=================================================================")
-//     const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
-//     if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
-//         console.log(req)
-//         console.log("=================================================================")
-//         res.send("working")
-//     }
-//    res.send("not working")
+// app.get('/testingroute/webhook/createtask', async (req, res) => {
+// //     console.log("=================================================================")
+// //     const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
+// //     if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
+// //         console.log(req)
+// //         console.log("=================================================================")
+// //         res.send("working")
+// //     }
+// //    res.send("not working")
 
-console.log("=================================================================")
+// console.log("=================================================================")
 
-const receivedSignature = req.headers['X-Onfleet-Signature'];
-const message = JSON.stringify(req.body);
-const secret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
+// const receivedSignature = req.headers['X-Onfleet-Signature'];
+// const message = JSON.stringify(req.body);
+// const secret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
 
-const hash = crypto.createHmac('sha512', secret)
-                   .update(message)
-                   .digest('hex');
+// const hash = crypto.createHmac('sha512', secret)
+//                    .update(message)
+//                    .digest('hex');
 
-if (hash === receivedSignature) {
-    console.log('Valid signataure. Processing webhook...');
-    // Process the webhook
-} else {
-    console.log('Invalid signature. Rejecting the request...');
-    return res.status(403).send('Invalid signature');
-}
+// if (hash === receivedSignature) {
+//     console.log('Valid signataure. Processing webhook...');
+//     // Process the webhook
+// } else {
+//     console.log('Invalid signature. Rejecting the request...');
+//     return res.status(403).send('Invalid signature');
+// }
 
-res.status(200).send('Webhook received');
-})
+// res.status(200).send('Webhook received');
+// })
 
 app.post('/testingroute/webhook/createtask', async (req, res) => {
-    console.log("=================================================================")
+    const secret = process.env.ONFLEET_SECRET
+    const onfleetSignature = req.headers['x-onfleet-signature'];
+    
+    var parsedBody =  JSON.stringify(req.body)
 
-    const receivedSignature = req.headers['X-Onfleet-Signature'];
-   // const message = JSON.stringify(req.body);
-    const serverSecret = "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30";
-    var onfleetSignature = JSON.stringify(receivedSignature)
+    const hmac = crypto.createHmac('sha512', Buffer.from(secret, 'hex'))
+        .update(parsedBody)
+        .digest('hex');
 
-    const secret_in_hex = Buffer.from(serverSecret, 'hex');
-
-    const hash = crypto.createHmac('sha512', secret_in_hex)
-                       .update(onfleetSignature)
-                       .digest('hex');
-
-
-    if (hash === receivedSignature) {
-        console.log("=================================================================iiiiiiiiii")
-        console.log('Valid signature. Processing webhook...');
-        // Process the webhook
-        res.status(200).send('');
-    } 
-
-    res.status(200).send('');
-
-
-    // const hash = crypto.createHmac('sha512', secret_in_hex).update(req.body).digest('hex')
-    // if(hash == "72aef1f1d89d27c7117a5cff6548332bbe6916ec601832d00ce49cca746015cc4bb3dbd8f2a368a66694332d568d064604320f8deb1b4b0740905f97fa835d30"){
-    //     console.log(req)
-    //     console.log("=================================================================")
-    //     res.send("working")
-    // }
-//    res.send("In post route")
+    // Compare the generated HMAC with the X-Onfleet-Signature
+    if (hmac === onfleetSignature) {
+        console.log(req.body);
+        return res.status(200).send('Webhook received');
+    } else {
+        console.log('Invalid webhook');
+        return res.status(401).send('Invalid signature');
+    }
 })
+
+app.get("/testingroute/webhook/createtask", (req, res) => {
+    res.status(200).send(req.query.check)
+})
+
+// app.post("/webhooks", (req, res) => {
+//     const secret = process.env.ONFLEET_SECRET
+//     const onfleetSignature = req.headers['x-onfleet-signature'];
+    
+//     var parsedBody =  JSON.stringify(req.body)
+
+//     const hmac = crypto.createHmac('sha512', Buffer.from(secret, 'hex'))
+//         .update(parsedBody)
+//         .digest('hex');
+
+//     // Compare the generated HMAC with the X-Onfleet-Signature
+//     if (hmac === onfleetSignature) {
+//         console.log('Valid webhook');
+//         return res.status(200).send('Webhook received');
+//     } else {
+//         console.log('Invalid webhook');
+//         return res.status(401).send('Invalid signature');
+//     }
+// })
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
