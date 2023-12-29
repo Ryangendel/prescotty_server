@@ -5,20 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="./logic.js"></script>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./style.css">
-    <script src="logic.js"></script>
+   
 </head>
 
 <body>
+   <div class ="container">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <img id="img-max" src=" https://assets-global.website-files.com/624debe141aec6987ee016f6/64da96324548cef118f84c5c_Priscotty%20Logo.png" alt="Priscotty Logo">
+  </div>
+</div>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+            <div id="currentbusynesslevel"></div>
+      </div>
     <div id="home_quicklinks">
-        <a class="quicklink link1 slow" onclick="myFunction(event)">
-            <span class="ql_caption">
-                <span class="outer">
+        <a class="quicklink link1 slow">
+            <span class="ql_caption slow">
+                <span class="outer slow">
                     <span class="inner slow">
-                        <h2>Slow</h2>
+                        <h2 id="slow">Slow</h2>
                     </span>
                 </span>
             </span>
@@ -26,11 +35,11 @@
             <span class="ql_bottom"></span>
         </a>
 
-        <a class="quicklink link2" onclick="changeBusyiness('slowmedium')">
-            <span class="ql_caption">
-                <span class="outer">
+        <a class="quicklink link2 slowmedium" >
+            <span class="ql_caption slowmedium">
+                <span class="outer slowmedium">
                     <span class="inner slowmedium">
-                        <h2>Slow/Medium</h2>
+                        <h2 id="slowmedium">Slow/Medium</h2>
                     </span>
                 </span>
             </span>
@@ -38,11 +47,11 @@
             <span class="ql_bottom"></span>
         </a>
 
-        <a class="quicklink link3"  onclick="changeBusyiness('medium')">
-            <span class="ql_caption">
-                <span class="outer">
+        <a class="quicklink link3 medium" >
+            <span class="ql_caption medium">
+                <span class="outer medium">
                     <span class="inner medium">
-                        <h2>Medium </h2>
+                        <h2 id="medium">Medium </h2>
                     </span>
                 </span>
             </span>
@@ -51,22 +60,22 @@
         </a>
 
         <div class="clear"></div>
-        <a class="quicklink link4" onclick="changeBusyiness('mediumbusy')">
-            <span class="ql_caption">
-                <span class="outer">
+        <a class="quicklink link4 mediumbusy">
+            <span class="ql_caption mediumbusy">
+                <span class="outer mediumbusy">
                     <span class="inner mediumbusy">
-                        <h2>Medium/Busy </h2>
+                        <h2 id="mediumbusy">Medium/Busy </h2>
                     </span>
                 </span>
             </span>
             <span class="ql_top"></span>
             <span class="ql_bottom"></span>
         </a>
-        <a class="quicklink link5" onclick="changeBusyiness('busy')">
-            <span class="ql_caption">
-                <span class="outer">
+        <a class="quicklink link5 busy">
+            <span class="ql_caption busy">
+                <span class="outer busy">
                     <span class="inner busy">
-                        <h2>Busy </h2>
+                        <h2 id="busy">Busy </h2>
                     </span>
                 </span>
             </span>
@@ -74,10 +83,6 @@
             <span class="ql_bottom"></span>
         </a>
     </div>
-    <!-- <div class="hexagon">
-        <div class="hexTop"></div>
-        <div class="hexBottom"></div>
-    </div> -->
 </body>
 
 </html>

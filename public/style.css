@@ -193,3 +193,13 @@ a.quicklink {
 h2{
     font-size:1em;
 }
+
+#currentbusynesslevel {
+    font-size:3em;
+    color: gray
+}
+
+#img-max {
+    max-width: 500px;
+    width:100%;
+  }
