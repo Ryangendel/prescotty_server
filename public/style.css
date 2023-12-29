@@ -195,11 +195,18 @@ h2{
 }
 
 #currentbusynesslevel {
-    font-size:3em;
+    margin-top:5%;
+    font-size:1.5em;
     color: gray
 }
 
+#currentLevelDOM{
+    margin-top:2%;
+    font-size:2.5em;
+}
+
 #img-max {
+    margin-top:3%;
     max-width: 500px;
     width:100%;
   }
