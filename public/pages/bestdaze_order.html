@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Delivery Order</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/style_orderpage.css">
+    <script src="../js/logic_order.js"></script>
+</head>
+
+<body>
+    <div class="landing-page">
+        <div class="form-appointment">
+            <div class="wpcf7" id="wpcf7-f560-p590-o1">
+                <form action="/api/api/bestdazeorder" method="post" class="wpcf7-form"
+                    novalidate="novalidate" _lpchecked="1">
+                    <div style="display: none;">
+                        <input type="hidden" name="_wpcf7" value="560">
+                        <input type="hidden" name="_wpcf7_version" value="3.5">
+                        <input type="hidden" name="_wpcf7_locale" value="">
+                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f560-p590-o1">
+                        <input type="hidden" name="_wpnonce" value="dbb28877d5">
+                    </div>
+                    <h1>CUSTOMER INFORMATION</h1>
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap text-680"><input type="text" name="text-680" value=""
+                                    size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    aria-required="true" placeholder="Customer Name"></span><br>
+                            <span class="wpcf7-form-control-wrap id_number-680"><input type="text" name="id_number-680" value=""
+                                    size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                    aria-required="true" placeholder="Customer's State ID Number"></span><br>
+                            <span class="wpcf7-form-control-wrap email-680"><input type="email" name="email-680"
+                                    value="" size="45"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
+                                    aria-required="true" placeholder="Customer Email"></span><br>
+                            <span class="wpcf7-form-control-wrap tel-630"><input type="tel" name="tel-630" value=""
+                                    size="45"
+                                    class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel"
+                                    aria-required="true" placeholder=" Customer Phone #"></span><br>
+                            <span class="wpcf7-form-control-wrap textarea-398"><textarea name="textarea-398" cols="40"
+                                    rows="10" class="wpcf7-form-control wpcf7-textarea"
+                                    placeholder="Customer's Address"></textarea></span>
+                        </div>
+                        <div style="width: 48%; float: right;">
+                            <h4>Does the Customer a Medical card?</h4>
+                            <p><span class="wpcf7-form-control-wrap radio-98"><span
+                                        class="wpcf7-form-control wpcf7-radio"><span
+                                            class="wpcf7-list-item"><label><input type="radio" name="radio-98"
+                                                    value="True">&nbsp;<span
+                                                    class="wpcf7-list-item-label">True</span></label></span><span
+                                            class="wpcf7-list-item"><label><input type="radio" name="radio-98"
+                                                    value="False">&nbsp;<span
+                                                    class="wpcf7-list-item-label">False</span></label></span></span></span>
+                            </p>
+                            <!-- <h4>Days of the week you are available for appointment:</h4>
+        <p><span class="wpcf7-form-control-wrap checkbox-465"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Monday">&nbsp;<span class="wpcf7-list-item-label">Monday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Tuesday">&nbsp;<span class="wpcf7-list-item-label">Tuesday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Wednesday">&nbsp;<span class="wpcf7-list-item-label">Wednesday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Thursday">&nbsp;<span class="wpcf7-list-item-label">Thursday</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-465[]" value="Friday">&nbsp;<span class="wpcf7-list-item-label">Friday</span></label></span></span></span></p>
+        <h4>Best time of day for your appointment:</h4>
+        <p><span class="wpcf7-form-control-wrap checkbox-246"><span class="wpcf7-form-control wpcf7-checkbox"><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-246[]" value="Morning">&nbsp;<span class="wpcf7-list-item-label">Morning</span></label></span><span class="wpcf7-list-item"><label><input type="checkbox" name="checkbox-246[]" value="Afternoon">&nbsp;<span class="wpcf7-list-item-label">Afternoon</span></label></span></span></span></p> -->
+                        </div>
+                    </div>
+                    <div
+                        style="text-align: center; padding-top: 2em; border-top: 3px solid rgb(153, 202, 129); margin-top: 1em;">
+                    </div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+
+
+                    <h1>Order Detail</h1>
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap product_1_name-680"><input type="text" name="product_1" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-product_1_name" aria-required="true" placeholder="Product Name"></span><br>
+                            <span class="wpcf7-form-control-wrap product_1_option-680"><input type="text" name="product_1" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-product_2_option" aria-required="true" placeholder="Product Option (In grams-> 1g/3.5g)"></span><br>
+                            <span class="wpcf7-form-control-wrap product_1_quantity-680"><input type="text" name="product_1" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-product_1_quantity" aria-required="true" placeholder="Quantity"></span><br>
+                            <span class="wpcf7-form-control-wrap product_1_brand-630"><input type="text" name="product_1" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_1_brand" aria-required="true" placeholder="Product Brand"></span><br>
+                            <span class="wpcf7-form-control-wrap product_1_price-630"><input type="text" name="product_1" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_1_price" aria-required="true" placeholder="Product Price"></span><br>
+                            <span class="wpcf7-form-control-wrap product_1_sku-630"><input type="text" name="product_1" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_1_sku" aria-required="true" placeholder="Product SKU"></span><br>
+                        </div>
+                    </div>
+                    <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"></div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap product_2_name-680"><input type="text" name="product_2" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-product_2_name" aria-required="true" placeholder="Product Name"></span><br>
+                            <span class="wpcf7-form-control-wrap product_2_option-680"><input type="text" name="product_2" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-product_2_option" aria-required="true" placeholder="Product Option (In grams-> 1g/3.5g)"></span><br>
+                            <span class="wpcf7-form-control-wrap product_2_quantity-680"><input type="text" name="product_2" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-product_2_quantity" aria-required="true" placeholder="Quantity"></span><br>
+                            <span class="wpcf7-form-control-wrap product_2_brand-630"><input type="text" name="product_2" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_2_brand" aria-required="true" placeholder="Product Brand"></span><br>
+                            <span class="wpcf7-form-control-wrap product_2_price-630"><input type="text" name="product_2" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_2_price" aria-required="true" placeholder="Product Price"></span><br>
+                            <span class="wpcf7-form-control-wrap product_2_sku-630"><input type="text" name="product_2" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_2_sku" aria-required="true" placeholder="Product SKU"></span><br>
+                        </div>
+                    </div>
+                    <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"></div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap product_3_name-680"><input type="text" name="product_3" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-product_3_name" aria-required="true" placeholder="Product Name"></span><br>
+                            <span class="wpcf7-form-control-wrap product_3_option-680"><input type="text" name="product_3" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-product_3_option" aria-required="true" placeholder="Product Option (In grams-> 1g/3.5g)"></span><br>
+                            <span class="wpcf7-form-control-wrap product_3_quantity-680"><input type="text" name="product_3" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-product_3_quantity" aria-required="true" placeholder="Quantity"></span><br>
+                            <span class="wpcf7-form-control-wrap product_3_brand-630"><input type="text" name="product_3" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_3_brand" aria-required="true" placeholder="Product Brand"></span><br>
+                            <span class="wpcf7-form-control-wrap product_3_price-630"><input type="text" name="product_3" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_3_price" aria-required="true" placeholder="Product Price"></span><br>
+                            <span class="wpcf7-form-control-wrap product_3_sku-630"><input type="text" name="product_3" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_3_sku" aria-required="true" placeholder="Product SKU"></span><br>
+                        </div>
+                    </div>
+                    <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"></div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap product_4_name-680"><input type="text" name="product_4" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-product_4_name" aria-required="true" placeholder="Product Name"></span><br>
+                            <span class="wpcf7-form-control-wrap product_4_option-680"><input type="text" name="product_4" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-product_4_option" aria-required="true" placeholder="Product Option (In grams-> 1g/3.5g)"></span><br>
+                            <span class="wpcf7-form-control-wrap product_4_quantity-680"><input type="text" name="product_4" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-product_4_quantity" aria-required="true" placeholder="Quantity"></span><br>
+                            <span class="wpcf7-form-control-wrap product_4_brand-630"><input type="text" name="product_4" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_4_brand" aria-required="true" placeholder="Product Brand"></span><br>
+                            <span class="wpcf7-form-control-wrap product_4_price-630"><input type="text" name="product_4" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_4_price" aria-required="true" placeholder="Product Price"></span><br>
+                            <span class="wpcf7-form-control-wrap product_4_sku-630"><input type="text" name="product_4" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_4_sku" aria-required="true" placeholder="Product SKU"></span><br>
+                        </div>
+                    </div>
+                    <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"></div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap product_5_name-680"><input type="text" name="product_5" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-product_5_name" aria-required="true" placeholder="Product Name"></span><br>
+                            <span class="wpcf7-form-control-wrap product_5_option-680"><input type="text" name="product_5" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-product_5_option" aria-required="true" placeholder="Product Option (In grams-> 1g/3.5g)"></span><br>
+                            <span class="wpcf7-form-control-wrap product_5_quantity-680"><input type="text" name="product_5" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-product_5_quantity" aria-required="true" placeholder="Quantity"></span><br>
+                            <span class="wpcf7-form-control-wrap product_5_brand-630"><input type="text" name="product_5" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_5_brand" aria-required="true" placeholder="Product Brand"></span><br>
+                            <span class="wpcf7-form-control-wrap product_5_price-630"><input type="text" name="product_5" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_5_price" aria-required="true" placeholder="Product Price"></span><br>
+                            <span class="wpcf7-form-control-wrap product_5_sku-630"><input type="text" name="product_5" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-product_5_sku" aria-required="true" placeholder="Product SKU"></span><br>
+                        </div>
+                    </div>
+                    <div style="text-align: center; padding-top: 2em; border-top: 1px solid rgb(153, 202, 129); margin-top: 1em;"></div>
+                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+
+                    <h1>Order Totals</h1>
+                    <div class="group">
+                        <div style="width: 48%; float: left;">
+                            <span class="wpcf7-form-control-wrap totalitemsinorder-680"><input type="text" name="totalitemsinorder-680" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-totalitemsinorder" aria-required="true" placeholder="Total Number of Items in Order"></span><br>
+                            <span class="wpcf7-form-control-wrap orderid-680"><input type="text" name="orderid-680" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-orderid" aria-required="true" placeholder="Best Daze Order ID Number"></span><br>
+                            <span class="wpcf7-form-control-wrap subtotal-680"><input type="text" name="subtotal-680" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-subtotal" aria-required="true" placeholder="Order Subtotal"></span><br>
+                            <span class="wpcf7-form-control-wrap total-680"><input type="text" name="total-680" value="" size="45" class="wpcf7-form-control wpcf7-text wpcf7-id wpcf7-validates-as-required wpcf7-validates-as-total" aria-required="true" placeholder="Order Total"></span><br>
+                        </div>
+                    </div>
+
+
+                        <div
+                        style="text-align: center; padding-top: 2em; border-top: 5px solid rgb(153, 202, 129); margin-top: 1em;">
+                        <input type="submit" value="Submit Delivery Order" class="wpcf7-form-control wpcf7-submit"><img
+                            class="ajax-loader"
+                            src="http://www.professionalaudiologicalservices.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif"
+                            alt="Sending ..." style="visibility: hidden;"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
