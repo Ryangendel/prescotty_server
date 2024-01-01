@@ -46,9 +46,9 @@
   
   .form-appointment {
       padding: 2em;
-      background-color: rgb(239, 252, 239);
+      background-color: white;
       border-radius: 4px;
-      border: 1px solid rgb(130, 228, 130);
+      border: 1px solid black;
       box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.1);
       font-family: 'PT Sans', Arial, sans-serif;
       margin: 20px auto;
@@ -58,7 +58,7 @@
   .form-appointment input[type=email],
   .form-appointment input[type=tel],
   .form-appointment textarea {	
-      border: 1px solid rgb(153, 202, 129);
+      border: 1px solid black;
       border-radius: .2em;	
       font-family: 'PT Sans', Arial, sans-serif;
       font-size: 1.1em;
@@ -87,7 +87,7 @@
   .form-appointment textarea:active,
   .form-appointment textarea:focus {	
     outline: 0;
-    box-shadow: 0 0 6px rgb(176, 226, 188);
+    box-shadow: 0 0 6px black;
   }
   
   .form-appointment textarea {
@@ -95,8 +95,8 @@
   }
   
   .form-appointment input[type=submit] {
-      background-color: rgb(118, 207, 118);
-      border: 1px solid rgb(134, 189, 134);
+      background-color: darkgray;
+      border: 1px solid black;
       border-radius: 4px;
       color: rgb(255, 255, 255);
       cursor: pointer;
@@ -107,11 +107,11 @@
   
   .form-appointment input[type=submit]:hover {
       background-color: white;
-      color: rgb(118, 207, 118);
+      color: black;
   }
   
   .form-appointment .wpcf7-list-item-label {
-      color: rgb(130, 178, 136);
+      color: black
   }
   
   span.wpcf7-list-item {
@@ -119,3 +119,15 @@
       margin-left: -.02em;
   }
   
+  body{
+    background:black;
+  }
+
+  #prisottyLogo {
+	bottom: 0;
+	right: 0px;
+	max-width:221px;
+	max-height:91px;
+	/* width: 300px; */
+	/* border: 3px solid #73AD21; */
+  }

@@ -26,7 +26,7 @@ var onfleetLogic = {
 
           order_text += `\nOrder Total: ${order.order_total}`
 
-        await onfleetApi.tasks.create({
+        var dropoff = await onfleetApi.tasks.create({
             "destination":{
               "address":{
                 "unparsed":order.destination_address
@@ -40,23 +40,25 @@ var onfleetLogic = {
             "autoAssign":{"mode":"distance"}
           });
 
-         await onfleetApi.tasks.create({
+         var pickup = await onfleetApi.tasks.create({
             "destination":{
               "address":{
                 "unparsed":"200 COORS BLVD NW, ALBUQUERQUE NM 87105"
               },
-              "notes":""
-            },"recipients":[{"name":"Pickup - Best Daze",
+              "notes":""},
+              "recipients":[{"name":"Pickup - Best Daze",
                              "phone":"5055555555",
                              "notes":"NOTES"}],
             // "completeAfter":1455151071727,
+            // "dependencies":[dropoff.id],
+            "dependencies": [dropoff.id],
             "notes":order_text,
             "pickupTask":true,
             "autoAssign":{"mode":"distance"}
           });
-
-
-
+           
+        //  var wholeTask =  await this.linkTasks(dropoff.id, pickup.id, onfleetApi)
+  
     },
     getClosestDriver:function(){
 
