@@ -56,10 +56,8 @@ var onfleetLogic = {
             "pickupTask":true,
             "autoAssign":{"mode":"distance"}
           });
-           
-        //  var wholeTask =  await this.linkTasks(dropoff.id, pickup.id, onfleetApi)
-  
     },
+    
     getClosestDriver:function(){
 
     },
