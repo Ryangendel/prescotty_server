@@ -1,0 +1,28 @@
+{
+  "dependencies": [
+    "ivJ*br4*yByc0c0CYnaWg5t7"
+  ],
+  "task_id": "4dRSO3UCiT83toHKSWOWTSEq",
+  "destination_address": {
+    "apartment": "",
+    "state": "New Mexico",
+    "postalCode": "87121",
+    "number": "1514",
+    "street": "Coors Boulevard Northwest",
+    "city": "Albuquerque",
+    "country": "United States"
+  },
+  "destination_coordinates": [
+    -106.7055429,
+    35.1025676
+  ],
+  "merchant": "bJnXPsT*4zmiu1ONNmnGbDar",
+  "container": {
+    "type": "ORGANIZATION",
+    "organization": "bJnXPsT*4zmiu1ONNmnGbDar"
+  },
+  "webhook_trigger": "taskCreated",
+  "time_created": 1704171215000,
+  "state": 0,
+  "notes": "Customer Name Ryan Gendel\nAddress: 123 main street\nPhone: 3039313663\nItem 1----------\n product_name: Prod1\n option: 1g\n quantity: 1\n brand: Daze1\n price: 11\n sku: 123\nItem 2----------\n product_name: Prod2\n option: 2g\n quantity: 2\n brand: Daze2\n price: 22\n sku: 234\nItem 3----------\n product_name: Prod3\n option: 3g\n quantity: 3\n brand: Daze3\n price: 33\n sku: 345\n\nOrder Total: 1200"
+}

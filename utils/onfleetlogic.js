@@ -1,15 +1,8 @@
 const Onfleet = require("@onfleet/node-onfleet")
+const onfleetGetInfoDictionary = require("./onfleetGetInfoDictionary")
+const dispensary_directory = require("./dispensary_directory")
 
 var onfleetLogic = {
-    getAllDriversOnDuty: async function(){
-        var data = null
-        const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
-        console.log(await onfleetApi.verifyKey())
-        await onfleetApi.workers.get().then((results) => { 
-            data = results
-        });
-        return data
-    },
     makeOrder: async function(order){
         const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
         console.log(await onfleetApi.verifyKey())
@@ -25,7 +18,8 @@ var onfleetLogic = {
           }
 
           order_text += `\nOrder Total: ${order.order_total}`
-
+          
+          
         var dropoff = await onfleetApi.tasks.create({
             "destination":{
               "address":{
@@ -40,14 +34,16 @@ var onfleetLogic = {
             "autoAssign":{"mode":"distance"}
           });
 
+          const RI = Math.floor(Math.random() * 5)
+
          var pickup = await onfleetApi.tasks.create({
             "destination":{
               "address":{
-                "unparsed":"200 COORS BLVD NW, ALBUQUERQUE NM 87105"
+                "unparsed":dispensary_directory[RI].address
               },
               "notes":""},
-              "recipients":[{"name":"Pickup - Best Daze",
-                             "phone":"5055555555",
+              "recipients":[{"name":dispensary_directory[RI].name,
+                             "phone":dispensary_directory[RI].phone,
                              "notes":"NOTES"}],
             // "completeAfter":1455151071727,
             // "dependencies":[dropoff.id],
@@ -56,10 +52,6 @@ var onfleetLogic = {
             "pickupTask":true,
             "autoAssign":{"mode":"distance"}
           });
-    },
-    
-    getClosestDriver:function(){
-
     },
 }
 

@@ -1,3 +1,5 @@
+//
+ADD DATA => /admin/database/all/:month
 //db.getCollection("orders").find({})
 //
 //db.getCollection("orders").aggregate([
