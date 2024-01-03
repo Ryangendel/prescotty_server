@@ -36,14 +36,31 @@ var onfleetLogic = {
 
           const RI = Math.floor(Math.random() * 5)
 
-         var pickup = await onfleetApi.tasks.create({
+        //  var pickup = await onfleetApi.tasks.create({
+        //     "destination":{
+        //       "address":{
+        //         "unparsed":dispensary_directory[RI].address
+        //       },
+        //       "notes":""},
+        //       "recipients":[{"name":dispensary_directory[RI].name,
+        //                      "phone":dispensary_directory[RI].phone,
+        //                      "notes":"NOTES"}],
+        //     // "completeAfter":1455151071727,
+        //     // "dependencies":[dropoff.id],
+        //     "dependencies": [dropoff.id],
+        //     "notes":order_text,
+        //     "pickupTask":true,
+        //     "autoAssign":{"mode":"distance"}
+        //   });
+
+  var pickup = await onfleetApi.tasks.create({
             "destination":{
               "address":{
-                "unparsed":dispensary_directory[RI].address
+                "unparsed":"200 Coors Blvd NW, Albuquerque NM 87104"
               },
               "notes":""},
-              "recipients":[{"name":dispensary_directory[RI].name,
-                             "phone":dispensary_directory[RI].phone,
+              "recipients":[{"name":"Pickup - Best Daze",
+                             "phone": "5055854937",
                              "notes":"NOTES"}],
             // "completeAfter":1455151071727,
             // "dependencies":[dropoff.id],
@@ -52,6 +69,7 @@ var onfleetLogic = {
             "pickupTask":true,
             "autoAssign":{"mode":"distance"}
           });
+
     },
 }
 
