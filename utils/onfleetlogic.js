@@ -4,7 +4,7 @@ const dispensary_directory = require("./dispensary_directory")
 
 var onfleetLogic = {
     makeOrder: async function(order){
-        const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
+        const onfleetApi = new Onfleet(process.env.ONFLEET_API_KEY_LIVE);
         console.log(await onfleetApi.verifyKey())
 
         let order_text = `Customer Name ${order.client_name}\n`
@@ -53,7 +53,7 @@ var onfleetLogic = {
         //     "autoAssign":{"mode":"distance"}
         //   });
 
-  var pickup = await onfleetApi.tasks.create({
+        var pickup = await onfleetApi.tasks.create({
             "destination":{
               "address":{
                 "unparsed":"200 Coors Blvd NW, Albuquerque NM 87104"

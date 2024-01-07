@@ -152,3 +152,4 @@ db.getCollection("orders").aggregate([
             averageTimeDifference: { $avg: "$timeDifferenceInSeconds" }
         }
     }
+    ])

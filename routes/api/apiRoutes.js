@@ -3,7 +3,7 @@ const Onfleet = require("@onfleet/node-onfleet")
 const onfleetLogic = require("../../utils/onfleetlogic")
 
 router.get('/testingroute', async (req, res) => {
-    const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
+    const onfleetApi = new Onfleet(process.env.ONFLEET_API_KEY_LIVE);
     console.log(await onfleetApi.verifyKey())
     onfleetApi.workers.get().then((results) => {
         console.log("*********************")
@@ -77,7 +77,9 @@ router.post('/bestdazeorder', async (req, res) => {
 
         onfleetLogic.makeOrder(BestDazeOrder)
     }
-    res.json([BestDazeOrder])
+    //return res.redirect('/orderconfirmation');
+    res.redirect(`/frontend/gui/orderconfirmation?ordernumber=${req.body["orderid-680"]}`);
+    //res.json([BestDazeOrder])
     //res.redirect(307, '/frontend/gui/bestdaze/home');
 })
 

@@ -47,4 +47,3 @@ ul.footer-nav li + li::before{background: #fff;}
     transition: border-width 150ms ease-in-out;
 }
 .btn-primary::after { content: ""; display: inline-block; width: 20px; background-color: #fff; height: 1px; position: absolute; left: 25px; top: 25px;}
-/* thank you page design */
