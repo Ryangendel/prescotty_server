@@ -1,5 +1,5 @@
 const Onfleet = require("@onfleet/node-onfleet")
-const onfleetApi = new Onfleet("433273baf931427ef6b294a5d14af7d4");
+const onfleetApi = new Onfleet(process.env.ONFLEET_API_KEY_LIVE);
 console.log(onfleetApi.verifyKey())
 
 var onfleetGetInfoDictionary = {

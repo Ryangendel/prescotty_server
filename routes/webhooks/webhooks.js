@@ -4,7 +4,7 @@ const fs = require('fs');
 var webhookdata = null;
 
 router.post('/testingroute/webhook/createtask', async (req, res) => {
-    const secret = process.env.ONFLEET_SECRET_TESTING
+    const secret = process.env.ONFLEET_SECRET_LIVE
     const onfleetSignature = req.headers['x-onfleet-signature'];
 
     var parsedBody = JSON.stringify(req.body)
@@ -78,7 +78,7 @@ router.get("/webhook/createtask/bestdaze", (req, res) => {
 })
 
 router.post('/webhook/createtask/bestdaze', async (req, res) => {
-    const secret = process.env.ONFLEET_SECRET_TESTING
+    const secret = process.env.ONFLEET_SECRET_LIVE
     const onfleetSignature = req.headers['x-onfleet-signature'];
 
     var parsedBody = JSON.stringify(req.body)
@@ -148,7 +148,7 @@ router.post('/webhook/createtask/bestdaze', async (req, res) => {
 //---------------END
 
 router.post("/webhooks", (req, res) => {
-    const secret = process.env.ONFLEET_SECRET
+    const secret = process.env.ONFLEET_SECRET_LIVE
     const onfleetSignature = req.headers['x-onfleet-signature'];
 
     var parsedBody = JSON.stringify(req.body)
