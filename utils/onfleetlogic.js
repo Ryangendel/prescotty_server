@@ -4,9 +4,10 @@ const dispensary_directory = require("./dispensary_directory")
 
 var onfleetLogic = {
     makeOrder: async function(order){
+
         const onfleetApi = new Onfleet(process.env.ONFLEET_API_KEY_LIVE);
         console.log(await onfleetApi.verifyKey())
-
+try{
         let order_text = `Customer Name ${order.client_name}\n`
         order_text += `Address: ${order.destination_address}\n`
         order_text += `Phone: ${order.client_phone_number}\n`
@@ -16,7 +17,7 @@ var onfleetLogic = {
                 order_text += ` ${property}: ${order.products_in_order[i][property]}\n`
               }
           }
-
+          order_text += `\nCustomer is paying with ${order.payment_type}`
           order_text += `\nOrder Total: ${order.order_total}`
           
           
@@ -69,7 +70,11 @@ var onfleetLogic = {
             "pickupTask":true,
             "autoAssign":{"mode":"distance"}
           });
-
+          return true
+        }
+        catch{
+          return false
+        }
     },
 }
 
